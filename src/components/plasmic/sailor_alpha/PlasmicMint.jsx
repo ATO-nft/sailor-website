@@ -75,9 +75,9 @@ function PlasmicMint__RenderFunc(props) {
 
             <div className={classNames(projectcss.all, sty.freeBox__hlyV7)}>
               <Button
-                data-plasmic-name={"button"}
-                data-plasmic-override={overrides.button}
-                className={classNames("__wab_instance", sty.button)}
+                data-plasmic-name={"mintButton"}
+                data-plasmic-override={overrides.mintButton}
+                className={classNames("__wab_instance", sty.mintButton)}
               >
                 {"Mint"}
               </Button>
@@ -90,10 +90,10 @@ function PlasmicMint__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "h1", "button"],
+  root: ["root", "myHeader", "h1", "mintButton"],
   myHeader: ["myHeader"],
   h1: ["h1"],
-  button: ["button"]
+  mintButton: ["mintButton"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -127,7 +127,7 @@ export const PlasmicMint = Object.assign(
     // Helper components rendering sub-elements
     myHeader: makeNodeComponent("myHeader"),
     h1: makeNodeComponent("h1"),
-    button: makeNodeComponent("button"),
+    mintButton: makeNodeComponent("mintButton"),
     // Metadata about props expected for PlasmicMint
     internalVariantProps: PlasmicMint__VariantProps,
     internalArgProps: PlasmicMint__ArgProps
