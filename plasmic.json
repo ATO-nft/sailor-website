@@ -119,6 +119,20 @@
           "cssFilePath": "plasmic/sailor_alpha/PlasmicArtwork.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "GeHxaxYhV01",
+          "name": "Minting",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicMinting.jsx",
+          "importSpec": {
+            "modulePath": "Minting.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicMinting.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
