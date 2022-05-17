@@ -15,7 +15,6 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import MyHeader from "../../MyHeader"; // plasmic-import: sfUx3YtoOJF/component
-import Button from "../../Button"; // plasmic-import: XuXn_eVAMfJ/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicArtwork.module.css"; // plasmic-import: YFLbf8Sj1U/css
@@ -50,7 +49,11 @@ function PlasmicArtwork__RenderFunc(props) {
             className={classNames("__wab_instance", sty.myHeader)}
           />
 
-          <div className={classNames(projectcss.all, sty.freeBox__ky2WG)}>
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
             <h1
               data-plasmic-name={"h1"}
               data-plasmic-override={overrides.h1}
@@ -72,24 +75,6 @@ function PlasmicArtwork__RenderFunc(props) {
                 <React.Fragment>{""}</React.Fragment>
               </React.Fragment>
             </h1>
-
-            <div className={classNames(projectcss.all, sty.freeBox__oDxDp)}>
-              <Button
-                data-plasmic-name={"mintButton"}
-                data-plasmic-override={overrides.mintButton}
-                className={classNames("__wab_instance", sty.mintButton)}
-              >
-                {"Mint"}
-              </Button>
-
-              <Button
-                data-plasmic-name={"mintButtonBeta"}
-                data-plasmic-override={overrides.mintButtonBeta}
-                className={classNames("__wab_instance", sty.mintButtonBeta)}
-              >
-                {"Mint Beta"}
-              </Button>
-            </div>
           </div>
         </div>
       </div>
@@ -98,11 +83,10 @@ function PlasmicArtwork__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "h1", "mintButton", "mintButtonBeta"],
+  root: ["root", "myHeader", "freeBox", "h1"],
   myHeader: ["myHeader"],
-  h1: ["h1"],
-  mintButton: ["mintButton"],
-  mintButtonBeta: ["mintButtonBeta"]
+  freeBox: ["freeBox", "h1"],
+  h1: ["h1"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -135,9 +119,8 @@ export const PlasmicArtwork = Object.assign(
   {
     // Helper components rendering sub-elements
     myHeader: makeNodeComponent("myHeader"),
+    freeBox: makeNodeComponent("freeBox"),
     h1: makeNodeComponent("h1"),
-    mintButton: makeNodeComponent("mintButton"),
-    mintButtonBeta: makeNodeComponent("mintButtonBeta"),
     // Metadata about props expected for PlasmicArtwork
     internalVariantProps: PlasmicArtwork__VariantProps,
     internalArgProps: PlasmicArtwork__ArgProps
