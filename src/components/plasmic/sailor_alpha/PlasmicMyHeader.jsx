@@ -344,15 +344,17 @@ function PlasmicMyHeader__RenderFunc(props) {
           role={"img"}
         />
 
-        <div
+        <a
           className={classNames(
             projectcss.all,
+            projectcss.a,
             projectcss.__wab_text,
-            sty.text__cJpew
+            sty.link__cJpew
           )}
+          href={"/artist"}
         >
           {"THE ARTIST"}
-        </div>
+        </a>
       </div>
 
       <div
@@ -378,15 +380,17 @@ function PlasmicMyHeader__RenderFunc(props) {
           }}
         />
 
-        <div
+        <a
           className={classNames(
             projectcss.all,
+            projectcss.a,
             projectcss.__wab_text,
-            sty.text__wgqh
+            sty.link__wgqh
           )}
+          href={"/gallery"}
         >
           {"GALLERY"}
-        </div>
+        </a>
       </div>
 
       <div
@@ -426,10 +430,12 @@ function PlasmicMyHeader__RenderFunc(props) {
         ) : null}
         {false ? (
           <div
+            data-plasmic-name={"text"}
+            data-plasmic-override={overrides.text}
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__oe5F
+              sty.text
             )}
           >
             {"LOGO"}
@@ -478,6 +484,7 @@ const PlasmicDescendants = {
     "group14",
     "group15",
     "rectangle1",
+    "text",
     "signat101"
   ],
 
@@ -507,8 +514,9 @@ const PlasmicDescendants = {
   group12: ["group12"],
   group13: ["group13"],
   group14: ["group14"],
-  group15: ["group15", "rectangle1", "signat101"],
+  group15: ["group15", "rectangle1", "text", "signat101"],
   rectangle1: ["rectangle1"],
+  text: ["text"],
   signat101: ["signat101"]
 };
 
@@ -569,6 +577,7 @@ export const PlasmicMyHeader = Object.assign(
     group14: makeNodeComponent("group14"),
     group15: makeNodeComponent("group15"),
     rectangle1: makeNodeComponent("rectangle1"),
+    text: makeNodeComponent("text"),
     signat101: makeNodeComponent("signat101"),
     // Metadata about props expected for PlasmicMyHeader
     internalVariantProps: PlasmicMyHeader__VariantProps,

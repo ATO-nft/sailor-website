@@ -16,7 +16,7 @@ import {
 } from "@plasmicapp/react-web";
 import MyHeader from "../../MyHeader"; // plasmic-import: sfUx3YtoOJF/component
 import Button from "../../Button"; // plasmic-import: XuXn_eVAMfJ/component
-import Minting from "../../Minting"; // plasmic-import: GeHxaxYhV01/component
+import MintButton from "../../MintButton"; // plasmic-import: GeHxaxYhV01/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicMint.module.css"; // plasmic-import: kmIJQ5z3TF/css
@@ -75,9 +75,7 @@ function PlasmicMint__RenderFunc(props) {
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__hlyV7)}>
                 <Button
-                  data-plasmic-name={"mintButton"}
-                  data-plasmic-override={overrides.mintButton}
-                  className={classNames("__wab_instance", sty.mintButton)}
+                  className={classNames("__wab_instance", sty.button__b8VR)}
                 >
                   {"Mint"}
                 </Button>
@@ -96,13 +94,11 @@ function PlasmicMint__RenderFunc(props) {
             ) : null}
 
             <div className={classNames(projectcss.all, sty.freeBox___9VpB)}>
-              <Minting
-                data-plasmic-name={"minting"}
-                data-plasmic-override={overrides.minting}
-                className={classNames("__wab_instance", sty.minting)}
+              <MintButton
+                className={classNames("__wab_instance", sty.mintButton__oXjw7)}
               >
                 {"Mint"}
-              </Minting>
+              </MintButton>
             </div>
           </div>
 
@@ -134,11 +130,9 @@ function PlasmicMint__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "mintButton", "mintButton2", "minting"],
+  root: ["root", "myHeader", "mintButton2"],
   myHeader: ["myHeader"],
-  mintButton: ["mintButton"],
-  mintButton2: ["mintButton2"],
-  minting: ["minting"]
+  mintButton2: ["mintButton2"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -171,9 +165,7 @@ export const PlasmicMint = Object.assign(
   {
     // Helper components rendering sub-elements
     myHeader: makeNodeComponent("myHeader"),
-    mintButton: makeNodeComponent("mintButton"),
     mintButton2: makeNodeComponent("mintButton2"),
-    minting: makeNodeComponent("minting"),
     // Metadata about props expected for PlasmicMint
     internalVariantProps: PlasmicMint__VariantProps,
     internalArgProps: PlasmicMint__ArgProps
