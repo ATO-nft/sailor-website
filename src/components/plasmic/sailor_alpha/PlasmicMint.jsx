@@ -72,25 +72,28 @@ function PlasmicMint__RenderFunc(props) {
               </React.Fragment>
             </h1>
 
-            <div className={classNames(projectcss.all, sty.freeBox__hlyV7)}>
-              <Button
-                data-plasmic-name={"mintButton"}
-                data-plasmic-override={overrides.mintButton}
-                className={classNames("__wab_instance", sty.mintButton)}
-              >
-                {"Mint"}
-              </Button>
-            </div>
-
-            <div className={classNames(projectcss.all, sty.freeBox___37Pd)}>
-              <Button
-                data-plasmic-name={"mintButton2"}
-                data-plasmic-override={overrides.mintButton2}
-                className={classNames("__wab_instance", sty.mintButton2)}
-              >
-                {"Mint2"}
-              </Button>
-            </div>
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__hlyV7)}>
+                <Button
+                  data-plasmic-name={"mintButton"}
+                  data-plasmic-override={overrides.mintButton}
+                  className={classNames("__wab_instance", sty.mintButton)}
+                >
+                  {"Mint"}
+                </Button>
+              </div>
+            ) : null}
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox___37Pd)}>
+                <Button
+                  data-plasmic-name={"mintButton2"}
+                  data-plasmic-override={overrides.mintButton2}
+                  className={classNames("__wab_instance", sty.mintButton2)}
+                >
+                  {"Mint2"}
+                </Button>
+              </div>
+            ) : null}
 
             <div className={classNames(projectcss.all, sty.freeBox___9VpB)}>
               <Minting
@@ -98,30 +101,32 @@ function PlasmicMint__RenderFunc(props) {
                 data-plasmic-override={overrides.minting}
                 className={classNames("__wab_instance", sty.minting)}
               >
-                {"Minting"}
+                {"Mint"}
               </Minting>
             </div>
           </div>
 
-          <h1
-            className={classNames(
-              projectcss.all,
-              projectcss.h1,
-              projectcss.__wab_text,
-              sty.h1__nrzhT
-            )}
-          >
-            <React.Fragment>
-              <React.Fragment>{""}</React.Fragment>
-              <span
-                className={"plasmic_default__all plasmic_default__span"}
-                style={{ color: "#FFFFFF" }}
-              >
-                {"Test"}
-              </span>
-              <React.Fragment>{""}</React.Fragment>
-            </React.Fragment>
-          </h1>
+          {true ? (
+            <h1
+              className={classNames(
+                projectcss.all,
+                projectcss.h1,
+                projectcss.__wab_text,
+                sty.h1__nrzhT
+              )}
+            >
+              <React.Fragment>
+                <React.Fragment>{""}</React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ color: "#FFFFFF" }}
+                >
+                  {"Test"}
+                </span>
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
+            </h1>
+          ) : null}
         </div>
       </div>
     </React.Fragment>
