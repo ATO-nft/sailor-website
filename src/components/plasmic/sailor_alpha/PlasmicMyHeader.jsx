@@ -286,13 +286,11 @@ function PlasmicMyHeader__RenderFunc(props) {
         />
 
         <a
-          data-plasmic-name={"link"}
-          data-plasmic-override={overrides.link}
           className={classNames(
             projectcss.all,
             projectcss.a,
             projectcss.__wab_text,
-            sty.link
+            sty.link___9LA4W
           )}
           href={"/mint"}
         >
@@ -399,15 +397,17 @@ function PlasmicMyHeader__RenderFunc(props) {
           role={"img"}
         />
 
-        <div
+        <a
           className={classNames(
             projectcss.all,
+            projectcss.a,
             projectcss.__wab_text,
-            sty.text__pShL
+            sty.link__pShL
           )}
+          href={"/artwork"}
         >
           {"ARTWORK"}
-        </div>
+        </a>
       </div>
 
       <div
@@ -470,7 +470,6 @@ const PlasmicDescendants = {
     "objects5",
     "circle",
     "group10",
-    "link",
     "group11",
     "group12",
     "group13",
@@ -501,8 +500,7 @@ const PlasmicDescendants = {
   group9: ["group9", "objects5", "circle"],
   objects5: ["objects5", "circle"],
   circle: ["circle"],
-  group10: ["group10", "link"],
-  link: ["link"],
+  group10: ["group10"],
   group11: ["group11"],
   group12: ["group12"],
   group13: ["group13"],
@@ -563,7 +561,6 @@ export const PlasmicMyHeader = Object.assign(
     objects5: makeNodeComponent("objects5"),
     circle: makeNodeComponent("circle"),
     group10: makeNodeComponent("group10"),
-    link: makeNodeComponent("link"),
     group11: makeNodeComponent("group11"),
     group12: makeNodeComponent("group12"),
     group13: makeNodeComponent("group13"),
