@@ -106,6 +106,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "YFLbf8Sj1U",
+          "name": "Artwork",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicArtwork.jsx",
+          "importSpec": {
+            "modulePath": "Artwork.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicArtwork.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
