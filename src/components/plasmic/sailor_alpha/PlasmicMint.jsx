@@ -53,13 +53,11 @@ function PlasmicMint__RenderFunc(props) {
 
           <div className={classNames(projectcss.all, sty.freeBox__gy6JE)}>
             <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
               className={classNames(
                 projectcss.all,
                 projectcss.h1,
                 projectcss.__wab_text,
-                sty.h1
+                sty.h1__zwEqL
               )}
             >
               <React.Fragment>
@@ -104,6 +102,26 @@ function PlasmicMint__RenderFunc(props) {
               </Minting>
             </div>
           </div>
+
+          <h1
+            className={classNames(
+              projectcss.all,
+              projectcss.h1,
+              projectcss.__wab_text,
+              sty.h1__nrzhT
+            )}
+          >
+            <React.Fragment>
+              <React.Fragment>{""}</React.Fragment>
+              <span
+                className={"plasmic_default__all plasmic_default__span"}
+                style={{ color: "#FFFFFF" }}
+              >
+                {"Test"}
+              </span>
+              <React.Fragment>{""}</React.Fragment>
+            </React.Fragment>
+          </h1>
         </div>
       </div>
     </React.Fragment>
@@ -111,9 +129,8 @@ function PlasmicMint__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "h1", "mintButton", "mintButton2", "minting"],
+  root: ["root", "myHeader", "mintButton", "mintButton2", "minting"],
   myHeader: ["myHeader"],
-  h1: ["h1"],
   mintButton: ["mintButton"],
   mintButton2: ["mintButton2"],
   minting: ["minting"]
@@ -149,7 +166,6 @@ export const PlasmicMint = Object.assign(
   {
     // Helper components rendering sub-elements
     myHeader: makeNodeComponent("myHeader"),
-    h1: makeNodeComponent("h1"),
     mintButton: makeNodeComponent("mintButton"),
     mintButton2: makeNodeComponent("mintButton2"),
     minting: makeNodeComponent("minting"),

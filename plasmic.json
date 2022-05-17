@@ -133,6 +133,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "c-0KVxh9hq",
+          "name": "Roadmap",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicRoadmap.jsx",
+          "importSpec": {
+            "modulePath": "Roadmap.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicRoadmap.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
