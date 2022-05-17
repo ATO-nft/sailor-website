@@ -27,7 +27,7 @@
   min-width: 0;
   padding: 140px 8px 8px;
 }
-.h1 {
+.h1__zwEqL {
   position: relative;
   width: 100%;
   height: auto;
@@ -123,4 +123,13 @@
   object-fit: cover;
   width: 1em;
   height: 1em;
+}
+.h1__nrzhT {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  text-align: center;
+  padding-top: 97px;
+  min-width: 0;
 }

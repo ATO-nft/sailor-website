@@ -321,15 +321,17 @@ function PlasmicMyHeader__RenderFunc(props) {
           }}
         />
 
-        <div
+        <a
           className={classNames(
             projectcss.all,
+            projectcss.a,
             projectcss.__wab_text,
-            sty.text__tl8V
+            sty.link__tl8V
           )}
+          href={"/roadmap"}
         >
           {"ROADMAP"}
-        </div>
+        </a>
       </div>
 
       <div
