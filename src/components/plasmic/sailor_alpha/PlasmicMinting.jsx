@@ -269,7 +269,7 @@ function PlasmicMinting__RenderFunc(props) {
         })}
       >
         {p.renderPlasmicSlot({
-          defaultContents: "Button",
+          defaultContents: "Minting",
           value: args.children,
           className: classNames(sty.slotTargetChildren, {
             [sty.slotTargetChildren___focusVisibleWithin]:
