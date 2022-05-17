@@ -482,7 +482,7 @@
   top: 100%;
   left: 100%;
 }
-.text__cJpew {
+.link__cJpew {
   display: block;
   font-size: 12px;
   text-align: center;
@@ -526,7 +526,7 @@
 .img__fsyrM > .__wab_img-spacer > img {
   object-fit: cover;
 }
-.text__wgqh {
+.link__wgqh {
   display: block;
   font-size: 12px;
   font-family: "Marydale";
@@ -594,7 +594,7 @@
   left: 5px;
   border-radius: 9px;
 }
-.text__oe5F {
+.text {
   display: block;
   font-size: 22px;
   font-family: "Inter", sans-serif;
