@@ -1,0 +1,19 @@
+{
+  "props": [
+    {
+      "name": "Blue",
+      "type": "color",
+      "value": "#0099FF",
+      "category": "color",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "xCJwSuBjk"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.root {
+  width: 0px;
+  height: 0px;
+  display: block;
+  position: relative;
+}
+.svg__jMhJy {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #358bc9;
+  transform: translate(0px, -0.18600000000003547px);
+  width: 1506px;
+  height: 159px;
+  display: block;
+  top: -10px;
+  left: -27px;
+}
+.svg___2PuI {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #a2d9ff;
+  width: 1440px;
+  height: 153px;
+  display: block;
+  top: -65px;
+  left: 0px;
+  overflow: hidden;
+}
+.svg__gIjH {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #2a648e;
+  transform: translate(0.48100000000000165px, 0.3690000000000282px);
+  width: 1492px;
+  height: 175px;
+  display: block;
+  top: 0px;
+  left: -18px;
+}
+.svg__kNsKl {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #09f;
+  width: 1440px;
+  height: 88px;
+  display: block;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.freeBox___1ASPk {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 23px;
+  height: auto;
+  max-width: 100%;
+  left: -20px;
+  top: 0px;
+  padding: 8px;
+}
+.freeBox__pl5Ha {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
