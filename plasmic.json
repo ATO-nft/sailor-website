@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -92,6 +92,20 @@
           "cssFilePath": "plasmic/sailor_alpha/PlasmicFooter.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "XuXn_eVAMfJ",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicButton.jsx",
+          "importSpec": {
+            "modulePath": "Button.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -204,6 +218,16 @@
           "id": "irjNS_NSkIK",
           "name": "Vector12Icon",
           "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector12.jsx"
+        },
+        {
+          "id": "QQ0SctFdkn5",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Checksvg.jsx"
+        },
+        {
+          "id": "boz120LRHfd",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Icon.jsx"
         }
       ],
       "images": [

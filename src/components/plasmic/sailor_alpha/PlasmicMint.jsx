@@ -15,6 +15,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import MyHeader from "../../MyHeader"; // plasmic-import: sfUx3YtoOJF/component
+import Button from "../../Button"; // plasmic-import: XuXn_eVAMfJ/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicMint.module.css"; // plasmic-import: kmIJQ5z3TF/css
@@ -49,11 +50,39 @@ function PlasmicMint__RenderFunc(props) {
             className={classNames("__wab_instance", sty.myHeader)}
           />
 
-          <div
-            data-plasmic-name={"sailor"}
-            data-plasmic-override={overrides.sailor}
-            className={classNames(projectcss.all, sty.sailor)}
-          />
+          <div className={classNames(projectcss.all, sty.freeBox__gy6JE)}>
+            <h1
+              data-plasmic-name={"h1"}
+              data-plasmic-override={overrides.h1}
+              className={classNames(
+                projectcss.all,
+                projectcss.h1,
+                projectcss.__wab_text,
+                sty.h1
+              )}
+            >
+              <React.Fragment>
+                <React.Fragment>{""}</React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ color: "#FFFFFF" }}
+                >
+                  {"Hello mint"}
+                </span>
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
+            </h1>
+
+            <div className={classNames(projectcss.all, sty.freeBox__hlyV7)}>
+              <Button
+                data-plasmic-name={"button"}
+                data-plasmic-override={overrides.button}
+                className={classNames("__wab_instance", sty.button)}
+              >
+                {"Mint"}
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -61,9 +90,10 @@ function PlasmicMint__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "sailor"],
+  root: ["root", "myHeader", "h1", "button"],
   myHeader: ["myHeader"],
-  sailor: ["sailor"]
+  h1: ["h1"],
+  button: ["button"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -96,7 +126,8 @@ export const PlasmicMint = Object.assign(
   {
     // Helper components rendering sub-elements
     myHeader: makeNodeComponent("myHeader"),
-    sailor: makeNodeComponent("sailor"),
+    h1: makeNodeComponent("h1"),
+    button: makeNodeComponent("button"),
     // Metadata about props expected for PlasmicMint
     internalVariantProps: PlasmicMint__VariantProps,
     internalArgProps: PlasmicMint__ArgProps
