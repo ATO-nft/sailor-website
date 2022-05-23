@@ -6,32 +6,1152 @@
   height: 100%;
   justify-content: flex-start;
   align-items: center;
-  background: var(--token-xCJwSuBjk);
+  background: none;
   min-width: 0;
   min-height: 0;
 }
-.myHeader:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
+.roadmapDesktop {
+  background: rgba(255, 255, 255, 1);
+  width: 1440px;
+  height: 861px;
+  display: block;
+  overflow: hidden;
   flex-shrink: 0;
 }
-.freeBox {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 140px 8px 8px;
+@media (min-width: 0px) and (max-width: 768px) {
+  .roadmapDesktop {
+    display: none;
+  }
 }
-.h1 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
+.svg___0WlMo {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #e0e0e0;
+  width: 1440px;
+  height: 675px;
+  display: block;
+  top: 71px;
+  left: 0px;
+}
+.text___2JX5K {
+  display: block;
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 377px;
+  left: 379px;
+}
+.header {
+  width: 1440px;
+  height: 71px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.group1 {
+  transform: translate(-0.23900000000003274px, 0px);
+  width: 35px;
+  height: 37px;
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 1166px;
+}
+.frame {
+  mix-blend-mode: normal;
+  width: 35px;
+  height: 37px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.group {
+  transform: translate(0.001px, -0.003px);
+  width: 35px;
+  height: 38px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.objects {
+  width: 35px;
+  height: 38px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.svg__g9Px2 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  mix-blend-mode: multiply;
+  width: 34.902px;
+  height: 37.001px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.svg___3GCUi {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: translate(0.2370000000000001px, 0.002000000000000668px);
+  width: 20px;
+  height: 16px;
+  display: block;
+  top: 29.72%;
+  left: 25.78%;
+}
+.svg__m1Ou5 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: translate(0.06199999999999761px, -0.1980000000000004px);
+  width: 1px;
+  height: 1px;
+  display: block;
+  top: 35.13%;
+  left: 77.35%;
+}
+.group2 {
+  mix-blend-mode: normal;
+  transform: translate(-0.3689999999999145px, 0px);
+  width: 37px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 1213px;
+}
+.frame2 {
+  width: 37px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.group3 {
+  transform: translate(-0.003px, -0.001px);
+  width: 37px;
+  height: 37px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.objects2 {
+  width: 37px;
+  height: 37px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.svg__rmMaV {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  mix-blend-mode: multiply;
+  width: 36.899px;
+  height: 36.01px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.svg__fxWk {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: translate(0.37100000000000044px, 0px);
+  width: 18px;
+  height: 16px;
+  display: block;
+  top: 30.54%;
+  left: 27.1%;
+}
+.svg__seLQd {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: translate(0.46000000000000085px, 0.09799999999999898px);
+  width: 5px;
+  height: 7px;
+  display: block;
+  top: 38.87%;
+  left: 29.81%;
+}
+.group4 {
+  mix-blend-mode: normal;
+  transform: translate(0.49499999999989086px, 0px);
+  width: 36px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 1261px;
+}
+.frame3 {
+  width: 36px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.group5 {
+  transform: translate(-0.003px, 0.015px);
+  width: 36px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.objects3 {
+  width: 36px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.svg__idOtZ {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  mix-blend-mode: multiply;
+  width: 35.902px;
+  height: 33.982px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.svg__sjZLy {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: translate(-0.4930000000000003px, -0.015000000000000568px);
+  width: 17px;
+  height: 14px;
+  display: block;
+  top: 32.37%;
+  left: 27.85%;
+}
+.group6 {
+  mix-blend-mode: normal;
+  transform: translate(0.36200000000008004px, 0px);
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 1309px;
+}
+.frame4 {
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.group7 {
+  transform: translate(-0.001px, -0.003px);
+  width: 34px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.objects4 {
+  width: 34px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.svg__jdQ4G {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  mix-blend-mode: multiply;
+  width: 33.905px;
+  height: 34.002px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.svg__z5L1 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: translate(0.4139999999999997px, 0.30100000000000016px);
+  width: 15px;
+  height: 16px;
+  display: block;
+  top: 26.46%;
+  left: 29.49%;
+}
+.svg__ucwNk {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: translate(-0.009000000000000341px, -0.03999999999999915px);
+  width: 2px;
+  height: 2px;
+  display: block;
+  top: 35.29%;
+  left: 61.93%;
+}
+.svg__pma8G {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: translate(0.014999999999998792px, -0.06300000000000061px);
+  width: 8px;
+  height: 8px;
+  display: block;
+  top: 38.23%;
+  left: 41.29%;
+}
+.svg__zIw5Q {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: translate(-0.028999999999999915px, -0.03999999999999915px);
+  width: 2px;
+  height: 2px;
+  display: block;
+  top: 35.29%;
+  left: 61.93%;
+}
+.group8 {
+  mix-blend-mode: normal;
+  transform: translate(0.22700000000008913px, 0px);
+  width: 33px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 1358px;
+}
+.frame5 {
+  width: 33px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.group9 {
+  width: 33px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.objects5 {
+  width: 33px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.svg__vIbMw {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  mix-blend-mode: multiply;
+  width: 32.907px;
+  height: 35.001px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.circle {
+  transform: translate(-0.10299999999999976px, 0.02999999999999936px);
+  width: 16px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 9px;
+}
+.svg__dhbSw {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 15.112px;
+  height: 14.945px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.group10 {
+  transform: translate(0.21000000000003638px, 0px);
+  width: 90px;
+  height: 29px;
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 1004px;
+}
+.img__o6ImD {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 89.75px;
+  height: 29px;
+  display: block !important;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.img__o6ImD > picture > img {
+  object-fit: cover;
+}
+.img__o6ImD > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.text__zzbdN {
+  display: block;
+  font-size: 12px;
+  font-family: "Marydale";
+  font-weight: 900;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 7px;
+  left: 30px;
+  width: 30px;
+  transform: translate(-0.08300000000008367px, 0px);
+}
+.group11 {
+  transform: translate(0.4759999999999991px, 0px);
+  width: 85px;
+  height: 26px;
+  display: block;
+  position: absolute;
+  top: 31px;
+  left: 908px;
+}
+.img__qfZb4 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 84.764px;
+  height: 26px;
+  display: block !important;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.img__qfZb4 > picture > img {
+  object-fit: cover;
+}
+.img__qfZb4 > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.text__bPwBs {
+  display: block;
+  font-size: 12px;
+  font-family: "Marydale";
+  font-weight: 900;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 4px;
+  left: 14px;
+  width: 57px;
+  transform: translate(-0.03899999999998727px, 0px);
+}
+.group12 {
+  width: 96px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 29px;
+  left: 707px;
+}
+.svg___99Q9N {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  transform: scale(1.000000499999875, 0.999999500000375)
+    rotate(-179.94270423958343deg) skew(0.05729570311883569deg, 0deg);
+  width: 96px;
+  height: 30px;
+  display: block;
+  transform-origin: top left;
+  top: 100%;
+  left: 100%;
+}
+.text__pMy0F {
+  display: block;
+  font-size: 12px;
   text-align: center;
-  min-width: 0;
+  font-family: "Marydale";
+  font-weight: 900;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 5px;
+  left: 11px;
+  width: 73px;
+  height: 14px;
+}
+.group13 {
+  transform: translate(-0.18299999999999272px, -0.31599999999999895px);
+  width: 89px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 613px;
+}
+.img__xChXc {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  transform: scale(0.999336780069662, 0.9993367800696621)
+    rotate(5.339770308831057deg) translate(0.32600000000002183px, 0px);
+  width: 85.763px;
+  height: 35.768px;
+  display: block !important;
+  transform-origin: top left;
+  top: 0px;
+  left: 3px;
+  overflow: hidden;
+}
+.img__xChXc > picture > img {
+  object-fit: cover;
+}
+.img__xChXc > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.text___2X9UD {
+  display: block;
+  font-size: 12px;
+  font-family: "Marydale";
+  font-weight: 900;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  width: 55px;
+  transform: translate(0.43499999999994543px, 0.31599999999999895px);
+}
+.group14 {
+  transform: translate(-0.25300000000004275px, 0px);
+  width: 85px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 811px;
+}
+.svg__n0N4 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 85px;
+  height: 30px;
+  display: block;
+  top: 0%;
+  left: 0%;
+}
+.text__pOLcI {
+  display: block;
+  font-size: 12px;
+  font-family: "Marydale";
+  font-weight: 900;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 7px;
+  left: 13px;
+  width: 59px;
+  transform: translate(-0.03599999999994452px, 0px);
+}
+.group15 {
+  transform: translate(0px, -0.04299999999999926px);
+  width: 117px;
+  height: 37px;
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 24px;
+}
+.rectangle1 {
+  background: rgba(255, 115, 115, 1);
+  transform: translate(-0.08099999999999952px, 0.04199999999999804px);
+  width: 92px;
+  height: 29px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  border-radius: 9px;
+}
+.text__geJ22 {
+  display: block;
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 4px;
+  left: 19px;
+  width: 64px;
+  transform: translate(-0.11999999999999744px, 0.04199999999999804px);
+}
+.signat101 {
+  background: url("./images/signat101.png") center center / cover no-repeat;
+  transform: scale(0.9999684995038595, 0.9999244981177938)
+    rotate(-2.521907948040579deg) skew(-0.05724207094029576deg, 0deg)
+    translate(0px, -0.0259999999999998px);
+  width: 116px;
+  height: 32px;
+  display: block;
+  transform-origin: top left;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+.footer {
+  width: 0px;
+  height: 0px;
+  display: block;
+  position: absolute;
+  top: 777px;
+  left: -5px;
+}
+.svg__ec0Wk {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #358bc9;
+  transform: translate(0px, -0.18600000000003547px);
+  width: 1506px;
+  height: 159px;
+  display: block;
+  top: -10px;
+  left: -27px;
+}
+.svg__teijy {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #a2d9ff;
+  width: 1440px;
+  height: 153px;
+  display: block;
+  top: -65px;
+  left: 0px;
+  overflow: hidden;
+}
+.svg__wlU7 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #2a648e;
+  transform: translate(0.48100000000000165px, 0.3690000000000282px);
+  width: 1492px;
+  height: 175px;
+  display: block;
+  top: 0px;
+  left: -18px;
+}
+.svg__js2P {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #09f;
+  width: 1440px;
+  height: 88px;
+  display: block;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.case20 {
+  background: url("./images/case20.png") center center / cover no-repeat;
+  width: 393px;
+  height: 564px;
+  display: block;
+  position: absolute;
+  top: 219px;
+  left: 20px;
+}
+.case21 {
+  background: url("./images/case21.png") center center / cover no-repeat;
+  width: 738px;
+  height: 288px;
+  display: block;
+  position: absolute;
+  top: 496px;
+  left: 414px;
+}
+.case22 {
+  background: url("./images/case22.png") center center / cover no-repeat;
+  width: 390px;
+  height: 277px;
+  display: block;
+  position: absolute;
+  top: 219px;
+  left: 413px;
+}
+.case24 {
+  background: url("./images/case24.png") center center / cover no-repeat;
+  width: 268px;
+  height: 288px;
+  display: block;
+  position: absolute;
+  top: 496px;
+  left: 1152px;
+}
+.case25 {
+  background: url("./images/case25.png") center center / cover no-repeat;
+  width: 373px;
+  height: 198px;
+  display: block;
+  position: absolute;
+  top: 122px;
+  left: 1049px;
+}
+.img__utwF2 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 206px;
+  height: 236px;
+  display: block !important;
+  top: 66.31%;
+  left: 3.05%;
+}
+.img__utwF2 > picture > img {
+  object-fit: cover;
+}
+.img__utwF2 > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.img__nYljO {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 216px;
+  height: 251px;
+  display: block !important;
+  top: 45.18%;
+  left: 30.13%;
+}
+.img__nYljO > picture > img {
+  object-fit: cover;
+}
+.img__nYljO > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.img__ikHgT {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 386px;
+  height: 185px;
+  display: block !important;
+  top: 31.59%;
+  left: 58.05%;
+}
+.img__ikHgT > picture > img {
+  object-fit: cover;
+}
+.img__ikHgT > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.img__dUpCj {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 249px;
+  height: 177px;
+  display: block !important;
+  top: 15.33%;
+  left: 6.59%;
+}
+.img__dUpCj > picture > img {
+  object-fit: cover;
+}
+.img__dUpCj > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 149px;
+  left: 110px;
+  width: 215px;
+  height: 138px;
+}
+.text___4Zs6J {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 586px;
+  left: 59px;
+  width: 177px;
+  height: 192px;
+}
+.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 404px;
+  left: 449px;
+  width: 182px;
+  height: 210px;
+}
+.phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2 {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 287px;
+  left: 851px;
+  width: 350px;
+  height: 138px;
+}
+.iPhone1313Pro1 {
+  background: rgba(255, 255, 255, 1);
+  width: 390px;
+  height: 3294px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.case223 {
+  background: url("./images/case22.png") center center / cover no-repeat;
+  width: 390px;
+  height: 277px;
+  display: block;
+  position: absolute;
+  top: 318px;
+  left: 0px;
+}
+.case271 {
+  background: url("./images/case271.png") center center / cover no-repeat;
+  width: 387px;
+  height: 556px;
+  display: block;
+  position: absolute;
+  top: 683px;
+  left: 1px;
+}
+.img__mGjk {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 269px;
+  height: 225px;
+  top: 3.91%;
+  left: 5.64%;
+  display: none !important;
+}
+.img__mGjk > picture > img {
+  object-fit: cover;
+}
+.img__mGjk > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__mGjk {
+    display: block !important;
+  }
+}
+.phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 145px;
+  left: 33px;
+  width: 243px;
+  height: 185px;
+}
+.case252 {
+  background: url("./images/case25.png") center center / cover no-repeat;
+  width: 399px;
+  height: 212px;
+  display: block;
+  position: absolute;
+  top: 1487px;
+  left: -5px;
+}
+.img__hnOkC {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 300px;
+  height: 258px;
+  top: 50.6%;
+  left: 18.46%;
+  display: none !important;
+}
+.img__hnOkC > picture > img {
+  object-fit: cover;
+}
+.img__hnOkC > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__hnOkC {
+    display: block !important;
+  }
+}
+.phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22 {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 1681px;
+  left: 90px;
+  width: 257px;
+  height: 267px;
+}
+.img__tomPt {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 239px;
+  height: 256px;
+  top: 15.48%;
+  left: 34.1%;
+  display: none !important;
+}
+.img__tomPt > picture > img {
+  object-fit: cover;
+}
+.img__tomPt > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__tomPt {
+    display: block !important;
+  }
+}
+.text__bp15L {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 525px;
+  left: 150px;
+  width: 206px;
+  height: 217px;
+}
+.case222 {
+  background: url("./images/case22.png") -197px -214px / 394px 277px no-repeat;
+  width: 146px;
+  height: 46px;
+  display: block;
+  position: absolute;
+  top: 362px;
+  left: 226px;
+}
+.group16 {
+  width: 117px;
+  height: 37px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 137px;
+}
+.rectangle2 {
+  background: rgba(255, 115, 115, 1);
+  transform: translate(-0.08099999999998886px, 0.04200000000000159px);
+  width: 92px;
+  height: 29px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  border-radius: 9px;
+}
+.text__hica {
+  display: block;
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 4px;
+  left: 19px;
+  width: 64px;
+  transform: translate(-0.12000000000000455px, 0.04200000000000159px);
+}
+.signat102 {
+  background: url("./images/signat101.png") center center / cover no-repeat;
+  transform: scale(0.9999684995038595, 0.9999244981177938)
+    rotate(-2.521907948040579deg) skew(-0.05724207094029576deg, 0deg)
+    translate(0px, -0.0259999999999998px);
+  width: 116px;
+  height: 32px;
+  display: block;
+  transform-origin: top left;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+.svg__hkQxI {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  transform: scale(1.000000499999875, 0.999999500000375)
+    rotate(-179.94270423958343deg) skew(0.05729570311883569deg, 0deg);
+  width: 32px;
+  height: 3px;
+  transform-origin: top left;
+  top: 1%;
+  left: 95.38%;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__hkQxI {
+    display: block;
+  }
+}
+.svg__h0MFd {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  transform: scale(1.000000499999875, 0.9999985000008749)
+    rotate(-0.057295760416576934deg) skew(-0.1145912916467999deg, 0deg);
+  width: 32px;
+  height: 3px;
+  transform-origin: top left;
+  top: 1.33%;
+  left: 87.17%;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__h0MFd {
+    display: block;
+  }
+}
+.svg__upmd3 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 32px;
+  height: 3px;
+  top: 1.12%;
+  left: 87.17%;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__upmd3 {
+    display: block;
+  }
+}
+.img___3TXjh {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 280px;
+  height: 284px;
+  top: 36.52%;
+  left: 5.12%;
+  display: none !important;
+}
+.img___3TXjh > picture > img {
+  object-fit: cover;
+}
+.img___3TXjh > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img___3TXjh {
+    display: block !important;
+  }
+}
+.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2 {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 1220px;
+  left: 40px;
+  width: 236px;
+  height: 238px;
 }

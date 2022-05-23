@@ -11,13 +11,16 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Footer from "../../Footer"; // plasmic-import: YxvqrP_b4K/component
-import SailorFooter from "../../SailorFooter"; // plasmic-import: nhj0lG9b9L/component
-import MyHeader from "../../MyHeader"; // plasmic-import: sfUx3YtoOJF/component
+import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
+import Button from "../../Button"; // plasmic-import: XuXn_eVAMfJ/component
+import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
+import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: mtd7WeQst9yk/css
@@ -29,6 +32,10 @@ export const PlasmicHomepage__ArgProps = new Array();
 function PlasmicHomepage__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
   const $props = props.args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsu0VQjvxy5SkDm()
+  });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -48,25 +55,10 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.root
           )}
         >
-          {true ? (
-            <Footer
-              data-plasmic-name={"footer"}
-              data-plasmic-override={overrides.footer}
-              className={classNames("__wab_instance", sty.footer)}
-            />
-          ) : null}
-          {true ? (
-            <SailorFooter
-              data-plasmic-name={"sailorFooter"}
-              data-plasmic-override={overrides.sailorFooter}
-              className={classNames("__wab_instance", sty.sailorFooter)}
-            />
-          ) : null}
-
-          <MyHeader
-            data-plasmic-name={"myHeader"}
-            data-plasmic-override={overrides.myHeader}
-            className={classNames("__wab_instance", sty.myHeader)}
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
           />
 
           <div
@@ -74,28 +66,64 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-override={overrides.freeBox}
             className={classNames(projectcss.all, sty.freeBox)}
           >
-            <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1
-              )}
+            <div
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              className={classNames(projectcss.all, sty.columns)}
             >
-              <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ color: "#FFFFFF" }}
+              <div className={classNames(projectcss.all, sty.column__yo0)} />
+
+              <div className={classNames(projectcss.all, sty.column__ax342)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__wzTP
+                  )}
                 >
-                  {"Hello world"}
-                </span>
-                <React.Fragment>{""}</React.Fragment>
-              </React.Fragment>
-            </h1>
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "From the streets to the blockchain: the journey of the"
+                    : "From the streets to the blockchain : the journey of the"}
+                </div>
+
+                <div
+                  data-plasmic-name={"sailor2"}
+                  data-plasmic-override={overrides.sailor2}
+                  className={classNames(projectcss.all, sty.sailor2)}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__dcez7
+                  )}
+                >
+                  {"by Raphael Federici"}
+                </div>
+
+                <Button
+                  data-plasmic-name={"button"}
+                  data-plasmic-override={overrides.button}
+                  className={classNames("__wab_instance", sty.button)}
+                >
+                  {"Discover his journey"}
+                </Button>
+              </div>
+            </div>
           </div>
+
+          <div
+            data-plasmic-name={"sailor"}
+            data-plasmic-override={overrides.sailor}
+            className={classNames(projectcss.all, sty.sailor)}
+          />
+
+          <Footer
+            data-plasmic-name={"footer"}
+            data-plasmic-override={overrides.footer}
+            className={classNames("__wab_instance", sty.footer)}
+          />
         </p.Stack>
       </div>
     </React.Fragment>
@@ -103,12 +131,24 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "footer", "sailorFooter", "myHeader", "freeBox", "h1"],
-  footer: ["footer"],
-  sailorFooter: ["sailorFooter"],
-  myHeader: ["myHeader"],
-  freeBox: ["freeBox", "h1"],
-  h1: ["h1"]
+  root: [
+    "root",
+    "header",
+    "freeBox",
+    "columns",
+    "sailor2",
+    "button",
+    "sailor",
+    "footer"
+  ],
+
+  header: ["header"],
+  freeBox: ["freeBox", "columns", "sailor2", "button"],
+  columns: ["columns", "sailor2", "button"],
+  sailor2: ["sailor2"],
+  button: ["button"],
+  sailor: ["sailor"],
+  footer: ["footer"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -140,11 +180,13 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    footer: makeNodeComponent("footer"),
-    sailorFooter: makeNodeComponent("sailorFooter"),
-    myHeader: makeNodeComponent("myHeader"),
+    header: makeNodeComponent("header"),
     freeBox: makeNodeComponent("freeBox"),
-    h1: makeNodeComponent("h1"),
+    columns: makeNodeComponent("columns"),
+    sailor2: makeNodeComponent("sailor2"),
+    button: makeNodeComponent("button"),
+    sailor: makeNodeComponent("sailor"),
+    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps

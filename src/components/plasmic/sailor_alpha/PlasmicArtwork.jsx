@@ -54,27 +54,49 @@ function PlasmicArtwork__RenderFunc(props) {
             data-plasmic-override={overrides.freeBox}
             className={classNames(projectcss.all, sty.freeBox)}
           >
-            <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1
-              )}
+            <div
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              className={classNames(projectcss.all, sty.columns)}
             >
-              <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ color: "#FFFFFF" }}
+              <div className={classNames(projectcss.all, sty.column__ePoLo)}>
+                <div
+                  data-plasmic-name={"titre1"}
+                  data-plasmic-override={overrides.titre1}
+                  className={classNames(projectcss.all, sty.titre1)}
+                />
+
+                <div
+                  data-plasmic-name={"text"}
+                  data-plasmic-override={overrides.text}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text
+                  )}
                 >
-                  {"Hello artwork"}
-                </span>
-                <React.Fragment>{""}</React.Fragment>
-              </React.Fragment>
-            </h1>
+                  {
+                    "“2020. Le monde s’est arrêté en sombrant dans une dictature sanitaire mondiale. Sailor est un marin solitaire parcourant le monde entier. Il est \nà la recherche de coins sauvages \net tranquilles où il pourra s’évader \ndans les méandres de son imagination \net s’abandonner à la poésie. \nAlors qu’il fuit “Babylone”, le coeur \nde l’humanité 2.0, il collectionne \nles petits boulots afin d’économiser \net de se procurer un rafiot digne \nde concourir à sa grande échappée. \nMais Dieu seul sait ce que son \nvoyage lui réserve...”"
+                  }
+                </div>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column__kjkxp)}>
+                <div
+                  data-plasmic-name={"rectangle47"}
+                  data-plasmic-override={overrides.rectangle47}
+                  className={classNames(projectcss.all, sty.rectangle47)}
+                />
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column__aBarR)}>
+                <div
+                  data-plasmic-name={"rectangle48"}
+                  data-plasmic-override={overrides.rectangle48}
+                  className={classNames(projectcss.all, sty.rectangle48)}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -83,10 +105,32 @@ function PlasmicArtwork__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "freeBox", "h1"],
+  root: [
+    "root",
+    "myHeader",
+    "freeBox",
+    "columns",
+    "titre1",
+    "text",
+    "rectangle47",
+    "rectangle48"
+  ],
+
   myHeader: ["myHeader"],
-  freeBox: ["freeBox", "h1"],
-  h1: ["h1"]
+  freeBox: [
+    "freeBox",
+    "columns",
+    "titre1",
+    "text",
+    "rectangle47",
+    "rectangle48"
+  ],
+
+  columns: ["columns", "titre1", "text", "rectangle47", "rectangle48"],
+  titre1: ["titre1"],
+  text: ["text"],
+  rectangle47: ["rectangle47"],
+  rectangle48: ["rectangle48"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -120,7 +164,11 @@ export const PlasmicArtwork = Object.assign(
     // Helper components rendering sub-elements
     myHeader: makeNodeComponent("myHeader"),
     freeBox: makeNodeComponent("freeBox"),
-    h1: makeNodeComponent("h1"),
+    columns: makeNodeComponent("columns"),
+    titre1: makeNodeComponent("titre1"),
+    text: makeNodeComponent("text"),
+    rectangle47: makeNodeComponent("rectangle47"),
+    rectangle48: makeNodeComponent("rectangle48"),
     // Metadata about props expected for PlasmicArtwork
     internalVariantProps: PlasmicArtwork__VariantProps,
     internalArgProps: PlasmicArtwork__ArgProps

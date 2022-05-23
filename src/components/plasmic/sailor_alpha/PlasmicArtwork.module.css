@@ -25,13 +25,110 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 140px 8px 8px;
+  padding: 44px 8px 8px;
 }
-.h1 {
+.columns {
+  display: flex;
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 800px;
-  text-align: center;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
   min-width: 0;
+  padding: 8px;
+}
+.columns > :nth-child(3n + 1) {
+  width: calc((100% - 3 * 0px) * 3 / 12);
+}
+.columns > :nth-child(3n + 2) {
+  width: calc((100% - 3 * 0px) * 4 / 12);
+}
+.columns > :nth-child(3n + 3) {
+  width: calc((100% - 3 * 0px) * 5 / 12);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns > :nth-child(1n + 1) {
+    width: calc((100% - 1 * 0px) * 12 / 12);
+  }
+}
+.column__ePoLo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.titre1 {
+  background: url("./images/titre1.png") center center / cover no-repeat;
+  width: 190px;
+  height: 90px;
+  display: block;
+  margin-bottom: 51px;
+  flex-shrink: 0;
+}
+.text {
+  display: block;
+  font-size: 17px;
+  font-family: "Marydale";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  width: 275px;
+  height: 408px;
+  flex-shrink: 0;
+}
+.column__kjkxp {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.rectangle47 {
+  background: rgba(195, 195, 195, 1);
+  width: 523px;
+  height: 635px;
+  display: block;
+  flex-shrink: 0;
+}
+.column__aBarR {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.rectangle48 {
+  background: rgba(195, 195, 195, 1);
+  width: 523px;
+  height: 635px;
+  display: block;
+  flex-shrink: 0;
 }
