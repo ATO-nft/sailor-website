@@ -9,15 +9,53 @@
 // Plasmic Project: 6tP4H2YXq73abyMEePhpsf
 // Component: c-0KVxh9hq
 import * as React from "react";
+import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import MyHeader from "../../MyHeader"; // plasmic-import: sfUx3YtoOJF/component
+import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicRoadmap.module.css"; // plasmic-import: c-0KVxh9hq/css
+import Rectangle12Icon from "./icons/PlasmicIcon__Rectangle12"; // plasmic-import: 5b4iZPvXBH/icon
+import Group7Icon from "./icons/PlasmicIcon__Group7"; // plasmic-import: YuTey3_gZl/icon
+import Vector15Icon from "./icons/PlasmicIcon__Vector15"; // plasmic-import: Bj4GhDg1_t/icon
+import Vector16Icon from "./icons/PlasmicIcon__Vector16"; // plasmic-import: nPl2qKjNR7/icon
+import Group8Icon from "./icons/PlasmicIcon__Group8"; // plasmic-import: e7_Kl1BE5o/icon
+import Vector17Icon from "./icons/PlasmicIcon__Vector17"; // plasmic-import: zsbxYr-xMd/icon
+import Vector18Icon from "./icons/PlasmicIcon__Vector18"; // plasmic-import: CctCRY5INO/icon
+import Group9Icon from "./icons/PlasmicIcon__Group9"; // plasmic-import: N3VAOrdctd/icon
+import Vector19Icon from "./icons/PlasmicIcon__Vector19"; // plasmic-import: 0Iwytd0xfd/icon
+import Group10Icon from "./icons/PlasmicIcon__Group10"; // plasmic-import: -moBxgIQ_t/icon
+import Vector20Icon from "./icons/PlasmicIcon__Vector20"; // plasmic-import: HM7DpFmCWr/icon
+import Vector21Icon from "./icons/PlasmicIcon__Vector21"; // plasmic-import: gdyJc--PQ1/icon
+import Vector22Icon from "./icons/PlasmicIcon__Vector22"; // plasmic-import: 7ipi9rOB7v/icon
+import Vector23Icon from "./icons/PlasmicIcon__Vector23"; // plasmic-import: 6HeqwqHBbf/icon
+import Group11Icon from "./icons/PlasmicIcon__Group11"; // plasmic-import: Hg_aDXW0Z0/icon
+import Group12Icon from "./icons/PlasmicIcon__Group12"; // plasmic-import: OhSD0j47BP/icon
+import Vector13Icon from "./icons/PlasmicIcon__Vector13"; // plasmic-import: COhTphc4Ut/icon
+import Vector14Icon from "./icons/PlasmicIcon__Vector14"; // plasmic-import: yVohYqlYFb/icon
+import Vector25Icon from "./icons/PlasmicIcon__Vector25"; // plasmic-import: jLqQURmORE/icon
+import Wave12Icon from "./icons/PlasmicIcon__Wave12"; // plasmic-import: mONoTt4GFD/icon
+import Vector26Icon from "./icons/PlasmicIcon__Vector26"; // plasmic-import: -sN0b3ryjh/icon
+import Wave2Icon from "./icons/PlasmicIcon__Wave2"; // plasmic-import: iBPLYBuw3O/icon
+import Vector34Icon from "./icons/PlasmicIcon__Vector34"; // plasmic-import: 0W5NrMaF1Z/icon
+import Vector35Icon from "./icons/PlasmicIcon__Vector35"; // plasmic-import: 3oW-8ZY9Ws/icon
+import frame15VqLsMCtBrx from "./images/frame15.svg"; // plasmic-import: VqLsMCtBrx/picture
+import frame16HNlQtZMv from "./images/frame16.svg"; // plasmic-import: hNl-QtZ_Mv/picture
+import frame174TMDiFTjJ from "./images/frame17.svg"; // plasmic-import: 4tMDiFTjJ/picture
+import vector270ZzVBva24V from "./images/vector27.svg"; // plasmic-import: 0ZzVBva24V/picture
+import vector28KRv5VVhPUr from "./images/vector28.svg"; // plasmic-import: KRv5VVhPUr/picture
+import vector29KAsjJsuzaw from "./images/vector29.svg"; // plasmic-import: KAsjJSUZAW/picture
+import vector30R9WTq0DlP0 from "./images/vector30.svg"; // plasmic-import: R9wTQ0dlP0/picture
+import vector31UXvlE2R9Cy from "./images/vector31.svg"; // plasmic-import: UXvlE2r9Cy/picture
+import vector32OChYBetgbA from "./images/vector32.svg"; // plasmic-import: oChYBetgbA/picture
+import vector330NqC1RV5I2 from "./images/vector33.svg"; // plasmic-import: 0NqC1rV5I2/picture
+import vector36MOnaTtUxPj from "./images/vector36.svg"; // plasmic-import: mOnaTTUxPj/picture
 
 export const PlasmicRoadmap__VariantProps = new Array();
 
@@ -26,6 +64,10 @@ export const PlasmicRoadmap__ArgProps = new Array();
 function PlasmicRoadmap__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
   const $props = props.args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsu0VQjvxy5SkDm()
+  });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -43,39 +85,862 @@ function PlasmicRoadmap__RenderFunc(props) {
             sty.root
           )}
         >
-          <MyHeader
-            data-plasmic-name={"myHeader"}
-            data-plasmic-override={overrides.myHeader}
-            className={classNames("__wab_instance", sty.myHeader)}
-          />
-
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
-            <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1
-              )}
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <div
+              data-plasmic-name={"roadmapDesktop"}
+              data-plasmic-override={overrides.roadmapDesktop}
+              className={classNames(projectcss.all, sty.roadmapDesktop)}
             >
-              <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ color: "#FFFFFF" }}
+              {false ? (
+                <Rectangle12Icon
+                  className={classNames(projectcss.all, sty.svg___0WlMo)}
+                  role={"img"}
+                />
+              ) : null}
+              {false ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___2JX5K
+                  )}
                 >
-                  {"Hello roadmap"}
-                </span>
-                <React.Fragment>{""}</React.Fragment>
-              </React.Fragment>
-            </h1>
-          </div>
+                  {"VIDEO DE PRESENTATION / IMAGE DE FOND"}
+                </div>
+              ) : null}
+
+              <div
+                data-plasmic-name={"header"}
+                data-plasmic-override={overrides.header}
+                className={classNames(projectcss.all, sty.header)}
+              >
+                <div
+                  data-plasmic-name={"group1"}
+                  data-plasmic-override={overrides.group1}
+                  className={classNames(projectcss.all, sty.group1)}
+                >
+                  <div
+                    data-plasmic-name={"frame"}
+                    data-plasmic-override={overrides.frame}
+                    className={classNames(projectcss.all, sty.frame)}
+                  >
+                    <div
+                      data-plasmic-name={"group"}
+                      data-plasmic-override={overrides.group}
+                      className={classNames(projectcss.all, sty.group)}
+                    >
+                      <div
+                        data-plasmic-name={"objects"}
+                        data-plasmic-override={overrides.objects}
+                        className={classNames(projectcss.all, sty.objects)}
+                      >
+                        <Group7Icon
+                          className={classNames(projectcss.all, sty.svg__g9Px2)}
+                          role={"img"}
+                        />
+
+                        <Vector15Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___3GCUi
+                          )}
+                          role={"img"}
+                        />
+
+                        <Vector16Icon
+                          className={classNames(projectcss.all, sty.svg__m1Ou5)}
+                          role={"img"}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group2"}
+                  data-plasmic-override={overrides.group2}
+                  className={classNames(projectcss.all, sty.group2)}
+                >
+                  <div
+                    data-plasmic-name={"frame2"}
+                    data-plasmic-override={overrides.frame2}
+                    className={classNames(projectcss.all, sty.frame2)}
+                  >
+                    <div
+                      data-plasmic-name={"group3"}
+                      data-plasmic-override={overrides.group3}
+                      className={classNames(projectcss.all, sty.group3)}
+                    >
+                      <div
+                        data-plasmic-name={"objects2"}
+                        data-plasmic-override={overrides.objects2}
+                        className={classNames(projectcss.all, sty.objects2)}
+                      >
+                        <Group8Icon
+                          className={classNames(projectcss.all, sty.svg__rmMaV)}
+                          role={"img"}
+                        />
+
+                        <Vector17Icon
+                          className={classNames(projectcss.all, sty.svg__fxWk)}
+                          role={"img"}
+                        />
+
+                        <Vector18Icon
+                          className={classNames(projectcss.all, sty.svg__seLQd)}
+                          role={"img"}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group4"}
+                  data-plasmic-override={overrides.group4}
+                  className={classNames(projectcss.all, sty.group4)}
+                >
+                  <div
+                    data-plasmic-name={"frame3"}
+                    data-plasmic-override={overrides.frame3}
+                    className={classNames(projectcss.all, sty.frame3)}
+                  >
+                    <div
+                      data-plasmic-name={"group5"}
+                      data-plasmic-override={overrides.group5}
+                      className={classNames(projectcss.all, sty.group5)}
+                    >
+                      <div
+                        data-plasmic-name={"objects3"}
+                        data-plasmic-override={overrides.objects3}
+                        className={classNames(projectcss.all, sty.objects3)}
+                      >
+                        <Group9Icon
+                          className={classNames(projectcss.all, sty.svg__idOtZ)}
+                          role={"img"}
+                        />
+
+                        <Vector19Icon
+                          className={classNames(projectcss.all, sty.svg__sjZLy)}
+                          role={"img"}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group6"}
+                  data-plasmic-override={overrides.group6}
+                  className={classNames(projectcss.all, sty.group6)}
+                >
+                  <div
+                    data-plasmic-name={"frame4"}
+                    data-plasmic-override={overrides.frame4}
+                    className={classNames(projectcss.all, sty.frame4)}
+                  >
+                    <div
+                      data-plasmic-name={"group7"}
+                      data-plasmic-override={overrides.group7}
+                      className={classNames(projectcss.all, sty.group7)}
+                    >
+                      <div
+                        data-plasmic-name={"objects4"}
+                        data-plasmic-override={overrides.objects4}
+                        className={classNames(projectcss.all, sty.objects4)}
+                      >
+                        <Group10Icon
+                          className={classNames(projectcss.all, sty.svg__jdQ4G)}
+                          role={"img"}
+                        />
+
+                        <Vector20Icon
+                          className={classNames(projectcss.all, sty.svg__z5L1)}
+                          role={"img"}
+                        />
+
+                        <Vector21Icon
+                          className={classNames(projectcss.all, sty.svg__ucwNk)}
+                          role={"img"}
+                        />
+
+                        <Vector22Icon
+                          className={classNames(projectcss.all, sty.svg__pma8G)}
+                          role={"img"}
+                        />
+
+                        <Vector23Icon
+                          className={classNames(projectcss.all, sty.svg__zIw5Q)}
+                          role={"img"}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group8"}
+                  data-plasmic-override={overrides.group8}
+                  className={classNames(projectcss.all, sty.group8)}
+                >
+                  <div
+                    data-plasmic-name={"frame5"}
+                    data-plasmic-override={overrides.frame5}
+                    className={classNames(projectcss.all, sty.frame5)}
+                  >
+                    <div
+                      data-plasmic-name={"group9"}
+                      data-plasmic-override={overrides.group9}
+                      className={classNames(projectcss.all, sty.group9)}
+                    >
+                      <div
+                        data-plasmic-name={"objects5"}
+                        data-plasmic-override={overrides.objects5}
+                        className={classNames(projectcss.all, sty.objects5)}
+                      >
+                        <Group11Icon
+                          className={classNames(projectcss.all, sty.svg__vIbMw)}
+                          role={"img"}
+                        />
+
+                        <div
+                          data-plasmic-name={"circle"}
+                          data-plasmic-override={overrides.circle}
+                          className={classNames(projectcss.all, sty.circle)}
+                        >
+                          <Group12Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__dhbSw
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group10"}
+                  data-plasmic-override={overrides.group10}
+                  className={classNames(projectcss.all, sty.group10)}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__o6ImD)}
+                    displayHeight={"29px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"89.75px"}
+                    loading={"lazy"}
+                    src={{
+                      src: frame15VqLsMCtBrx,
+                      fullWidth: 89.75,
+                      fullHeight: 29,
+                      aspectRatio: 3.103448
+                    }}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__zzbdN
+                    )}
+                  >
+                    {"MINT"}
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group11"}
+                  data-plasmic-override={overrides.group11}
+                  className={classNames(projectcss.all, sty.group11)}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__qfZb4)}
+                    displayHeight={"26px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"84.764px"}
+                    loading={"lazy"}
+                    src={{
+                      src: frame16HNlQtZMv,
+                      fullWidth: 84.764,
+                      fullHeight: 26,
+                      aspectRatio: 3.269231
+                    }}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bPwBs
+                    )}
+                  >
+                    {"ROADMAP"}
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group12"}
+                  data-plasmic-override={overrides.group12}
+                  className={classNames(projectcss.all, sty.group12)}
+                >
+                  <Vector13Icon
+                    className={classNames(projectcss.all, sty.svg___99Q9N)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pMy0F
+                    )}
+                  >
+                    {"THE ARTIST"}
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group13"}
+                  data-plasmic-override={overrides.group13}
+                  className={classNames(projectcss.all, sty.group13)}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__xChXc)}
+                    displayHeight={"35.768px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"85.763px"}
+                    loading={"lazy"}
+                    src={{
+                      src: frame174TMDiFTjJ,
+                      fullWidth: 85.763,
+                      fullHeight: 35.768,
+                      aspectRatio: 2.388889
+                    }}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___2X9UD
+                    )}
+                  >
+                    {"GALLERY"}
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group14"}
+                  data-plasmic-override={overrides.group14}
+                  className={classNames(projectcss.all, sty.group14)}
+                >
+                  <Vector14Icon
+                    className={classNames(projectcss.all, sty.svg__n0N4)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pOLcI
+                    )}
+                  >
+                    {"ARTWORK"}
+                  </div>
+                </div>
+
+                <div
+                  data-plasmic-name={"group15"}
+                  data-plasmic-override={overrides.group15}
+                  className={classNames(projectcss.all, sty.group15)}
+                >
+                  {false ? (
+                    <div
+                      data-plasmic-name={"rectangle1"}
+                      data-plasmic-override={overrides.rectangle1}
+                      className={classNames(projectcss.all, sty.rectangle1)}
+                    />
+                  ) : null}
+                  {false ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__geJ22
+                      )}
+                    >
+                      {"LOGO"}
+                    </div>
+                  ) : null}
+
+                  <div
+                    data-plasmic-name={"signat101"}
+                    data-plasmic-override={overrides.signat101}
+                    className={classNames(projectcss.all, sty.signat101)}
+                  />
+                </div>
+              </div>
+
+              <div
+                data-plasmic-name={"footer"}
+                data-plasmic-override={overrides.footer}
+                className={classNames(projectcss.all, sty.footer)}
+              >
+                {false ? (
+                  <Vector25Icon
+                    className={classNames(projectcss.all, sty.svg__ec0Wk)}
+                    role={"img"}
+                  />
+                ) : null}
+                {false ? (
+                  <Wave12Icon
+                    className={classNames(projectcss.all, sty.svg__teijy)}
+                    role={"img"}
+                  />
+                ) : null}
+                {false ? (
+                  <Vector26Icon
+                    className={classNames(projectcss.all, sty.svg__wlU7)}
+                    role={"img"}
+                  />
+                ) : null}
+                {false ? (
+                  <Wave2Icon
+                    className={classNames(projectcss.all, sty.svg__js2P)}
+                    role={"img"}
+                  />
+                ) : null}
+              </div>
+
+              <div
+                data-plasmic-name={"case20"}
+                data-plasmic-override={overrides.case20}
+                className={classNames(projectcss.all, sty.case20)}
+              />
+
+              <div
+                data-plasmic-name={"case21"}
+                data-plasmic-override={overrides.case21}
+                className={classNames(projectcss.all, sty.case21)}
+              />
+
+              <div
+                data-plasmic-name={"case22"}
+                data-plasmic-override={overrides.case22}
+                className={classNames(projectcss.all, sty.case22)}
+              />
+
+              <div
+                data-plasmic-name={"case24"}
+                data-plasmic-override={overrides.case24}
+                className={classNames(projectcss.all, sty.case24)}
+              />
+
+              <div
+                data-plasmic-name={"case25"}
+                data-plasmic-override={overrides.case25}
+                className={classNames(projectcss.all, sty.case25)}
+              />
+
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__utwF2)}
+                displayHeight={"236px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"206px"}
+                loading={"lazy"}
+                src={{
+                  src: vector270ZzVBva24V,
+                  fullWidth: 206,
+                  fullHeight: 236,
+                  aspectRatio: 0.872881
+                }}
+              />
+
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__nYljO)}
+                displayHeight={"251px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"216px"}
+                loading={"lazy"}
+                src={{
+                  src: vector28KRv5VVhPUr,
+                  fullWidth: 216,
+                  fullHeight: 251,
+                  aspectRatio: 0.860558
+                }}
+              />
+
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__ikHgT)}
+                displayHeight={"185px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"386px"}
+                loading={"lazy"}
+                src={{
+                  src: vector29KAsjJsuzaw,
+                  fullWidth: 386,
+                  fullHeight: 185,
+                  aspectRatio: 2.086486
+                }}
+              />
+
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__dUpCj)}
+                displayHeight={"177px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"249px"}
+                loading={"lazy"}
+                src={{
+                  src: vector30R9WTq0DlP0,
+                  fullWidth: 249,
+                  fullHeight: 177,
+                  aspectRatio: 1.40678
+                }}
+              />
+
+              <div
+                data-plasmic-name={
+                  "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent"
+                }
+                data-plasmic-override={
+                  overrides.phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent
+                }
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent
+                )}
+              >
+                {
+                  "Phase 1\nThe first apparition of the Sailor happened in the streets of paris out of Raphael Federici’s mind. \nAbandoned wall, closed shop, ruined building, the Sailor \nhas no limit invading the city, \nthe country and all 5 continent. "
+                }
+              </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___4Zs6J
+                )}
+              >
+                {
+                  "Phase 2\nThe sailor comes to life with the launch of his #1 comic book available worldwide. \nWe discover his fear, goals and character. A man who wants to emancipate from the world and discover \nhis inner one. That’s what the sailor is."
+                }
+              </div>
+
+              <div
+                data-plasmic-name={
+                  "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
+                }
+                data-plasmic-override={
+                  overrides.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore
+                }
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore
+                )}
+              >
+                {
+                  "Phase 3\nThe sailor is free and \nhas no frontier. That’s why Raphael Federici propose \nto be co-producter of the Sailor’s Comics & animated series by owning a Sailor NFT. \nLaunch of the social media and private discord. Live painting of Raphael Federici Meditation courses \nand more. "
+                }
+              </div>
+
+              <div
+                data-plasmic-name={
+                  "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2"
+                }
+                data-plasmic-override={
+                  overrides.phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2
+                }
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2
+                )}
+              >
+                {
+                  "Phase 4\nLaunch of the collection. \nReveal of the Legendary\nLaunch of a rarity sniper Holders of the NFT \nwill be Private event for holders in Paris. \npurchase of an island to giveaway to the community \npurchase of a boat to giveaway to the community \nStart of the Sailor Comics #2 "
+                }
+              </div>
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+          ) ? (
+            <div
+              data-plasmic-name={"iPhone1313Pro1"}
+              data-plasmic-override={overrides.iPhone1313Pro1}
+              className={classNames(projectcss.all, sty.iPhone1313Pro1)}
+            >
+              <div
+                data-plasmic-name={"case223"}
+                data-plasmic-override={overrides.case223}
+                className={classNames(projectcss.all, sty.case223)}
+              />
+
+              <div
+                data-plasmic-name={"case271"}
+                data-plasmic-override={overrides.case271}
+                className={classNames(projectcss.all, sty.case271)}
+              />
+
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__mGjk)}
+                  displayHeight={"225px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"269px"}
+                  loading={"lazy"}
+                  src={{
+                    src: vector31UXvlE2R9Cy,
+                    fullWidth: 269,
+                    fullHeight: 225,
+                    aspectRatio: 1.195556
+                  }}
+                />
+              ) : null}
+
+              <div
+                data-plasmic-name={
+                  "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents"
+                }
+                data-plasmic-override={
+                  overrides.phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents
+                }
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents
+                )}
+              >
+                {
+                  "Phase 1\nThe first apparition \nof the Sailor happened \nin the streets of paris out \nof Raphael Federici’s mind. \nAbandoned wall, closed shop, ruined building, the Sailor \nhas no limit invading \nthe city, the country \nand all five continents. "
+                }
+              </div>
+
+              <div
+                data-plasmic-name={"case252"}
+                data-plasmic-override={overrides.case252}
+                className={classNames(projectcss.all, sty.case252)}
+              />
+
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__hnOkC)}
+                  displayHeight={"258px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"300px"}
+                  loading={"lazy"}
+                  src={{
+                    src: vector32OChYBetgbA,
+                    fullWidth: 300,
+                    fullHeight: 258,
+                    aspectRatio: 1.162791
+                  }}
+                />
+              ) : null}
+
+              <div
+                data-plasmic-name={
+                  "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22"
+                }
+                data-plasmic-override={
+                  overrides.phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22
+                }
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22
+                )}
+              >
+                {
+                  "Phase 4\nLaunch of the collection. \nReveal of the Legendary\nLaunch of a rarity sniper Holders of the NFT will \nbe Private event for \nholders in Paris. \npurchase of an island to giveaway to the community \npurchase of a boat to giveaway to the community \nStart of the Sailor Comics #2 "
+                }
+              </div>
+
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__tomPt)}
+                  displayHeight={"256px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"239px"}
+                  loading={"lazy"}
+                  src={{
+                    src: vector330NqC1RV5I2,
+                    fullWidth: 239,
+                    fullHeight: 256,
+                    aspectRatio: 0.933594
+                  }}
+                />
+              ) : null}
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__bp15L
+                )}
+              >
+                {
+                  "Phase 2\nThe sailor comes to life with the launch of his \n#1 comic book available worldwide. \nWe discover his fear, goals and character. \nA man who wants to emancipate from the world and discover \nhis inner one. That’s \nwhat the sailor is."
+                }
+              </div>
+
+              <div
+                data-plasmic-name={"case222"}
+                data-plasmic-override={overrides.case222}
+                className={classNames(projectcss.all, sty.case222)}
+              />
+
+              <div
+                data-plasmic-name={"group16"}
+                data-plasmic-override={overrides.group16}
+                className={classNames(projectcss.all, sty.group16)}
+              >
+                {false ? (
+                  <div
+                    data-plasmic-name={"rectangle2"}
+                    data-plasmic-override={overrides.rectangle2}
+                    className={classNames(projectcss.all, sty.rectangle2)}
+                  />
+                ) : null}
+                {false ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__hica
+                    )}
+                  >
+                    {"LOGO"}
+                  </div>
+                ) : null}
+
+                <div
+                  data-plasmic-name={"signat102"}
+                  data-plasmic-override={overrides.signat102}
+                  className={classNames(projectcss.all, sty.signat102)}
+                />
+              </div>
+
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <Vector34Icon
+                  className={classNames(projectcss.all, sty.svg__hkQxI)}
+                  role={"img"}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <Vector34Icon
+                  className={classNames(projectcss.all, sty.svg__h0MFd)}
+                  role={"img"}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <Vector35Icon
+                  className={classNames(projectcss.all, sty.svg__upmd3)}
+                  role={"img"}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___3TXjh)}
+                  displayHeight={"284px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"280px"}
+                  loading={"lazy"}
+                  src={{
+                    src: vector36MOnaTtUxPj,
+                    fullWidth: 280,
+                    fullHeight: 284,
+                    aspectRatio: 0.985915
+                  }}
+                />
+              ) : null}
+
+              <div
+                data-plasmic-name={
+                  "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2"
+                }
+                data-plasmic-override={
+                  overrides.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2
+                }
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2
+                )}
+              >
+                {
+                  "Phase 3\nThe sailor is free and \nhas no frontier. That’s why Raphael Federici propose \nto be co-producter of the Sailor’s Comics & animated series by owning a Sailor NFT. \nLaunch of the social media and private discord. Live painting of Raphael Federici Meditation courses and more. "
+                }
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -83,10 +948,222 @@ function PlasmicRoadmap__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "freeBox", "h1"],
-  myHeader: ["myHeader"],
-  freeBox: ["freeBox", "h1"],
-  h1: ["h1"]
+  root: [
+    "root",
+    "roadmapDesktop",
+    "header",
+    "group1",
+    "frame",
+    "group",
+    "objects",
+    "group2",
+    "frame2",
+    "group3",
+    "objects2",
+    "group4",
+    "frame3",
+    "group5",
+    "objects3",
+    "group6",
+    "frame4",
+    "group7",
+    "objects4",
+    "group8",
+    "frame5",
+    "group9",
+    "objects5",
+    "circle",
+    "group10",
+    "group11",
+    "group12",
+    "group13",
+    "group14",
+    "group15",
+    "rectangle1",
+    "signat101",
+    "footer",
+    "case20",
+    "case21",
+    "case22",
+    "case24",
+    "case25",
+    "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent",
+    "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore",
+    "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2",
+    "iPhone1313Pro1",
+    "case223",
+    "case271",
+    "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents",
+    "case252",
+    "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22",
+    "case222",
+    "group16",
+    "rectangle2",
+    "signat102",
+    "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2"
+  ],
+
+  roadmapDesktop: [
+    "roadmapDesktop",
+    "header",
+    "group1",
+    "frame",
+    "group",
+    "objects",
+    "group2",
+    "frame2",
+    "group3",
+    "objects2",
+    "group4",
+    "frame3",
+    "group5",
+    "objects3",
+    "group6",
+    "frame4",
+    "group7",
+    "objects4",
+    "group8",
+    "frame5",
+    "group9",
+    "objects5",
+    "circle",
+    "group10",
+    "group11",
+    "group12",
+    "group13",
+    "group14",
+    "group15",
+    "rectangle1",
+    "signat101",
+    "footer",
+    "case20",
+    "case21",
+    "case22",
+    "case24",
+    "case25",
+    "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent",
+    "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore",
+    "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2"
+  ],
+
+  header: [
+    "header",
+    "group1",
+    "frame",
+    "group",
+    "objects",
+    "group2",
+    "frame2",
+    "group3",
+    "objects2",
+    "group4",
+    "frame3",
+    "group5",
+    "objects3",
+    "group6",
+    "frame4",
+    "group7",
+    "objects4",
+    "group8",
+    "frame5",
+    "group9",
+    "objects5",
+    "circle",
+    "group10",
+    "group11",
+    "group12",
+    "group13",
+    "group14",
+    "group15",
+    "rectangle1",
+    "signat101"
+  ],
+
+  group1: ["group1", "frame", "group", "objects"],
+  frame: ["frame", "group", "objects"],
+  group: ["group", "objects"],
+  objects: ["objects"],
+  group2: ["group2", "frame2", "group3", "objects2"],
+  frame2: ["frame2", "group3", "objects2"],
+  group3: ["group3", "objects2"],
+  objects2: ["objects2"],
+  group4: ["group4", "frame3", "group5", "objects3"],
+  frame3: ["frame3", "group5", "objects3"],
+  group5: ["group5", "objects3"],
+  objects3: ["objects3"],
+  group6: ["group6", "frame4", "group7", "objects4"],
+  frame4: ["frame4", "group7", "objects4"],
+  group7: ["group7", "objects4"],
+  objects4: ["objects4"],
+  group8: ["group8", "frame5", "group9", "objects5", "circle"],
+  frame5: ["frame5", "group9", "objects5", "circle"],
+  group9: ["group9", "objects5", "circle"],
+  objects5: ["objects5", "circle"],
+  circle: ["circle"],
+  group10: ["group10"],
+  group11: ["group11"],
+  group12: ["group12"],
+  group13: ["group13"],
+  group14: ["group14"],
+  group15: ["group15", "rectangle1", "signat101"],
+  rectangle1: ["rectangle1"],
+  signat101: ["signat101"],
+  footer: ["footer"],
+  case20: ["case20"],
+  case21: ["case21"],
+  case22: ["case22"],
+  case24: ["case24"],
+  case25: ["case25"],
+  phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent:
+    [
+      "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent"
+    ],
+
+  phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore:
+    [
+      "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
+    ],
+
+  phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2:
+    [
+      "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2"
+    ],
+
+  iPhone1313Pro1: [
+    "iPhone1313Pro1",
+    "case223",
+    "case271",
+    "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents",
+    "case252",
+    "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22",
+    "case222",
+    "group16",
+    "rectangle2",
+    "signat102",
+    "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2"
+  ],
+
+  case223: ["case223"],
+  case271: ["case271"],
+  phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents:
+    [
+      "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents"
+    ],
+
+  case252: ["case252"],
+  phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22:
+    [
+      "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22"
+    ],
+
+  case222: ["case222"],
+  group16: ["group16", "rectangle2", "signat102"],
+  rectangle2: ["rectangle2"],
+  signat102: ["signat102"],
+  phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2:
+    [
+      "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2"
+    ]
 };
 
 function makeNodeComponent(nodeName) {
@@ -118,9 +1195,81 @@ export const PlasmicRoadmap = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    myHeader: makeNodeComponent("myHeader"),
-    freeBox: makeNodeComponent("freeBox"),
-    h1: makeNodeComponent("h1"),
+    roadmapDesktop: makeNodeComponent("roadmapDesktop"),
+    header: makeNodeComponent("header"),
+    group1: makeNodeComponent("group1"),
+    frame: makeNodeComponent("frame"),
+    group: makeNodeComponent("group"),
+    objects: makeNodeComponent("objects"),
+    group2: makeNodeComponent("group2"),
+    frame2: makeNodeComponent("frame2"),
+    group3: makeNodeComponent("group3"),
+    objects2: makeNodeComponent("objects2"),
+    group4: makeNodeComponent("group4"),
+    frame3: makeNodeComponent("frame3"),
+    group5: makeNodeComponent("group5"),
+    objects3: makeNodeComponent("objects3"),
+    group6: makeNodeComponent("group6"),
+    frame4: makeNodeComponent("frame4"),
+    group7: makeNodeComponent("group7"),
+    objects4: makeNodeComponent("objects4"),
+    group8: makeNodeComponent("group8"),
+    frame5: makeNodeComponent("frame5"),
+    group9: makeNodeComponent("group9"),
+    objects5: makeNodeComponent("objects5"),
+    circle: makeNodeComponent("circle"),
+    group10: makeNodeComponent("group10"),
+    group11: makeNodeComponent("group11"),
+    group12: makeNodeComponent("group12"),
+    group13: makeNodeComponent("group13"),
+    group14: makeNodeComponent("group14"),
+    group15: makeNodeComponent("group15"),
+    rectangle1: makeNodeComponent("rectangle1"),
+    signat101: makeNodeComponent("signat101"),
+    footer: makeNodeComponent("footer"),
+    case20: makeNodeComponent("case20"),
+    case21: makeNodeComponent("case21"),
+    case22: makeNodeComponent("case22"),
+    case24: makeNodeComponent("case24"),
+    case25: makeNodeComponent("case25"),
+    phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent:
+      makeNodeComponent(
+        "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent"
+      ),
+
+    phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore:
+      makeNodeComponent(
+        "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
+      ),
+
+    phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2:
+      makeNodeComponent(
+        "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2"
+      ),
+
+    iPhone1313Pro1: makeNodeComponent("iPhone1313Pro1"),
+    case223: makeNodeComponent("case223"),
+    case271: makeNodeComponent("case271"),
+    phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents:
+      makeNodeComponent(
+        "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAllFiveContinents"
+      ),
+
+    case252: makeNodeComponent("case252"),
+    phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22:
+      makeNodeComponent(
+        "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics22"
+      ),
+
+    case222: makeNodeComponent("case222"),
+    group16: makeNodeComponent("group16"),
+    rectangle2: makeNodeComponent("rectangle2"),
+    signat102: makeNodeComponent("signat102"),
+    phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2:
+      makeNodeComponent(
+        "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore2"
+      ),
+
     // Metadata about props expected for PlasmicRoadmap
     internalVariantProps: PlasmicRoadmap__VariantProps,
     internalArgProps: PlasmicRoadmap__ArgProps

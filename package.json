@@ -5,7 +5,7 @@
   "dependencies": {
     "@plasmicapp/cli": "^0.1.178",
     "@plasmicapp/host": "^1.0.45",
-    "@plasmicapp/react-web": "^0.2.96",
+    "@plasmicapp/react-web": "^0.2.97",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",

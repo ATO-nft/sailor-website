@@ -53,29 +53,7 @@ function PlasmicArtist__RenderFunc(props) {
             data-plasmic-name={"freeBox"}
             data-plasmic-override={overrides.freeBox}
             className={classNames(projectcss.all, sty.freeBox)}
-          >
-            <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1
-              )}
-            >
-              <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ color: "#FFFFFF" }}
-                >
-                  {"Hello artist"}
-                </span>
-                <React.Fragment>{""}</React.Fragment>
-              </React.Fragment>
-            </h1>
-          </div>
+          />
         </div>
       </div>
     </React.Fragment>
@@ -83,10 +61,9 @@ function PlasmicArtist__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "freeBox", "h1"],
+  root: ["root", "myHeader", "freeBox"],
   myHeader: ["myHeader"],
-  freeBox: ["freeBox", "h1"],
-  h1: ["h1"]
+  freeBox: ["freeBox"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -120,7 +97,6 @@ export const PlasmicArtist = Object.assign(
     // Helper components rendering sub-elements
     myHeader: makeNodeComponent("myHeader"),
     freeBox: makeNodeComponent("freeBox"),
-    h1: makeNodeComponent("h1"),
     // Metadata about props expected for PlasmicArtist
     internalVariantProps: PlasmicArtist__VariantProps,
     internalArgProps: PlasmicArtist__ArgProps

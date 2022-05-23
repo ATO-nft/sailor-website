@@ -9,15 +9,40 @@
 // Plasmic Project: 6tP4H2YXq73abyMEePhpsf
 // Component: VPUAoXO14B
 import * as React from "react";
+import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import MyHeader from "../../MyHeader"; // plasmic-import: sfUx3YtoOJF/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicGallery.module.css"; // plasmic-import: VPUAoXO14B/css
+import Vector24Icon from "./icons/PlasmicIcon__Vector24"; // plasmic-import: rau-jPp5nIj/icon
+import Vector13Icon from "./icons/PlasmicIcon__Vector13"; // plasmic-import: COhTphc4Ut/icon
+import Frame12Icon from "./icons/PlasmicIcon__Frame12"; // plasmic-import: wVTpvhRIk/icon
+import Vector14Icon from "./icons/PlasmicIcon__Vector14"; // plasmic-import: yVohYqlYFb/icon
+import Vector25Icon from "./icons/PlasmicIcon__Vector25"; // plasmic-import: jLqQURmORE/icon
+import Wave12Icon from "./icons/PlasmicIcon__Wave12"; // plasmic-import: mONoTt4GFD/icon
+import Vector26Icon from "./icons/PlasmicIcon__Vector26"; // plasmic-import: -sN0b3ryjh/icon
+import Wave2Icon from "./icons/PlasmicIcon__Wave2"; // plasmic-import: iBPLYBuw3O/icon
+import Group7Icon from "./icons/PlasmicIcon__Group7"; // plasmic-import: YuTey3_gZl/icon
+import Vector15Icon from "./icons/PlasmicIcon__Vector15"; // plasmic-import: Bj4GhDg1_t/icon
+import Vector16Icon from "./icons/PlasmicIcon__Vector16"; // plasmic-import: nPl2qKjNR7/icon
+import Group8Icon from "./icons/PlasmicIcon__Group8"; // plasmic-import: e7_Kl1BE5o/icon
+import Vector17Icon from "./icons/PlasmicIcon__Vector17"; // plasmic-import: zsbxYr-xMd/icon
+import Vector18Icon from "./icons/PlasmicIcon__Vector18"; // plasmic-import: CctCRY5INO/icon
+import Group9Icon from "./icons/PlasmicIcon__Group9"; // plasmic-import: N3VAOrdctd/icon
+import Vector19Icon from "./icons/PlasmicIcon__Vector19"; // plasmic-import: 0Iwytd0xfd/icon
+import Group10Icon from "./icons/PlasmicIcon__Group10"; // plasmic-import: -moBxgIQ_t/icon
+import Vector20Icon from "./icons/PlasmicIcon__Vector20"; // plasmic-import: HM7DpFmCWr/icon
+import Vector21Icon from "./icons/PlasmicIcon__Vector21"; // plasmic-import: gdyJc--PQ1/icon
+import Vector22Icon from "./icons/PlasmicIcon__Vector22"; // plasmic-import: 7ipi9rOB7v/icon
+import Vector23Icon from "./icons/PlasmicIcon__Vector23"; // plasmic-import: 6HeqwqHBbf/icon
+import Group11Icon from "./icons/PlasmicIcon__Group11"; // plasmic-import: Hg_aDXW0Z0/icon
+import Group12Icon from "./icons/PlasmicIcon__Group12"; // plasmic-import: OhSD0j47BP/icon
+import frame10ZS9Tyjvgk84 from "./images/frame10.svg"; // plasmic-import: zS9tyjvgk84/picture
+import frame11Wec4CzMciuK from "./images/frame11.svg"; // plasmic-import: wec4CZMciuK/picture
 
 export const PlasmicGallery__VariantProps = new Array();
 
@@ -43,38 +68,430 @@ function PlasmicGallery__RenderFunc(props) {
             sty.root
           )}
         >
-          <MyHeader
-            data-plasmic-name={"myHeader"}
-            data-plasmic-override={overrides.myHeader}
-            className={classNames("__wab_instance", sty.myHeader)}
-          />
-
           <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
+            data-plasmic-name={"galleryDesktop"}
+            data-plasmic-override={overrides.galleryDesktop}
+            className={classNames(projectcss.all, sty.galleryDesktop)}
           >
-            <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1
-              )}
+            <Vector24Icon
+              className={classNames(projectcss.all, sty.svg__za4O4)}
+              role={"img"}
+            />
+
+            <div
+              data-plasmic-name={"header"}
+              data-plasmic-override={overrides.header}
+              className={classNames(projectcss.all, sty.header)}
             >
-              <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ color: "#FFFFFF" }}
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__v7OlN)}
+                displayHeight={"29px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"89.75px"}
+                loading={"lazy"}
+                src={{
+                  src: frame10ZS9Tyjvgk84,
+                  fullWidth: 89.75,
+                  fullHeight: 29,
+                  aspectRatio: 3.103448
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ks7Ge
+                )}
+              >
+                {"MINT"}
+              </div>
+
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__k6Tay)}
+                displayHeight={"26px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"84.764px"}
+                loading={"lazy"}
+                src={{
+                  src: frame11Wec4CzMciuK,
+                  fullWidth: 84.764,
+                  fullHeight: 26,
+                  aspectRatio: 3.269231
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__o2KKl
+                )}
+              >
+                {"ROADMAP"}
+              </div>
+
+              <Vector13Icon
+                className={classNames(projectcss.all, sty.svg__jVif7)}
+                role={"img"}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__movgE
+                )}
+              >
+                {"THE ARTIST"}
+              </div>
+
+              <Frame12Icon
+                className={classNames(projectcss.all, sty.svg__yi4K)}
+                role={"img"}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__zcbm8
+                )}
+              >
+                {"GALLERY"}
+              </div>
+
+              <Vector14Icon
+                className={classNames(projectcss.all, sty.svg___0Dfgs)}
+                role={"img"}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__t5AWv
+                )}
+              >
+                {"ARTWORK"}
+              </div>
+
+              <div
+                data-plasmic-name={"group11"}
+                data-plasmic-override={overrides.group11}
+                className={classNames(projectcss.all, sty.group11)}
+              >
+                {false ? (
+                  <div
+                    data-plasmic-name={"rectangle1"}
+                    data-plasmic-override={overrides.rectangle1}
+                    className={classNames(projectcss.all, sty.rectangle1)}
+                  />
+                ) : null}
+                {false ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ud1Pd
+                    )}
+                  >
+                    {"LOGO"}
+                  </div>
+                ) : null}
+
+                <div
+                  data-plasmic-name={"signat101"}
+                  data-plasmic-override={overrides.signat101}
+                  className={classNames(projectcss.all, sty.signat101)}
+                />
+              </div>
+            </div>
+
+            {false ? (
+              <div
+                data-plasmic-name={"footer"}
+                data-plasmic-override={overrides.footer}
+                className={classNames(projectcss.all, sty.footer)}
+              >
+                <Vector25Icon
+                  className={classNames(projectcss.all, sty.svg___1RCGd)}
+                  role={"img"}
+                />
+
+                <Wave12Icon
+                  className={classNames(projectcss.all, sty.svg___4Yili)}
+                  role={"img"}
+                />
+
+                <Vector26Icon
+                  className={classNames(projectcss.all, sty.svg__fnlT)}
+                  role={"img"}
+                />
+
+                <Wave2Icon
+                  className={classNames(projectcss.all, sty.svg__kPrL)}
+                  role={"img"}
+                />
+              </div>
+            ) : null}
+
+            <div
+              data-plasmic-name={"group35"}
+              data-plasmic-override={overrides.group35}
+              className={classNames(projectcss.all, sty.group35)}
+            >
+              <div
+                data-plasmic-name={"nft1"}
+                data-plasmic-override={overrides.nft1}
+                className={classNames(projectcss.all, sty.nft1)}
+              />
+
+              <div
+                data-plasmic-name={"nft2"}
+                data-plasmic-override={overrides.nft2}
+                className={classNames(projectcss.all, sty.nft2)}
+              />
+
+              <div
+                data-plasmic-name={"nft3"}
+                data-plasmic-override={overrides.nft3}
+                className={classNames(projectcss.all, sty.nft3)}
+              />
+
+              <div
+                data-plasmic-name={"nft4"}
+                data-plasmic-override={overrides.nft4}
+                className={classNames(projectcss.all, sty.nft4)}
+              />
+
+              <div
+                data-plasmic-name={"nft5"}
+                data-plasmic-override={overrides.nft5}
+                className={classNames(projectcss.all, sty.nft5)}
+              />
+
+              <div
+                data-plasmic-name={"nft6"}
+                data-plasmic-override={overrides.nft6}
+                className={classNames(projectcss.all, sty.nft6)}
+              />
+
+              <div
+                data-plasmic-name={"nft7"}
+                data-plasmic-override={overrides.nft7}
+                className={classNames(projectcss.all, sty.nft7)}
+              />
+            </div>
+
+            <div
+              data-plasmic-name={"group1"}
+              data-plasmic-override={overrides.group1}
+              className={classNames(projectcss.all, sty.group1)}
+            >
+              <div
+                data-plasmic-name={"frame"}
+                data-plasmic-override={overrides.frame}
+                className={classNames(projectcss.all, sty.frame)}
+              >
+                <div
+                  data-plasmic-name={"group"}
+                  data-plasmic-override={overrides.group}
+                  className={classNames(projectcss.all, sty.group)}
                 >
-                  {"Hello gallery"}
-                </span>
-                <React.Fragment>{""}</React.Fragment>
-              </React.Fragment>
-            </h1>
+                  <div
+                    data-plasmic-name={"objects"}
+                    data-plasmic-override={overrides.objects}
+                    className={classNames(projectcss.all, sty.objects)}
+                  >
+                    <Group7Icon
+                      className={classNames(projectcss.all, sty.svg__heK6E)}
+                      role={"img"}
+                    />
+
+                    <Vector15Icon
+                      className={classNames(projectcss.all, sty.svg___9Nl1U)}
+                      role={"img"}
+                    />
+
+                    <Vector16Icon
+                      className={classNames(projectcss.all, sty.svg__axVr9)}
+                      role={"img"}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-plasmic-name={"group2"}
+              data-plasmic-override={overrides.group2}
+              className={classNames(projectcss.all, sty.group2)}
+            >
+              <div
+                data-plasmic-name={"frame2"}
+                data-plasmic-override={overrides.frame2}
+                className={classNames(projectcss.all, sty.frame2)}
+              >
+                <div
+                  data-plasmic-name={"group3"}
+                  data-plasmic-override={overrides.group3}
+                  className={classNames(projectcss.all, sty.group3)}
+                >
+                  <div
+                    data-plasmic-name={"objects2"}
+                    data-plasmic-override={overrides.objects2}
+                    className={classNames(projectcss.all, sty.objects2)}
+                  >
+                    <Group8Icon
+                      className={classNames(projectcss.all, sty.svg__rQh46)}
+                      role={"img"}
+                    />
+
+                    <Vector17Icon
+                      className={classNames(projectcss.all, sty.svg__pLgAl)}
+                      role={"img"}
+                    />
+
+                    <Vector18Icon
+                      className={classNames(projectcss.all, sty.svg__elACw)}
+                      role={"img"}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-plasmic-name={"group4"}
+              data-plasmic-override={overrides.group4}
+              className={classNames(projectcss.all, sty.group4)}
+            >
+              <div
+                data-plasmic-name={"frame3"}
+                data-plasmic-override={overrides.frame3}
+                className={classNames(projectcss.all, sty.frame3)}
+              >
+                <div
+                  data-plasmic-name={"group5"}
+                  data-plasmic-override={overrides.group5}
+                  className={classNames(projectcss.all, sty.group5)}
+                >
+                  <div
+                    data-plasmic-name={"objects3"}
+                    data-plasmic-override={overrides.objects3}
+                    className={classNames(projectcss.all, sty.objects3)}
+                  >
+                    <Group9Icon
+                      className={classNames(projectcss.all, sty.svg__mNNoZ)}
+                      role={"img"}
+                    />
+
+                    <Vector19Icon
+                      className={classNames(projectcss.all, sty.svg__f8UC8)}
+                      role={"img"}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-plasmic-name={"group6"}
+              data-plasmic-override={overrides.group6}
+              className={classNames(projectcss.all, sty.group6)}
+            >
+              <div
+                data-plasmic-name={"frame4"}
+                data-plasmic-override={overrides.frame4}
+                className={classNames(projectcss.all, sty.frame4)}
+              >
+                <div
+                  data-plasmic-name={"group7"}
+                  data-plasmic-override={overrides.group7}
+                  className={classNames(projectcss.all, sty.group7)}
+                >
+                  <div
+                    data-plasmic-name={"objects4"}
+                    data-plasmic-override={overrides.objects4}
+                    className={classNames(projectcss.all, sty.objects4)}
+                  >
+                    <Group10Icon
+                      className={classNames(projectcss.all, sty.svg__jhtYl)}
+                      role={"img"}
+                    />
+
+                    <Vector20Icon
+                      className={classNames(projectcss.all, sty.svg__vfED)}
+                      role={"img"}
+                    />
+
+                    <Vector21Icon
+                      className={classNames(projectcss.all, sty.svg__pdA0)}
+                      role={"img"}
+                    />
+
+                    <Vector22Icon
+                      className={classNames(projectcss.all, sty.svg__j3Km9)}
+                      role={"img"}
+                    />
+
+                    <Vector23Icon
+                      className={classNames(projectcss.all, sty.svg__vomCl)}
+                      role={"img"}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-plasmic-name={"group8"}
+              data-plasmic-override={overrides.group8}
+              className={classNames(projectcss.all, sty.group8)}
+            >
+              <div
+                data-plasmic-name={"frame5"}
+                data-plasmic-override={overrides.frame5}
+                className={classNames(projectcss.all, sty.frame5)}
+              >
+                <div
+                  data-plasmic-name={"group9"}
+                  data-plasmic-override={overrides.group9}
+                  className={classNames(projectcss.all, sty.group9)}
+                >
+                  <div
+                    data-plasmic-name={"objects5"}
+                    data-plasmic-override={overrides.objects5}
+                    className={classNames(projectcss.all, sty.objects5)}
+                  >
+                    <Group11Icon
+                      className={classNames(projectcss.all, sty.svg___0TsfE)}
+                      role={"img"}
+                    />
+
+                    <div
+                      data-plasmic-name={"circle"}
+                      data-plasmic-override={overrides.circle}
+                      className={classNames(projectcss.all, sty.circle)}
+                    >
+                      <Group12Icon
+                        className={classNames(projectcss.all, sty.svg__wmYe5)}
+                        role={"img"}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -83,10 +500,117 @@ function PlasmicGallery__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "freeBox", "h1"],
-  myHeader: ["myHeader"],
-  freeBox: ["freeBox", "h1"],
-  h1: ["h1"]
+  root: [
+    "root",
+    "galleryDesktop",
+    "header",
+    "group11",
+    "rectangle1",
+    "signat101",
+    "footer",
+    "group35",
+    "nft1",
+    "nft2",
+    "nft3",
+    "nft4",
+    "nft5",
+    "nft6",
+    "nft7",
+    "group1",
+    "frame",
+    "group",
+    "objects",
+    "group2",
+    "frame2",
+    "group3",
+    "objects2",
+    "group4",
+    "frame3",
+    "group5",
+    "objects3",
+    "group6",
+    "frame4",
+    "group7",
+    "objects4",
+    "group8",
+    "frame5",
+    "group9",
+    "objects5",
+    "circle"
+  ],
+
+  galleryDesktop: [
+    "galleryDesktop",
+    "header",
+    "group11",
+    "rectangle1",
+    "signat101",
+    "footer",
+    "group35",
+    "nft1",
+    "nft2",
+    "nft3",
+    "nft4",
+    "nft5",
+    "nft6",
+    "nft7",
+    "group1",
+    "frame",
+    "group",
+    "objects",
+    "group2",
+    "frame2",
+    "group3",
+    "objects2",
+    "group4",
+    "frame3",
+    "group5",
+    "objects3",
+    "group6",
+    "frame4",
+    "group7",
+    "objects4",
+    "group8",
+    "frame5",
+    "group9",
+    "objects5",
+    "circle"
+  ],
+
+  header: ["header", "group11", "rectangle1", "signat101"],
+  group11: ["group11", "rectangle1", "signat101"],
+  rectangle1: ["rectangle1"],
+  signat101: ["signat101"],
+  footer: ["footer"],
+  group35: ["group35", "nft1", "nft2", "nft3", "nft4", "nft5", "nft6", "nft7"],
+  nft1: ["nft1"],
+  nft2: ["nft2"],
+  nft3: ["nft3"],
+  nft4: ["nft4"],
+  nft5: ["nft5"],
+  nft6: ["nft6"],
+  nft7: ["nft7"],
+  group1: ["group1", "frame", "group", "objects"],
+  frame: ["frame", "group", "objects"],
+  group: ["group", "objects"],
+  objects: ["objects"],
+  group2: ["group2", "frame2", "group3", "objects2"],
+  frame2: ["frame2", "group3", "objects2"],
+  group3: ["group3", "objects2"],
+  objects2: ["objects2"],
+  group4: ["group4", "frame3", "group5", "objects3"],
+  frame3: ["frame3", "group5", "objects3"],
+  group5: ["group5", "objects3"],
+  objects3: ["objects3"],
+  group6: ["group6", "frame4", "group7", "objects4"],
+  frame4: ["frame4", "group7", "objects4"],
+  group7: ["group7", "objects4"],
+  objects4: ["objects4"],
+  group8: ["group8", "frame5", "group9", "objects5", "circle"],
+  frame5: ["frame5", "group9", "objects5", "circle"],
+  group9: ["group9", "objects5", "circle"],
+  objects5: ["objects5", "circle"],
+  circle: ["circle"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -118,9 +642,41 @@ export const PlasmicGallery = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    myHeader: makeNodeComponent("myHeader"),
-    freeBox: makeNodeComponent("freeBox"),
-    h1: makeNodeComponent("h1"),
+    galleryDesktop: makeNodeComponent("galleryDesktop"),
+    header: makeNodeComponent("header"),
+    group11: makeNodeComponent("group11"),
+    rectangle1: makeNodeComponent("rectangle1"),
+    signat101: makeNodeComponent("signat101"),
+    footer: makeNodeComponent("footer"),
+    group35: makeNodeComponent("group35"),
+    nft1: makeNodeComponent("nft1"),
+    nft2: makeNodeComponent("nft2"),
+    nft3: makeNodeComponent("nft3"),
+    nft4: makeNodeComponent("nft4"),
+    nft5: makeNodeComponent("nft5"),
+    nft6: makeNodeComponent("nft6"),
+    nft7: makeNodeComponent("nft7"),
+    group1: makeNodeComponent("group1"),
+    frame: makeNodeComponent("frame"),
+    group: makeNodeComponent("group"),
+    objects: makeNodeComponent("objects"),
+    group2: makeNodeComponent("group2"),
+    frame2: makeNodeComponent("frame2"),
+    group3: makeNodeComponent("group3"),
+    objects2: makeNodeComponent("objects2"),
+    group4: makeNodeComponent("group4"),
+    frame3: makeNodeComponent("frame3"),
+    group5: makeNodeComponent("group5"),
+    objects3: makeNodeComponent("objects3"),
+    group6: makeNodeComponent("group6"),
+    frame4: makeNodeComponent("frame4"),
+    group7: makeNodeComponent("group7"),
+    objects4: makeNodeComponent("objects4"),
+    group8: makeNodeComponent("group8"),
+    frame5: makeNodeComponent("frame5"),
+    group9: makeNodeComponent("group9"),
+    objects5: makeNodeComponent("objects5"),
+    circle: makeNodeComponent("circle"),
     // Metadata about props expected for PlasmicGallery
     internalVariantProps: PlasmicGallery__VariantProps,
     internalArgProps: PlasmicGallery__ArgProps
