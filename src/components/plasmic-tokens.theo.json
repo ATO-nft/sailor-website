@@ -1,6 +1,16 @@
 {
   "props": [
     {
+      "name": "Black",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "h6RawRnEP"
+      }
+    },
+    {
       "name": "Blue",
       "type": "color",
       "value": "#0099FF",
@@ -8,6 +18,96 @@
       "meta": {
         "projectId": "6tP4H2YXq73abyMEePhpsf",
         "id": "xCJwSuBjk"
+      }
+    },
+    {
+      "name": "GIANT",
+      "type": "spacing",
+      "value": "80px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "GwLpY0L1k"
+      }
+    },
+    {
+      "name": "L",
+      "type": "spacing",
+      "value": "24px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "xu09rnoJl"
+      }
+    },
+    {
+      "name": "M",
+      "type": "spacing",
+      "value": "16px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "l01UNgJZS"
+      }
+    },
+    {
+      "name": "Red",
+      "type": "color",
+      "value": "#FF0000",
+      "category": "color",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "PvYYAX3xE"
+      }
+    },
+    {
+      "name": "S",
+      "type": "spacing",
+      "value": "8px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "NBv66ILA2"
+      }
+    },
+    {
+      "name": "White",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "XhAnDcyiC"
+      }
+    },
+    {
+      "name": "XL",
+      "type": "spacing",
+      "value": "32px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "hP4aaKaTz"
+      }
+    },
+    {
+      "name": "XS",
+      "type": "spacing",
+      "value": "4px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "SiV4_nu_r"
+      }
+    },
+    {
+      "name": "XXL",
+      "type": "spacing",
+      "value": "64px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6tP4H2YXq73abyMEePhpsf",
+        "id": "GNJGzP5bB"
       }
     }
   ],

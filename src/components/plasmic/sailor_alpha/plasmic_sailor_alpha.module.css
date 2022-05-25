@@ -3,11 +3,31 @@
 .plasmic_tokens {
   --token-xCJwSuBjk: #0099ff;
   --plasmic-token-blue: var(--token-xCJwSuBjk);
+  --token-h6RawRnEP: #000000;
+  --plasmic-token-black: var(--token-h6RawRnEP);
+  --token-PvYYAX3xE: #ff0000;
+  --plasmic-token-red: var(--token-PvYYAX3xE);
+  --token-XhAnDcyiC: #ffffff;
+  --plasmic-token-white: var(--token-XhAnDcyiC);
+  --token-SiV4_nu_r: 4px;
+  --plasmic-token-xs: var(--token-SiV4_nu_r);
+  --token-NBv66ILA2: 8px;
+  --plasmic-token-s: var(--token-NBv66ILA2);
+  --token-l01UNgJZS: 16px;
+  --plasmic-token-m: var(--token-l01UNgJZS);
+  --token-xu09rnoJl: 24px;
+  --plasmic-token-l: var(--token-xu09rnoJl);
+  --token-hP4aaKaTz: 32px;
+  --plasmic-token-xl: var(--token-hP4aaKaTz);
+  --token-GNJGzP5bB: 64px;
+  --plasmic-token-xxl: var(--token-GNJGzP5bB);
+  --token-GwLpY0L1k: 80px;
+  --plasmic-token-giant: var(--token-GwLpY0L1k);
 }
 
 .plasmic_default_styles {
-  --mixin-oGyPqHespGWA_font-family: "Inter";
-  --mixin-oGyPqHespGWA_font-size: 16px;
+  --mixin-oGyPqHespGWA_font-family: "Marydale";
+  --mixin-oGyPqHespGWA_font-size: 18px;
   --mixin-oGyPqHespGWA_font-weight: 400;
   --mixin-oGyPqHespGWA_font-style: normal;
   --mixin-oGyPqHespGWA_color: #535353;

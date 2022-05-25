@@ -1,198 +1,138 @@
 .root {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 100%;
-  background: #0099ff;
-  min-width: 0;
-  min-height: 0;
-  padding: 0px;
-}
-.root > :global(.__wab_flex-container) {
-  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background: url("./images/sailor.png") left -20% bottom 0% / contain no-repeat,
+    url("./images/bgClourds2Png.png") top 50% left 50% / contain repeat,
+    var(--token-xCJwSuBjk);
   min-width: 0;
   min-height: 0;
-  margin-top: calc(0px - 16px);
-  height: calc(100% + 16px);
 }
-.root > :global(.__wab_flex-container) > *,
-.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.root > :global(.__wab_flex-container) > picture > img,
-.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
-  margin-top: 16px;
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    background: url("./images/sailor.png") top 100% left 100% / contain no-repeat,
+      var(--token-xCJwSuBjk);
+  }
 }
 .header:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
 }
-.freeBox {
+.heroSection {
   display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  align-self: flex-end;
-  min-width: 0;
-  padding: 52px 8px 8px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox {
-    padding-top: 0px;
-  }
-}
-.columns {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: auto;
-  align-items: stretch;
-  flex-shrink: 1;
   flex-direction: row;
-  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
   min-width: 0;
+  min-height: 0;
   padding: 8px;
 }
-.columns > :nth-child(2n + 1) {
-  width: calc((100% - 2 * 0px) * 6 / 12);
+@media (min-width: 0px) and (max-width: 768px) {
+  .heroSection {
+    padding: var(--token-hP4aaKaTz) 0px;
+  }
 }
-.columns > :nth-child(2n + 2) {
-  width: calc((100% - 2 * 0px) * 6 / 12);
+.container {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  max-width: 100%;
+  min-height: 0;
+  padding: 8px;
+}
+.container > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+  margin-top: calc(0px - var(--token-xu09rnoJl));
+  height: calc(100% + var(--token-xu09rnoJl));
+}
+.container > :global(.__wab_flex-container) > *,
+.container > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.container > :global(.__wab_flex-container) > picture > img,
+.container
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: var(--token-xu09rnoJl);
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .columns {
+  .container {
     width: 100%;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
+    min-width: 0;
+    padding: 0px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .container > :global(.__wab_flex-container) {
+    justify-content: flex-start;
+    align-items: center;
     min-width: 0;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .columns > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 0px) * 12 / 12);
-  }
-}
-.column__yo0 {
+.textContainer {
   display: flex;
   position: relative;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   height: auto;
   max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
   min-width: 0;
   padding: 8px;
 }
-.column__ax342 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
+.text__t75Qm {
   width: 100%;
   height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
+  text-align: center;
+  color: var(--token-XhAnDcyiC);
   min-width: 0;
-  padding: 8px;
-}
-.text__wzTP {
-  display: block;
-  font-size: 28px;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 100%;
-  color: rgba(255, 255, 255, 1);
-  width: 448px;
-  height: 69px;
-  padding-bottom: 0px;
-  margin-bottom: 27px;
-  flex-shrink: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .text__wzTP {
-    width: 369px;
-  }
-}
-.sailor2 {
-  background: url("./images/titre1.png") center center / cover no-repeat;
-  width: 602px;
-  height: 285px;
-  display: block;
-  margin-bottom: 9px;
-  flex-shrink: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .sailor2 {
-    width: 100%;
-    height: 100%;
-    min-width: 0;
-    min-height: 0;
-  }
-}
-.text__dcez7 {
-  display: block;
-  font-size: 28px;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 100%;
-  color: rgba(255, 255, 255, 1);
-  margin-bottom: 27px;
-  align-self: flex-end;
-  margin-right: 55px;
-}
-.button:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  left: auto;
-  top: auto;
-}
-.svg__zpGww {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__pQfhA {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
 }
 .sailor {
-  background: url("./images/sailor.png") center center / cover no-repeat;
-  width: 1050px;
-  height: 813px;
-  display: block;
-  position: sticky;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
-  align-self: flex-start;
-  flex-shrink: 0;
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .sailor {
-    display: flex;
-    flex-direction: row;
-    left: auto;
-    top: auto;
-    width: 100%;
-    height: 100%;
-    flex-row-gap: 0px;
-    min-width: 0;
-    min-height: 0;
-  }
+.sailor > picture > img {
+  object-fit: cover;
 }
-.footer:global(.__wab_instance) {
+.sailor > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.text__q9R62 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: var(--token-XhAnDcyiC);
+  min-width: 0;
+}
+.cta:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+}
+.svg__w4ZAz {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg___3GX8 {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
 }
