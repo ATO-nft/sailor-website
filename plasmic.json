@@ -29,32 +29,6 @@
       "cssFilePath": "plasmic/sailor_alpha/plasmic_sailor_alpha.module.css",
       "components": [
         {
-          "id": "mtd7WeQst9yk",
-          "name": "Homepage",
-          "type": "managed",
-          "projectId": "6tP4H2YXq73abyMEePhpsf",
-          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicHomepage.jsx",
-          "importSpec": {
-            "modulePath": "Homepage.jsx"
-          },
-          "cssFilePath": "plasmic/sailor_alpha/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "sfUx3YtoOJF",
-          "name": "MyHeader",
-          "type": "managed",
-          "projectId": "6tP4H2YXq73abyMEePhpsf",
-          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicMyHeader.jsx",
-          "importSpec": {
-            "modulePath": "MyHeader.jsx"
-          },
-          "cssFilePath": "plasmic/sailor_alpha/PlasmicMyHeader.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "kmIJQ5z3TF",
           "name": "Mint",
           "type": "managed",
@@ -135,19 +109,6 @@
           "plumeType": "button"
         },
         {
-          "id": "VPUAoXO14B",
-          "name": "Gallery",
-          "type": "managed",
-          "projectId": "6tP4H2YXq73abyMEePhpsf",
-          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicGallery.jsx",
-          "importSpec": {
-            "modulePath": "Gallery.jsx"
-          },
-          "cssFilePath": "plasmic/sailor_alpha/PlasmicGallery.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "4T390JcXEt",
           "name": "Artist",
           "type": "managed",
@@ -185,6 +146,32 @@
           "cssFilePath": "plasmic/sailor_alpha/PlasmicFooter.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "_5wgUA_BX3",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicHomepage.jsx",
+          "importSpec": {
+            "modulePath": "Homepage.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "CFz-I9uXMp",
+          "name": "Gallery",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicGallery.jsx",
+          "importSpec": {
+            "modulePath": "Gallery.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicGallery.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -649,11 +636,98 @@
           "id": "mOnaTTUxPj",
           "name": "Vector 36",
           "filePath": "plasmic/sailor_alpha/images/vector36.svg"
+        },
+        {
+          "id": "U5bGd5Wtc",
+          "name": "case-23.png",
+          "filePath": "plasmic/sailor_alpha/images/case23Png.png"
+        },
+        {
+          "id": "hD0j16vls",
+          "name": "titre 1.png",
+          "filePath": "plasmic/sailor_alpha/images/titre1Png.png"
+        },
+        {
+          "id": "lJoWIW4HH",
+          "name": "logo-white.png",
+          "filePath": "plasmic/sailor_alpha/images/logoWhitepng.png"
+        },
+        {
+          "id": "fRA1sPB3A",
+          "name": "BG clourds 2.png",
+          "filePath": "plasmic/sailor_alpha/images/bgClourds2Png.png"
+        },
+        {
+          "id": "24A5q1fTZ",
+          "name": "sailor2 1.png",
+          "filePath": "plasmic/sailor_alpha/images/sailor21Png.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/sailor_alpha/PlasmicGlobalContextsProvider.jsx",
       "codeComponents": []
+    },
+    {
+      "projectId": "84wxoth5npGrp6RRXPL88z",
+      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
+      "projectName": "react-scroll-parallax-global",
+      "version": "4.0.1",
+      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic_react_scroll_parallax_global.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.jsx",
+      "codeComponents": [
+        {
+          "id": "bozP4lLlAZ",
+          "name": "ParallaxWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        },
+        {
+          "id": "L6MfauX2Cw",
+          "name": "ParallaxProviderWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        }
+      ]
+    },
+    {
+      "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+      "projectApiToken": "eSFGpQaYCtO9sRbPuQ2Ll9dmLOg8I4oKhx6e1PuCrsfmUIVbFbSXcy32UrPTwF9zX2HVXA0xaIKJNhCMHvA",
+      "projectName": "react-slick",
+      "version": "2.1.1",
+      "cssFilePath": "plasmic/react_slick/plasmic_react_slick.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HOQUyOpClJ",
+          "name": "Slider",
+          "componentImportPath": "react-slick"
+        }
+      ]
+    },
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": "0.0.2",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic_plasmic_nav.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ]
     }
   ],
   "globalVariants": {
@@ -663,6 +737,12 @@
         "name": "Screen",
         "projectId": "6tP4H2YXq73abyMEePhpsf",
         "contextFilePath": "plasmic/sailor_alpha/PlasmicGlobalVariant__Screen.jsx"
+      },
+      {
+        "id": "QvtMAh6IevC",
+        "name": "Screen",
+        "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+        "contextFilePath": "plasmic/react_slick/PlasmicGlobalVariant__Screen.jsx"
       }
     ]
   },

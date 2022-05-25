@@ -11,41 +11,49 @@
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicHeader.module.css"; // plasmic-import: 9HJOL_ndHV/css
-import Vector13Icon from "./icons/PlasmicIcon__Vector13"; // plasmic-import: COhTphc4Ut/icon
-import Vector14Icon from "./icons/PlasmicIcon__Vector14"; // plasmic-import: yVohYqlYFb/icon
 import Group7Icon from "./icons/PlasmicIcon__Group7"; // plasmic-import: YuTey3_gZl/icon
 import Vector15Icon from "./icons/PlasmicIcon__Vector15"; // plasmic-import: Bj4GhDg1_t/icon
 import Vector16Icon from "./icons/PlasmicIcon__Vector16"; // plasmic-import: nPl2qKjNR7/icon
-import Group8Icon from "./icons/PlasmicIcon__Group8"; // plasmic-import: e7_Kl1BE5o/icon
-import Vector17Icon from "./icons/PlasmicIcon__Vector17"; // plasmic-import: zsbxYr-xMd/icon
-import Vector18Icon from "./icons/PlasmicIcon__Vector18"; // plasmic-import: CctCRY5INO/icon
-import Group9Icon from "./icons/PlasmicIcon__Group9"; // plasmic-import: N3VAOrdctd/icon
-import Vector19Icon from "./icons/PlasmicIcon__Vector19"; // plasmic-import: 0Iwytd0xfd/icon
+import Group11Icon from "./icons/PlasmicIcon__Group11"; // plasmic-import: Hg_aDXW0Z0/icon
+import Group12Icon from "./icons/PlasmicIcon__Group12"; // plasmic-import: OhSD0j47BP/icon
 import Group10Icon from "./icons/PlasmicIcon__Group10"; // plasmic-import: -moBxgIQ_t/icon
 import Vector20Icon from "./icons/PlasmicIcon__Vector20"; // plasmic-import: HM7DpFmCWr/icon
 import Vector21Icon from "./icons/PlasmicIcon__Vector21"; // plasmic-import: gdyJc--PQ1/icon
 import Vector22Icon from "./icons/PlasmicIcon__Vector22"; // plasmic-import: 7ipi9rOB7v/icon
 import Vector23Icon from "./icons/PlasmicIcon__Vector23"; // plasmic-import: 6HeqwqHBbf/icon
-import Group11Icon from "./icons/PlasmicIcon__Group11"; // plasmic-import: Hg_aDXW0Z0/icon
-import Group12Icon from "./icons/PlasmicIcon__Group12"; // plasmic-import: OhSD0j47BP/icon
-import frame7FxB7ZkNsZf from "./images/frame7.svg"; // plasmic-import: FxB7ZKNsZF/picture
-import frame8Xoyjbhvxm from "./images/frame8.svg"; // plasmic-import: Xoyjbhvxm/picture
-import frame91GqXsNiMo from "./images/frame9.svg"; // plasmic-import: 1GQXsNiMO/picture
+import Group9Icon from "./icons/PlasmicIcon__Group9"; // plasmic-import: N3VAOrdctd/icon
+import Vector19Icon from "./icons/PlasmicIcon__Vector19"; // plasmic-import: 0Iwytd0xfd/icon
+import Group8Icon from "./icons/PlasmicIcon__Group8"; // plasmic-import: e7_Kl1BE5o/icon
+import Vector17Icon from "./icons/PlasmicIcon__Vector17"; // plasmic-import: zsbxYr-xMd/icon
+import Vector18Icon from "./icons/PlasmicIcon__Vector18"; // plasmic-import: CctCRY5INO/icon
+import signat101Rr4KQb0BZ from "./images/signat101.png"; // plasmic-import: rr4KQb0b-Z/picture
+import logoWhitepngLJoWiw4Hh from "./images/logoWhitepng.png"; // plasmic-import: lJoWIW4HH/picture
 
-export const PlasmicHeader__VariantProps = new Array();
+export const PlasmicHeader__VariantProps = new Array("light");
 
 export const PlasmicHeader__ArgProps = new Array();
 
+export const defaultHeader__Args = {};
+
 function PlasmicHeader__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultHeader__Args, props.args);
+  const $props = args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsu0VQjvxy5SkDm()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -61,394 +69,456 @@ function PlasmicHeader__RenderFunc(props) {
         sty.root
       )}
     >
-      <div
-        data-plasmic-name={"logo"}
-        data-plasmic-override={overrides.logo}
-        className={classNames(projectcss.all, sty.logo)}
-      />
-
-      <div
-        data-plasmic-name={"gallery"}
-        data-plasmic-override={overrides.gallery}
-        className={classNames(projectcss.all, sty.gallery)}
-      >
-        <p.PlasmicImg
-          alt={""}
-          className={classNames(sty.img__zUz7B)}
-          displayHeight={"35.768px"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"85.763px"}
-          loading={"lazy"}
-          src={{
-            src: frame7FxB7ZkNsZf,
-            fullWidth: 85.763,
-            fullHeight: 35.768,
-            aspectRatio: 2.388889
-          }}
-        />
-
-        <a
-          className={classNames(projectcss.all, projectcss.a, sty.link__jufSi)}
-          href={"/gallery"}
-        >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__ew4N
-            )}
-          >
-            {"GALLERY"}
-          </div>
-        </a>
-      </div>
-
-      <div
-        data-plasmic-name={"artist"}
-        data-plasmic-override={overrides.artist}
-        className={classNames(projectcss.all, sty.artist)}
-      >
-        <Vector13Icon
-          className={classNames(projectcss.all, sty.svg___3BJBf)}
-          role={"img"}
-        />
-
-        <a
-          className={classNames(projectcss.all, projectcss.a, sty.link__e6IEp)}
-        >
+      <NavigationBar
+        data-plasmic-name={"navigationBar"}
+        data-plasmic-override={overrides.navigationBar}
+        brand={
           <a
             className={classNames(
               projectcss.all,
               projectcss.a,
-              sty.link__yVqDm
+              sty.link__itcKm,
+              {
+                [sty.linklight__itcKmBLk3V]: hasVariant(
+                  variants,
+                  "light",
+                  "light"
+                )
+              }
             )}
-            href={"/artist"}
+            href={"#"}
           >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__pKtgA
-              )}
-            >
-              {"THE ARTIST"}
-            </div>
+            <p.PlasmicImg
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img, {
+                [sty.imglight]: hasVariant(variants, "light", "light")
+              })}
+              displayHeight={"40px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"none"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"auto"}
+              src={
+                hasVariant(variants, "light", "light")
+                  ? {
+                      src: logoWhitepngLJoWiw4Hh,
+                      fullWidth: 125,
+                      fullHeight: 46,
+                      aspectRatio: undefined
+                    }
+                  : hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? {
+                      src: signat101Rr4KQb0BZ,
+                      fullWidth: 2813,
+                      fullHeight: 780,
+                      aspectRatio: undefined
+                    }
+                  : {
+                      src: signat101Rr4KQb0BZ,
+                      fullWidth: 2813,
+                      fullHeight: 780,
+                      aspectRatio: undefined
+                    }
+              }
+            />
           </a>
-        </a>
-      </div>
-
-      <div
-        data-plasmic-name={"artwork"}
-        data-plasmic-override={overrides.artwork}
-        className={classNames(projectcss.all, sty.artwork)}
-      >
-        <Vector14Icon
-          className={classNames(projectcss.all, sty.svg___7VqQc)}
-          role={"img"}
-        />
-
-        <a
-          className={classNames(projectcss.all, projectcss.a, sty.link__uIYm)}
-          href={"/artwork"}
-        >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text___8WsbO
-            )}
-          >
-            {"ARTWORK"}
-          </div>
-        </a>
-      </div>
-
-      <div
-        data-plasmic-name={"roadmap"}
-        data-plasmic-override={overrides.roadmap}
-        className={classNames(projectcss.all, sty.roadmap)}
-      >
-        <p.PlasmicImg
-          alt={""}
-          className={classNames(sty.img__omxIf)}
-          displayHeight={"26px"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"84.764px"}
-          loading={"lazy"}
-          src={{
-            src: frame8Xoyjbhvxm,
-            fullWidth: 84.764,
-            fullHeight: 26,
-            aspectRatio: 3.269231
-          }}
-        />
-
-        <a
-          className={classNames(projectcss.all, projectcss.a, sty.link__oqo1V)}
-          href={"/roadmap"}
-        >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__dp4Wo
-            )}
-          >
-            {"ROADMAP"}
-          </div>
-        </a>
-      </div>
-
-      <div
-        data-plasmic-name={"mint"}
-        data-plasmic-override={overrides.mint}
-        className={classNames(projectcss.all, sty.mint)}
-      >
-        <p.PlasmicImg
-          alt={""}
-          className={classNames(sty.img___1EJlU)}
-          displayHeight={"29px"}
-          displayMaxHeight={"none"}
-          displayMaxWidth={"100%"}
-          displayMinHeight={"0"}
-          displayMinWidth={"0"}
-          displayWidth={"89.75px"}
-          loading={"lazy"}
-          src={{
-            src: frame91GqXsNiMo,
-            fullWidth: 89.75,
-            fullHeight: 29,
-            aspectRatio: 3.103448
-          }}
-        />
-
-        <a
-          className={classNames(projectcss.all, projectcss.a, sty.link___9FuOd)}
-        >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__zojlO
-            )}
-          >
-            {"MINT"}
-          </div>
-        </a>
-      </div>
-
-      <a
-        className={classNames(projectcss.all, projectcss.a, sty.link___4XxE0)}
-        href={"https://twitter.com/"}
-        target={"_blank"}
-      >
-        <div
-          data-plasmic-name={"twitter"}
-          data-plasmic-override={overrides.twitter}
-          className={classNames(projectcss.all, sty.twitter)}
-        >
-          <div
-            data-plasmic-name={"frame"}
-            data-plasmic-override={overrides.frame}
-            className={classNames(projectcss.all, sty.frame)}
-          >
-            <div
-              data-plasmic-name={"group"}
-              data-plasmic-override={overrides.group}
-              className={classNames(projectcss.all, sty.group)}
+        }
+        className={classNames("__wab_instance", sty.navigationBar, {
+          [sty.navigationBarlight]: hasVariant(variants, "light", "light")
+        })}
+        closeButton={
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__xRx6F)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"none"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            src={"https://static1.plasmic.app/close.svg"}
+          />
+        }
+        forceOpenMenu={
+          hasVariant(globalVariants, "screen", "mobileOnly") ? false : undefined
+        }
+        itemsGap={8}
+        menuItems={
+          true ? (
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox)}
             >
-              <div
-                data-plasmic-name={"objects"}
-                data-plasmic-override={overrides.objects}
-                className={classNames(projectcss.all, sty.objects)}
-              >
-                <Group7Icon
-                  className={classNames(projectcss.all, sty.svg__n8Ry0)}
-                  role={"img"}
-                />
+              {true ? (
+                <div
+                  data-plasmic-name={"menuCont"}
+                  data-plasmic-override={overrides.menuCont}
+                  className={classNames(projectcss.all, sty.menuCont)}
+                >
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link___70Kzq
+                    )}
+                    href={"/gallery"}
+                  >
+                    {"GALLERY"}
+                  </a>
 
-                <Vector15Icon
-                  className={classNames(projectcss.all, sty.svg__dhg1B)}
-                  role={"img"}
-                />
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__p31H1
+                    )}
+                    href={"/artist"}
+                  >
+                    {"THE ARTIST"}
+                  </a>
 
-                <Vector16Icon
-                  className={classNames(projectcss.all, sty.svg___5A0Oq)}
-                  role={"img"}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__u03Ge
+                    )}
+                    href={"/artwork"}
+                  >
+                    {"ARTWORK"}
+                  </a>
 
-      <a
-        className={classNames(projectcss.all, projectcss.a, sty.link__iuZkv)}
-        href={"https://opensea.io/"}
-        target={"_blank"}
-      >
-        <div
-          data-plasmic-name={"opensea"}
-          data-plasmic-override={overrides.opensea}
-          className={classNames(projectcss.all, sty.opensea)}
-        >
-          <div
-            data-plasmic-name={"group2"}
-            data-plasmic-override={overrides.group2}
-            className={classNames(projectcss.all, sty.group2)}
-          >
-            <div
-              data-plasmic-name={"objects2"}
-              data-plasmic-override={overrides.objects2}
-              className={classNames(projectcss.all, sty.objects2)}
-            >
-              <Group8Icon
-                className={classNames(projectcss.all, sty.svg___3Ck1I)}
-                role={"img"}
-              />
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__bFdFf
+                    )}
+                    href={"/roadmap"}
+                  >
+                    {"ROADMAP"}
+                  </a>
 
-              <Vector17Icon
-                className={classNames(projectcss.all, sty.svg___2DSwh)}
-                role={"img"}
-              />
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__u2Ot5
+                    )}
+                    href={"/mint"}
+                  >
+                    {"    MINT    "}
+                  </a>
+                </div>
+              ) : null}
+              {true ? (
+                <div
+                  data-plasmic-name={"socialContainer"}
+                  data-plasmic-override={overrides.socialContainer}
+                  className={classNames(projectcss.all, sty.socialContainer)}
+                >
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link___4XxE0
+                    )}
+                    href={"https://twitter.com/"}
+                    target={"_blank"}
+                  >
+                    <div
+                      data-plasmic-name={"twitter"}
+                      data-plasmic-override={overrides.twitter}
+                      className={classNames(projectcss.all, sty.twitter)}
+                    >
+                      <div
+                        data-plasmic-name={"frame"}
+                        data-plasmic-override={overrides.frame}
+                        className={classNames(projectcss.all, sty.frame)}
+                      >
+                        <div
+                          data-plasmic-name={"group"}
+                          data-plasmic-override={overrides.group}
+                          className={classNames(projectcss.all, sty.group)}
+                        >
+                          <div
+                            data-plasmic-name={"objects"}
+                            data-plasmic-override={overrides.objects}
+                            className={classNames(projectcss.all, sty.objects)}
+                          >
+                            <Group7Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__n8Ry0
+                              )}
+                              role={"img"}
+                            />
 
-              <Vector18Icon
-                className={classNames(projectcss.all, sty.svg__pZDya)}
-                role={"img"}
-              />
-            </div>
-          </div>
-        </div>
-      </a>
+                            <Vector15Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__dhg1B
+                              )}
+                              role={"img"}
+                            />
 
-      <a
-        className={classNames(projectcss.all, projectcss.a, sty.link__kTlbb)}
-        href={"https://discord.com/"}
-        target={"_blank"}
-      >
-        <div
-          data-plasmic-name={"discord"}
-          data-plasmic-override={overrides.discord}
-          className={classNames(projectcss.all, sty.discord)}
-        >
-          <div
-            data-plasmic-name={"discord2"}
-            data-plasmic-override={overrides.discord2}
-            className={classNames(projectcss.all, sty.discord2)}
-          >
-            <div
-              data-plasmic-name={"objects3"}
-              data-plasmic-override={overrides.objects3}
-              className={classNames(projectcss.all, sty.objects3)}
-            >
-              <Group9Icon
-                className={classNames(projectcss.all, sty.svg__lRuBt)}
-                role={"img"}
-              />
+                            <Vector16Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg___5A0Oq
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
 
-              <Vector19Icon
-                className={classNames(projectcss.all, sty.svg__q3MoY)}
-                role={"img"}
-              />
-            </div>
-          </div>
-        </div>
-      </a>
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__jaOg7
+                    )}
+                    href={"https://etherscan.io/"}
+                    target={"_blank"}
+                  >
+                    <div
+                      data-plasmic-name={"etherscan"}
+                      data-plasmic-override={overrides.etherscan}
+                      className={classNames(projectcss.all, sty.etherscan)}
+                    >
+                      <div
+                        data-plasmic-name={"group5"}
+                        data-plasmic-override={overrides.group5}
+                        className={classNames(projectcss.all, sty.group5)}
+                      >
+                        <div
+                          data-plasmic-name={"objects5"}
+                          data-plasmic-override={overrides.objects5}
+                          className={classNames(projectcss.all, sty.objects5)}
+                        >
+                          <Group11Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___1C0Ni
+                            )}
+                            role={"img"}
+                          />
 
-      <a
-        className={classNames(projectcss.all, projectcss.a, sty.link__rLZnN)}
-        href={"https://www.instagram.com/"}
-        target={"_blank"}
-      >
-        <div
-          data-plasmic-name={"instagram"}
-          data-plasmic-override={overrides.instagram}
-          className={classNames(projectcss.all, sty.instagram)}
-        >
-          <div
-            data-plasmic-name={"instagram2"}
-            data-plasmic-override={overrides.instagram2}
-            className={classNames(projectcss.all, sty.instagram2)}
-          >
-            <div
-              data-plasmic-name={"objects4"}
-              data-plasmic-override={overrides.objects4}
-              className={classNames(projectcss.all, sty.objects4)}
-            >
-              <Group10Icon
-                className={classNames(projectcss.all, sty.svg__pZyu4)}
-                role={"img"}
-              />
+                          <div
+                            data-plasmic-name={"circle"}
+                            data-plasmic-override={overrides.circle}
+                            className={classNames(projectcss.all, sty.circle)}
+                          >
+                            <Group12Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg___5Ycnb
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
 
-              <Vector20Icon
-                className={classNames(projectcss.all, sty.svg__tvFZq)}
-                role={"img"}
-              />
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__rLZnN
+                    )}
+                    href={"https://www.instagram.com/"}
+                    target={"_blank"}
+                  >
+                    <div
+                      data-plasmic-name={"instagram"}
+                      data-plasmic-override={overrides.instagram}
+                      className={classNames(projectcss.all, sty.instagram)}
+                    >
+                      <div
+                        data-plasmic-name={"instagram2"}
+                        data-plasmic-override={overrides.instagram2}
+                        className={classNames(projectcss.all, sty.instagram2)}
+                      >
+                        <div
+                          data-plasmic-name={"objects4"}
+                          data-plasmic-override={overrides.objects4}
+                          className={classNames(projectcss.all, sty.objects4)}
+                        >
+                          <Group10Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__pZyu4
+                            )}
+                            role={"img"}
+                          />
 
-              <Vector21Icon
-                className={classNames(projectcss.all, sty.svg__k6OtS)}
-                role={"img"}
-              />
+                          <Vector20Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__tvFZq
+                            )}
+                            role={"img"}
+                          />
 
-              <Vector22Icon
-                className={classNames(projectcss.all, sty.svg__p4Z9K)}
-                role={"img"}
-              />
+                          <Vector21Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__k6OtS
+                            )}
+                            role={"img"}
+                          />
 
-              <Vector23Icon
-                className={classNames(projectcss.all, sty.svg__pYe8N)}
-                role={"img"}
-              />
-            </div>
-          </div>
-        </div>
-      </a>
+                          <Vector22Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__p4Z9K
+                            )}
+                            role={"img"}
+                          />
 
-      <a
-        className={classNames(projectcss.all, projectcss.a, sty.link__jaOg7)}
-        href={"https://etherscan.io/"}
-        target={"_blank"}
-      >
-        <div
-          data-plasmic-name={"etherscan"}
-          data-plasmic-override={overrides.etherscan}
-          className={classNames(projectcss.all, sty.etherscan)}
-        >
-          <div
-            data-plasmic-name={"group5"}
-            data-plasmic-override={overrides.group5}
-            className={classNames(projectcss.all, sty.group5)}
-          >
-            <div
-              data-plasmic-name={"objects5"}
-              data-plasmic-override={overrides.objects5}
-              className={classNames(projectcss.all, sty.objects5)}
-            >
-              <Group11Icon
-                className={classNames(projectcss.all, sty.svg___1C0Ni)}
-                role={"img"}
-              />
+                          <Vector23Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__pYe8N
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
 
-              <div
-                data-plasmic-name={"circle"}
-                data-plasmic-override={overrides.circle}
-                className={classNames(projectcss.all, sty.circle)}
-              >
-                <Group12Icon
-                  className={classNames(projectcss.all, sty.svg___5Ycnb)}
-                  role={"img"}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__kTlbb
+                    )}
+                    href={"https://discord.com/"}
+                    target={"_blank"}
+                  >
+                    <div
+                      data-plasmic-name={"discord"}
+                      data-plasmic-override={overrides.discord}
+                      className={classNames(projectcss.all, sty.discord)}
+                    >
+                      <div
+                        data-plasmic-name={"discord2"}
+                        data-plasmic-override={overrides.discord2}
+                        className={classNames(projectcss.all, sty.discord2)}
+                      >
+                        <div
+                          data-plasmic-name={"objects3"}
+                          data-plasmic-override={overrides.objects3}
+                          className={classNames(projectcss.all, sty.objects3)}
+                        >
+                          <Group9Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__lRuBt
+                            )}
+                            role={"img"}
+                          />
+
+                          <Vector19Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__q3MoY
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__iuZkv
+                    )}
+                    href={"https://opensea.io/"}
+                    target={"_blank"}
+                  >
+                    <div
+                      data-plasmic-name={"opensea"}
+                      data-plasmic-override={overrides.opensea}
+                      className={classNames(projectcss.all, sty.opensea)}
+                    >
+                      <div
+                        data-plasmic-name={"group2"}
+                        data-plasmic-override={overrides.group2}
+                        className={classNames(projectcss.all, sty.group2)}
+                      >
+                        <div
+                          data-plasmic-name={"objects2"}
+                          data-plasmic-override={overrides.objects2}
+                          className={classNames(projectcss.all, sty.objects2)}
+                        >
+                          <Group8Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___3Ck1I
+                            )}
+                            role={"img"}
+                          />
+
+                          <Vector17Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___2DSwh
+                            )}
+                            role={"img"}
+                          />
+
+                          <Vector18Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__pZDya
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              ) : null}
+            </p.Stack>
+          ) : null
+        }
+        openButton={
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__b4Qlz)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"none"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            src={"https://static1.plasmic.app/menu.svg"}
+          />
+        }
+        responsiveBreakpoint={768}
+      />
     </div>
   );
 }
@@ -456,54 +526,118 @@ function PlasmicHeader__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "logo",
-    "gallery",
-    "artist",
-    "artwork",
-    "roadmap",
-    "mint",
+    "navigationBar",
+    "img",
+    "freeBox",
+    "menuCont",
+    "socialContainer",
     "twitter",
     "frame",
     "group",
     "objects",
-    "opensea",
-    "group2",
-    "objects2",
-    "discord",
-    "discord2",
-    "objects3",
-    "instagram",
-    "instagram2",
-    "objects4",
     "etherscan",
     "group5",
     "objects5",
-    "circle"
+    "circle",
+    "instagram",
+    "instagram2",
+    "objects4",
+    "discord",
+    "discord2",
+    "objects3",
+    "opensea",
+    "group2",
+    "objects2"
   ],
 
-  logo: ["logo"],
-  gallery: ["gallery"],
-  artist: ["artist"],
-  artwork: ["artwork"],
-  roadmap: ["roadmap"],
-  mint: ["mint"],
+  navigationBar: [
+    "navigationBar",
+    "img",
+    "freeBox",
+    "menuCont",
+    "socialContainer",
+    "twitter",
+    "frame",
+    "group",
+    "objects",
+    "etherscan",
+    "group5",
+    "objects5",
+    "circle",
+    "instagram",
+    "instagram2",
+    "objects4",
+    "discord",
+    "discord2",
+    "objects3",
+    "opensea",
+    "group2",
+    "objects2"
+  ],
+
+  img: ["img"],
+  freeBox: [
+    "freeBox",
+    "menuCont",
+    "socialContainer",
+    "twitter",
+    "frame",
+    "group",
+    "objects",
+    "etherscan",
+    "group5",
+    "objects5",
+    "circle",
+    "instagram",
+    "instagram2",
+    "objects4",
+    "discord",
+    "discord2",
+    "objects3",
+    "opensea",
+    "group2",
+    "objects2"
+  ],
+
+  menuCont: ["menuCont"],
+  socialContainer: [
+    "socialContainer",
+    "twitter",
+    "frame",
+    "group",
+    "objects",
+    "etherscan",
+    "group5",
+    "objects5",
+    "circle",
+    "instagram",
+    "instagram2",
+    "objects4",
+    "discord",
+    "discord2",
+    "objects3",
+    "opensea",
+    "group2",
+    "objects2"
+  ],
+
   twitter: ["twitter", "frame", "group", "objects"],
   frame: ["frame", "group", "objects"],
   group: ["group", "objects"],
   objects: ["objects"],
-  opensea: ["opensea", "group2", "objects2"],
-  group2: ["group2", "objects2"],
-  objects2: ["objects2"],
-  discord: ["discord", "discord2", "objects3"],
-  discord2: ["discord2", "objects3"],
-  objects3: ["objects3"],
-  instagram: ["instagram", "instagram2", "objects4"],
-  instagram2: ["instagram2", "objects4"],
-  objects4: ["objects4"],
   etherscan: ["etherscan", "group5", "objects5", "circle"],
   group5: ["group5", "objects5", "circle"],
   objects5: ["objects5", "circle"],
-  circle: ["circle"]
+  circle: ["circle"],
+  instagram: ["instagram", "instagram2", "objects4"],
+  instagram2: ["instagram2", "objects4"],
+  objects4: ["objects4"],
+  discord: ["discord", "discord2", "objects3"],
+  discord2: ["discord2", "objects3"],
+  objects3: ["objects3"],
+  opensea: ["opensea", "group2", "objects2"],
+  group2: ["group2", "objects2"],
+  objects2: ["objects2"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -535,29 +669,28 @@ export const PlasmicHeader = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    logo: makeNodeComponent("logo"),
-    gallery: makeNodeComponent("gallery"),
-    artist: makeNodeComponent("artist"),
-    artwork: makeNodeComponent("artwork"),
-    roadmap: makeNodeComponent("roadmap"),
-    mint: makeNodeComponent("mint"),
+    navigationBar: makeNodeComponent("navigationBar"),
+    img: makeNodeComponent("img"),
+    freeBox: makeNodeComponent("freeBox"),
+    menuCont: makeNodeComponent("menuCont"),
+    socialContainer: makeNodeComponent("socialContainer"),
     twitter: makeNodeComponent("twitter"),
     frame: makeNodeComponent("frame"),
     group: makeNodeComponent("group"),
     objects: makeNodeComponent("objects"),
-    opensea: makeNodeComponent("opensea"),
-    group2: makeNodeComponent("group2"),
-    objects2: makeNodeComponent("objects2"),
-    discord: makeNodeComponent("discord"),
-    discord2: makeNodeComponent("discord2"),
-    objects3: makeNodeComponent("objects3"),
-    instagram: makeNodeComponent("instagram"),
-    instagram2: makeNodeComponent("instagram2"),
-    objects4: makeNodeComponent("objects4"),
     etherscan: makeNodeComponent("etherscan"),
     group5: makeNodeComponent("group5"),
     objects5: makeNodeComponent("objects5"),
     circle: makeNodeComponent("circle"),
+    instagram: makeNodeComponent("instagram"),
+    instagram2: makeNodeComponent("instagram2"),
+    objects4: makeNodeComponent("objects4"),
+    discord: makeNodeComponent("discord"),
+    discord2: makeNodeComponent("discord2"),
+    objects3: makeNodeComponent("objects3"),
+    opensea: makeNodeComponent("opensea"),
+    group2: makeNodeComponent("group2"),
+    objects2: makeNodeComponent("objects2"),
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
     internalArgProps: PlasmicHeader__ArgProps

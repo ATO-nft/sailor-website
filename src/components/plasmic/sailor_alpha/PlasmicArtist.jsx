@@ -9,23 +9,39 @@
 // Plasmic Project: 6tP4H2YXq73abyMEePhpsf
 // Component: 4T390JcXEt
 import * as React from "react";
+import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import MyHeader from "../../MyHeader"; // plasmic-import: sfUx3YtoOJF/component
+import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
+import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
+import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicArtist.module.css"; // plasmic-import: 4T390JcXEt/css
+import titre1PngHD0J16Vls from "./images/titre1Png.png"; // plasmic-import: hD0j16vls/picture
+import nft13LrJqBEcrbv from "./images/nft1.png"; // plasmic-import: 3LrJqBEcrbv/picture
+import nft2CaImCIbh7OT from "./images/nft2.png"; // plasmic-import: CAImCIbh7oT/picture
+import nft3I4UYce1FlU1 from "./images/nft3.png"; // plasmic-import: i4UYce1flU1/picture
+import nft4XHwUai6Q7C from "./images/nft4.png"; // plasmic-import: -xHwUAI6q7c/picture
 
 export const PlasmicArtist__VariantProps = new Array();
 
 export const PlasmicArtist__ArgProps = new Array();
 
+export const defaultArtist__Args = {};
+
 function PlasmicArtist__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultArtist__Args, props.args);
+  const $props = args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsu0VQjvxy5SkDm()
+  });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -43,17 +59,325 @@ function PlasmicArtist__RenderFunc(props) {
             sty.root
           )}
         >
-          <MyHeader
-            data-plasmic-name={"myHeader"}
-            data-plasmic-override={overrides.myHeader}
-            className={classNames("__wab_instance", sty.myHeader)}
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
           />
 
           <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          />
+            data-plasmic-name={"heroSection"}
+            data-plasmic-override={overrides.heroSection}
+            className={classNames(projectcss.all, sty.heroSection)}
+          >
+            <ParallaxWrapper
+              data-plasmic-name={"scrollParallax"}
+              data-plasmic-override={overrides.scrollParallax}
+              className={classNames("__wab_instance", sty.scrollParallax)}
+              speed={20}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__hsHBj)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"260px"}
+                loading={"lazy"}
+                src={{
+                  src: titre1PngHD0J16Vls,
+                  fullWidth: 431,
+                  fullHeight: 294,
+                  aspectRatio: undefined
+                }}
+              />
+            </ParallaxWrapper>
+          </div>
+
+          {true ? (
+            <div
+              data-plasmic-name={"argumentSection"}
+              data-plasmic-override={overrides.argumentSection}
+              className={classNames(projectcss.all, sty.argumentSection)}
+            >
+              <div
+                data-plasmic-name={"childhood"}
+                data-plasmic-override={overrides.childhood}
+                className={classNames(projectcss.all, sty.childhood)}
+              >
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__dDCi9)}
+                  >
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__uiT5
+                      )}
+                    >
+                      {"Childhood \n& Influence"}
+                    </h2>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__tIhBq
+                      )}
+                    >
+                      {
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida varius sapien quis porttitor. In vel magna eget arcu mattis porta et ac metus. Suspendisse pharetra enim et justo aliquam, sed ultricies eros venenatis. Nulla congue gravida augue, non dignissim odio. Donec porttitor nibh consequat arcu varius, quis pharetra lectus dignissim. Integer ut magna sapien. Phasellus sit amet erat ex. Maecenas sagittis, sapien efficitur euismod venenatis, tellus sem ullamcorper sem, ut sagittis neque urna ut dolor.\n\n"
+                      }
+                    </div>
+                  </p.Stack>
+                ) : null}
+                {true ? (
+                  <div
+                    data-plasmic-name={"illustration"}
+                    data-plasmic-override={overrides.illustration}
+                    className={classNames(projectcss.all, sty.illustration)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__uWzku)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft13LrJqBEcrbv,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          ) : null}
+          {true ? (
+            <div
+              data-plasmic-name={"argumentSection2"}
+              data-plasmic-override={overrides.argumentSection2}
+              className={classNames(projectcss.all, sty.argumentSection2)}
+            >
+              <div
+                data-plasmic-name={"childhood2"}
+                data-plasmic-override={overrides.childhood2}
+                className={classNames(projectcss.all, sty.childhood2)}
+              >
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"text2"}
+                    data-plasmic-override={overrides.text2}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.text2)}
+                  >
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__bcF5
+                      )}
+                    >
+                      {"Art \nDiscovering"}
+                    </h2>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__kLvy1
+                      )}
+                    >
+                      {
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida varius sapien quis porttitor. In vel magna eget arcu mattis porta et ac metus. Suspendisse pharetra enim et justo aliquam, sed ultricies eros venenatis. Nulla congue gravida augue, non dignissim odio. Donec porttitor nibh consequat arcu varius, quis pharetra lectus dignissim. Integer ut magna sapien. Phasellus sit amet erat ex. Maecenas sagittis, sapien efficitur euismod venenatis, tellus sem ullamcorper sem, ut sagittis neque urna ut dolor.\n\n"
+                      }
+                    </div>
+                  </p.Stack>
+                ) : null}
+                {true ? (
+                  <div
+                    data-plasmic-name={"illustration2"}
+                    data-plasmic-override={overrides.illustration2}
+                    className={classNames(projectcss.all, sty.illustration2)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__kx027)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft2CaImCIbh7OT,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          ) : null}
+          {true ? (
+            <div
+              data-plasmic-name={"argumentSection3"}
+              data-plasmic-override={overrides.argumentSection3}
+              className={classNames(projectcss.all, sty.argumentSection3)}
+            >
+              <div
+                data-plasmic-name={"childhood3"}
+                data-plasmic-override={overrides.childhood3}
+                className={classNames(projectcss.all, sty.childhood3)}
+              >
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"text3"}
+                    data-plasmic-override={overrides.text3}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.text3)}
+                  >
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__zDiG1
+                      )}
+                    >
+                      {"Web 3"}
+                    </h2>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__wyvfg
+                      )}
+                    >
+                      {
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida varius sapien quis porttitor. In vel magna eget arcu mattis porta et ac metus. Suspendisse pharetra enim et justo aliquam, sed ultricies eros venenatis. Nulla congue gravida augue, non dignissim odio. Donec porttitor nibh consequat arcu varius, quis pharetra lectus dignissim. Integer ut magna sapien. Phasellus sit amet erat ex. Maecenas sagittis, sapien efficitur euismod venenatis, tellus sem ullamcorper sem, ut sagittis neque urna ut dolor.\n\n"
+                      }
+                    </div>
+                  </p.Stack>
+                ) : null}
+                {true ? (
+                  <div
+                    data-plasmic-name={"illustration3"}
+                    data-plasmic-override={overrides.illustration3}
+                    className={classNames(projectcss.all, sty.illustration3)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__c30K1)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft3I4UYce1FlU1,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          ) : null}
+          {true ? (
+            <div
+              data-plasmic-name={"argumentSection4"}
+              data-plasmic-override={overrides.argumentSection4}
+              className={classNames(projectcss.all, sty.argumentSection4)}
+            >
+              <div
+                data-plasmic-name={"childhood4"}
+                data-plasmic-override={overrides.childhood4}
+                className={classNames(projectcss.all, sty.childhood4)}
+              >
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"text4"}
+                    data-plasmic-override={overrides.text4}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.text4)}
+                  >
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__veCfh
+                      )}
+                    >
+                      {"Art\nDeveloppement"}
+                    </h2>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ltO5L
+                      )}
+                    >
+                      {
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida varius sapien quis porttitor. In vel magna eget arcu mattis porta et ac metus. Suspendisse pharetra enim et justo aliquam, sed ultricies eros venenatis. Nulla congue gravida augue, non dignissim odio. Donec porttitor nibh consequat arcu varius, quis pharetra lectus dignissim. Integer ut magna sapien. Phasellus sit amet erat ex. Maecenas sagittis, sapien efficitur euismod venenatis, tellus sem ullamcorper sem, ut sagittis neque urna ut dolor.\n\n"
+                      }
+                    </div>
+                  </p.Stack>
+                ) : null}
+                {true ? (
+                  <div
+                    data-plasmic-name={"illustration4"}
+                    data-plasmic-override={overrides.illustration4}
+                    className={classNames(projectcss.all, sty.illustration4)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__t6Qsj)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft4XHwUai6Q7C,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -61,9 +385,64 @@ function PlasmicArtist__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "freeBox"],
-  myHeader: ["myHeader"],
-  freeBox: ["freeBox"]
+  root: [
+    "root",
+    "header",
+    "heroSection",
+    "scrollParallax",
+    "argumentSection",
+    "childhood",
+    "illustration",
+    "argumentSection2",
+    "childhood2",
+    "text2",
+    "illustration2",
+    "argumentSection3",
+    "childhood3",
+    "text3",
+    "illustration3",
+    "argumentSection4",
+    "childhood4",
+    "text4",
+    "illustration4"
+  ],
+
+  header: ["header"],
+  heroSection: ["heroSection", "scrollParallax"],
+  scrollParallax: ["scrollParallax"],
+  argumentSection: ["argumentSection", "childhood", "illustration"],
+  childhood: ["childhood", "illustration"],
+  illustration: ["illustration"],
+  argumentSection2: [
+    "argumentSection2",
+    "childhood2",
+    "text2",
+    "illustration2"
+  ],
+
+  childhood2: ["childhood2", "text2", "illustration2"],
+  text2: ["text2"],
+  illustration2: ["illustration2"],
+  argumentSection3: [
+    "argumentSection3",
+    "childhood3",
+    "text3",
+    "illustration3"
+  ],
+
+  childhood3: ["childhood3", "text3", "illustration3"],
+  text3: ["text3"],
+  illustration3: ["illustration3"],
+  argumentSection4: [
+    "argumentSection4",
+    "childhood4",
+    "text4",
+    "illustration4"
+  ],
+
+  childhood4: ["childhood4", "text4", "illustration4"],
+  text4: ["text4"],
+  illustration4: ["illustration4"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -95,8 +474,24 @@ export const PlasmicArtist = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    myHeader: makeNodeComponent("myHeader"),
-    freeBox: makeNodeComponent("freeBox"),
+    header: makeNodeComponent("header"),
+    heroSection: makeNodeComponent("heroSection"),
+    scrollParallax: makeNodeComponent("scrollParallax"),
+    argumentSection: makeNodeComponent("argumentSection"),
+    childhood: makeNodeComponent("childhood"),
+    illustration: makeNodeComponent("illustration"),
+    argumentSection2: makeNodeComponent("argumentSection2"),
+    childhood2: makeNodeComponent("childhood2"),
+    text2: makeNodeComponent("text2"),
+    illustration2: makeNodeComponent("illustration2"),
+    argumentSection3: makeNodeComponent("argumentSection3"),
+    childhood3: makeNodeComponent("childhood3"),
+    text3: makeNodeComponent("text3"),
+    illustration3: makeNodeComponent("illustration3"),
+    argumentSection4: makeNodeComponent("argumentSection4"),
+    childhood4: makeNodeComponent("childhood4"),
+    text4: makeNodeComponent("text4"),
+    illustration4: makeNodeComponent("illustration4"),
     // Metadata about props expected for PlasmicArtist
     internalVariantProps: PlasmicArtist__VariantProps,
     internalArgProps: PlasmicArtist__ArgProps

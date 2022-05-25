@@ -26,9 +26,12 @@ export const PlasmicSailorFooter__VariantProps = new Array();
 
 export const PlasmicSailorFooter__ArgProps = new Array();
 
+export const defaultSailorFooter__Args = {};
+
 function PlasmicSailorFooter__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultSailorFooter__Args, props.args);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -44,13 +47,13 @@ function PlasmicSailorFooter__RenderFunc(props) {
         sty.root
       )}
     >
-      {false ? (
+      {true ? (
         <Vector2Icon
           className={classNames(projectcss.all, sty.svg__jMhJy)}
           role={"img"}
         />
       ) : null}
-      {false ? (
+      {true ? (
         <Wave11Icon
           className={classNames(projectcss.all, sty.svg___2PuI)}
           role={"img"}

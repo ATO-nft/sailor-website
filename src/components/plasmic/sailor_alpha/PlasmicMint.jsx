@@ -14,7 +14,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import MyHeader from "../../MyHeader"; // plasmic-import: sfUx3YtoOJF/component
+import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
 import Button from "../../Button"; // plasmic-import: XuXn_eVAMfJ/component
 import MintButton from "../../MintButton"; // plasmic-import: GeHxaxYhV01/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -25,9 +25,12 @@ export const PlasmicMint__VariantProps = new Array();
 
 export const PlasmicMint__ArgProps = new Array();
 
+export const defaultMint__Args = {};
+
 function PlasmicMint__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultMint__Args, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -45,10 +48,10 @@ function PlasmicMint__RenderFunc(props) {
             sty.root
           )}
         >
-          <MyHeader
-            data-plasmic-name={"myHeader"}
-            data-plasmic-override={overrides.myHeader}
-            className={classNames("__wab_instance", sty.myHeader)}
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
           />
 
           <div className={classNames(projectcss.all, sty.freeBox__gy6JE)}>
@@ -140,8 +143,8 @@ function PlasmicMint__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "myHeader", "button1", "mintButton2"],
-  myHeader: ["myHeader"],
+  root: ["root", "header", "button1", "mintButton2"],
+  header: ["header"],
   button1: ["button1"],
   mintButton2: ["mintButton2"]
 };
@@ -175,7 +178,7 @@ export const PlasmicMint = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    myHeader: makeNodeComponent("myHeader"),
+    header: makeNodeComponent("header"),
     button1: makeNodeComponent("button1"),
     mintButton2: makeNodeComponent("mintButton2"),
     // Metadata about props expected for PlasmicMint

@@ -9,23 +9,44 @@
 // Plasmic Project: 6tP4H2YXq73abyMEePhpsf
 // Component: YFLbf8Sj1U
 import * as React from "react";
+import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import MyHeader from "../../MyHeader"; // plasmic-import: sfUx3YtoOJF/component
+import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
+import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
+import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicArtwork.module.css"; // plasmic-import: YFLbf8Sj1U/css
+import titre1FFjsUvpvre from "./images/titre1.png"; // plasmic-import: fFJSUvpvre/picture
+import titre1PngHD0J16Vls from "./images/titre1Png.png"; // plasmic-import: hD0j16vls/picture
+import nft13LrJqBEcrbv from "./images/nft1.png"; // plasmic-import: 3LrJqBEcrbv/picture
+import nft2CaImCIbh7OT from "./images/nft2.png"; // plasmic-import: CAImCIbh7oT/picture
+import nft3I4UYce1FlU1 from "./images/nft3.png"; // plasmic-import: i4UYce1flU1/picture
+import nft4XHwUai6Q7C from "./images/nft4.png"; // plasmic-import: -xHwUAI6q7c/picture
+import nft5ZJyUFs8I0X from "./images/nft5.png"; // plasmic-import: z-jyUFs8i0x/picture
+import nft66SvKTzPzKlc from "./images/nft6.png"; // plasmic-import: 6SvKTzPzKLC/picture
+import nft7AovqndXcK from "./images/nft7.png"; // plasmic-import: aovqnd_XC_K/picture
 
 export const PlasmicArtwork__VariantProps = new Array();
 
 export const PlasmicArtwork__ArgProps = new Array();
 
+export const defaultArtwork__Args = {};
+
 function PlasmicArtwork__RenderFunc(props) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultArtwork__Args, props.args);
+  const $props = args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsu0VQjvxy5SkDm()
+  });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -43,59 +64,226 @@ function PlasmicArtwork__RenderFunc(props) {
             sty.root
           )}
         >
-          <MyHeader
-            data-plasmic-name={"myHeader"}
-            data-plasmic-override={overrides.myHeader}
-            className={classNames("__wab_instance", sty.myHeader)}
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
           />
 
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
-            <div
-              data-plasmic-name={"columns"}
-              data-plasmic-override={overrides.columns}
-              className={classNames(projectcss.all, sty.columns)}
-            >
-              <div className={classNames(projectcss.all, sty.column__ePoLo)}>
-                <div
-                  data-plasmic-name={"titre1"}
-                  data-plasmic-override={overrides.titre1}
-                  className={classNames(projectcss.all, sty.titre1)}
-                />
+          <div className={classNames(projectcss.all, sty.freeBox__ky2WG)}>
+            <div className={classNames(projectcss.all, sty.freeBox__jh9Gs)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__i6Pqi)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "80%"
+                    : "33%"
+                }
+                loading={"lazy"}
+                src={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? {
+                        src: titre1PngHD0J16Vls,
+                        fullWidth: 431,
+                        fullHeight: 294,
+                        aspectRatio: undefined
+                      }
+                    : {
+                        src: titre1FFjsUvpvre,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }
+                }
+              />
 
-                <div
-                  data-plasmic-name={"text"}
-                  data-plasmic-override={overrides.text}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text
-                  )}
-                >
-                  {
-                    "“2020. Le monde s’est arrêté en sombrant dans une dictature sanitaire mondiale. Sailor est un marin solitaire parcourant le monde entier. Il est \nà la recherche de coins sauvages \net tranquilles où il pourra s’évader \ndans les méandres de son imagination \net s’abandonner à la poésie. \nAlors qu’il fuit “Babylone”, le coeur \nde l’humanité 2.0, il collectionne \nles petits boulots afin d’économiser \net de se procurer un rafiot digne \nde concourir à sa grande échappée. \nMais Dieu seul sait ce que son \nvoyage lui réserve...”"
+              <div
+                data-plasmic-name={"text"}
+                data-plasmic-override={overrides.text}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text
+                )}
+              >
+                {
+                  "“2020. Le monde s’est arrêté en sombrant dans une dictature sanitaire mondiale. Sailor est un marin solitaire parcourant le monde entier. Il est à la recherche de coins sauvages et tranquilles où il pourra s’évader dans les méandres de son imagination et s’abandonner à la poésie. Alors qu’il fuit “Babylone”, le coeur de l’humanité 2.0, il collectionne les petits boulots afin d’économiser et de se procurer un rafiot digne de concourir à sa grande échappée. Mais Dieu seul sait ce que son voyage lui réserve...”"
+                }
+              </div>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.freeBox__htF31)}>
+              <Slider
+                data-plasmic-name={"slider"}
+                data-plasmic-override={overrides.slider}
+                autoplay={true}
+                className={classNames("__wab_instance", sty.slider)}
+                dots={false}
+                slidesPerRow={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 2
+                }
+                variableWidth={false}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__kM5KN)}
+                  displayHeight={"100%"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "50%"
                   }
-                </div>
-              </div>
-
-              <div className={classNames(projectcss.all, sty.column__kjkxp)}>
-                <div
-                  data-plasmic-name={"rectangle47"}
-                  data-plasmic-override={overrides.rectangle47}
-                  className={classNames(projectcss.all, sty.rectangle47)}
+                  loading={"lazy"}
+                  src={{
+                    src: nft13LrJqBEcrbv,
+                    fullWidth: 1181,
+                    fullHeight: 1181,
+                    aspectRatio: undefined
+                  }}
                 />
-              </div>
 
-              <div className={classNames(projectcss.all, sty.column__aBarR)}>
-                <div
-                  data-plasmic-name={"rectangle48"}
-                  data-plasmic-override={overrides.rectangle48}
-                  className={classNames(projectcss.all, sty.rectangle48)}
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___3Orf6)}
+                  displayHeight={"100%"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "50%"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: nft2CaImCIbh7OT,
+                    fullWidth: 1181,
+                    fullHeight: 1181,
+                    aspectRatio: undefined
+                  }}
                 />
-              </div>
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__qpgxe)}
+                  displayHeight={"100%"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "50%"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: nft3I4UYce1FlU1,
+                    fullWidth: 1181,
+                    fullHeight: 1181,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__sU6F)}
+                  displayHeight={"100%"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "50%"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: nft4XHwUai6Q7C,
+                    fullWidth: 1181,
+                    fullHeight: 1181,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__ogvQv)}
+                  displayHeight={"100%"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "50%"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: nft5ZJyUFs8I0X,
+                    fullWidth: 1181,
+                    fullHeight: 1181,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___0KYux)}
+                  displayHeight={"100%"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "50%"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: nft66SvKTzPzKlc,
+                    fullWidth: 1181,
+                    fullHeight: 1181,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__ab1)}
+                  displayHeight={"100%"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "50%"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: nft7AovqndXcK,
+                    fullWidth: 1181,
+                    fullHeight: 1181,
+                    aspectRatio: undefined
+                  }}
+                />
+              </Slider>
             </div>
           </div>
         </div>
@@ -105,32 +293,10 @@ function PlasmicArtwork__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "myHeader",
-    "freeBox",
-    "columns",
-    "titre1",
-    "text",
-    "rectangle47",
-    "rectangle48"
-  ],
-
-  myHeader: ["myHeader"],
-  freeBox: [
-    "freeBox",
-    "columns",
-    "titre1",
-    "text",
-    "rectangle47",
-    "rectangle48"
-  ],
-
-  columns: ["columns", "titre1", "text", "rectangle47", "rectangle48"],
-  titre1: ["titre1"],
+  root: ["root", "header", "text", "slider"],
+  header: ["header"],
   text: ["text"],
-  rectangle47: ["rectangle47"],
-  rectangle48: ["rectangle48"]
+  slider: ["slider"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -162,13 +328,9 @@ export const PlasmicArtwork = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    myHeader: makeNodeComponent("myHeader"),
-    freeBox: makeNodeComponent("freeBox"),
-    columns: makeNodeComponent("columns"),
-    titre1: makeNodeComponent("titre1"),
+    header: makeNodeComponent("header"),
     text: makeNodeComponent("text"),
-    rectangle47: makeNodeComponent("rectangle47"),
-    rectangle48: makeNodeComponent("rectangle48"),
+    slider: makeNodeComponent("slider"),
     // Metadata about props expected for PlasmicArtwork
     internalVariantProps: PlasmicArtwork__VariantProps,
     internalArgProps: PlasmicArtwork__ArgProps
