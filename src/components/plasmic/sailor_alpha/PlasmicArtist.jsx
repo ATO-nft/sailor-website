@@ -17,7 +17,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
-import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
@@ -70,30 +69,23 @@ function PlasmicArtist__RenderFunc(props) {
             data-plasmic-override={overrides.heroSection}
             className={classNames(projectcss.all, sty.heroSection)}
           >
-            <ParallaxWrapper
-              data-plasmic-name={"scrollParallax"}
-              data-plasmic-override={overrides.scrollParallax}
-              className={classNames("__wab_instance", sty.scrollParallax)}
-              speed={20}
-            >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__hsHBj)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"260px"}
-                loading={"lazy"}
-                src={{
-                  src: titre1PngHD0J16Vls,
-                  fullWidth: 431,
-                  fullHeight: 294,
-                  aspectRatio: undefined
-                }}
-              />
-            </ParallaxWrapper>
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__hsHBj)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"260px"}
+              loading={"lazy"}
+              src={{
+                src: titre1PngHD0J16Vls,
+                fullWidth: 431,
+                fullHeight: 294,
+                aspectRatio: undefined
+              }}
+            />
           </div>
 
           {true ? (
@@ -389,7 +381,6 @@ const PlasmicDescendants = {
     "root",
     "header",
     "heroSection",
-    "scrollParallax",
     "argumentSection",
     "childhood",
     "illustration",
@@ -408,8 +399,7 @@ const PlasmicDescendants = {
   ],
 
   header: ["header"],
-  heroSection: ["heroSection", "scrollParallax"],
-  scrollParallax: ["scrollParallax"],
+  heroSection: ["heroSection"],
   argumentSection: ["argumentSection", "childhood", "illustration"],
   childhood: ["childhood", "illustration"],
   illustration: ["illustration"],
@@ -476,7 +466,6 @@ export const PlasmicArtist = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     heroSection: makeNodeComponent("heroSection"),
-    scrollParallax: makeNodeComponent("scrollParallax"),
     argumentSection: makeNodeComponent("argumentSection"),
     childhood: makeNodeComponent("childhood"),
     illustration: makeNodeComponent("illustration"),

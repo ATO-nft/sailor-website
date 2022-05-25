@@ -133,7 +133,7 @@ function PlasmicArtwork__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__kM5KN)}
-                  displayHeight={"100%"}
+                  displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -155,7 +155,7 @@ function PlasmicArtwork__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img___3Orf6)}
-                  displayHeight={"100%"}
+                  displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -177,7 +177,7 @@ function PlasmicArtwork__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__qpgxe)}
-                  displayHeight={"100%"}
+                  displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -199,7 +199,7 @@ function PlasmicArtwork__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__sU6F)}
-                  displayHeight={"100%"}
+                  displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -221,7 +221,7 @@ function PlasmicArtwork__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__ogvQv)}
-                  displayHeight={"100%"}
+                  displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -243,7 +243,7 @@ function PlasmicArtwork__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img___0KYux)}
-                  displayHeight={"100%"}
+                  displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -265,7 +265,7 @@ function PlasmicArtwork__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__ab1)}
-                  displayHeight={"100%"}
+                  displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}

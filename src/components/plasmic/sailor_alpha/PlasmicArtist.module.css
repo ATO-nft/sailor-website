@@ -36,10 +36,6 @@
     background: url("./images/sailor21Png.png") top 100% left 50% / contain no-repeat;
   }
 }
-.scrollParallax:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
 .img__hsHBj {
   position: relative;
   object-fit: cover;
@@ -61,9 +57,16 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: none;
+  background: url("./images/stickers16Png.png") top 96% left 96% / 33% auto no-repeat,
+    url("./images/stickers13Png.png") top 2% left 4% / 25% auto no-repeat;
   padding-top: var(--token-GNJGzP5bB);
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .argumentSection {
+    background: url("./images/stickers16Png.png") top 58% left 179% / 75% auto no-repeat,
+      url("./images/stickers13Png.png") top 0% left -102% / 75% auto no-repeat;
+  }
 }
 .childhood {
   display: flex;
@@ -163,9 +166,14 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: none;
+  background: url("./images/stickers15Png.png") top 71% left 8% / 15% auto no-repeat;
   min-width: 0;
   padding: 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .argumentSection2 {
+    background: url("./images/stickers15Png.png") top 53% left -21% / 50% auto no-repeat;
+  }
 }
 .childhood2 {
   display: flex;
@@ -261,9 +269,14 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: none;
+  background: url("./images/stickers12Png.png") top 76% left 93% / 20% auto no-repeat;
   min-width: 0;
   padding: 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .argumentSection3 {
+    background: url("./images/stickers12Png.png") top 50% left 125% / 50% auto no-repeat;
+  }
 }
 .childhood3 {
   display: flex;
@@ -359,9 +372,14 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: none;
+  background: url("./images/stickers191Png.png") top 50% right 0% / contain no-repeat;
   min-width: 0;
   padding: 0px 0px var(--token-GNJGzP5bB);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .argumentSection4 {
+    background: url("./images/stickers191Png.png") top 50% right -230% / contain no-repeat;
+  }
 }
 .childhood4 {
   display: flex;

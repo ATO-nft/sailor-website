@@ -661,6 +661,36 @@
           "id": "24A5q1fTZ",
           "name": "sailor2 1.png",
           "filePath": "plasmic/sailor_alpha/images/sailor21Png.png"
+        },
+        {
+          "id": "5rLjjTTZN",
+          "name": "stickers-12.png",
+          "filePath": "plasmic/sailor_alpha/images/stickers12Png.png"
+        },
+        {
+          "id": "SwEbmESe5",
+          "name": "stickers-13.png",
+          "filePath": "plasmic/sailor_alpha/images/stickers13Png.png"
+        },
+        {
+          "id": "fD9CIE6Fx",
+          "name": "stickers-14.png",
+          "filePath": "plasmic/sailor_alpha/images/stickers14Png.png"
+        },
+        {
+          "id": "wPVRrURt1",
+          "name": "stickers-15.png",
+          "filePath": "plasmic/sailor_alpha/images/stickers15Png.png"
+        },
+        {
+          "id": "9tw-HWhtu",
+          "name": "stickers-16.png",
+          "filePath": "plasmic/sailor_alpha/images/stickers16Png.png"
+        },
+        {
+          "id": "piFU6GBQB",
+          "name": "stickers-19 1.png",
+          "filePath": "plasmic/sailor_alpha/images/stickers191Png.png"
         }
       ],
       "indirect": false,
@@ -689,7 +719,8 @@
           "name": "ParallaxProviderWrapper",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -708,7 +739,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -727,7 +759,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
