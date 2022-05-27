@@ -1,9 +1,17 @@
-# Āto website
+# Sailor website
+
+In Plasmic: [https://studio.plasmic.app/projects/6tP4H2YXq73abyMEePhpsf](https://studio.plasmic.app/projects/6tP4H2YXq73abyMEePhpsf)
+
+## Install
+
+```bash
+npm i
+```
 
 ## Test
 
 ```bash
-npm i && npm run start
+npm run start
 ```
 
 ## Build
