@@ -172,6 +172,19 @@
           "cssFilePath": "plasmic/sailor_alpha/PlasmicGallery.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "uXGgfOygGw",
+          "name": "Artwork2",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicArtwork2.jsx",
+          "importSpec": {
+            "modulePath": "Artwork2.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicArtwork2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
