@@ -167,7 +167,7 @@
   width: auto;
   height: auto;
   max-width: 800px;
-  background: url("./images/frame13.svg") top 50% left 50% / contain no-repeat;
+  background: url("./images/frame15.svg") top 50% left 50% / contain no-repeat;
   color: #ffffff;
   font-family: "Marydale";
   padding: 16px 24px;
@@ -183,7 +183,7 @@
   width: auto;
   height: auto;
   max-width: 800px;
-  background: url("./images/frame13.svg") top 50% left 50% / contain no-repeat;
+  background: url("./images/frame17.svg") top 50% left 50% / contain no-repeat;
   color: #ffffff;
   font-family: "Marydale";
   padding: 16px 24px;
@@ -198,7 +198,7 @@
   width: auto;
   height: auto;
   max-width: 800px;
-  background: url("./images/frame10.svg") top 50% left 50% / contain no-repeat;
+  background: url("./images/frame15.svg") top 50% left 50% / contain no-repeat;
   color: #ffffff;
   font-family: "Marydale";
   padding: 16px 24px;
@@ -213,7 +213,7 @@
   width: auto;
   height: auto;
   max-width: 800px;
-  background: url("./images/frame11.svg") top 50% left 50% / contain no-repeat;
+  background: url("./images/frame17.svg") top 50% left 50% / contain no-repeat;
   color: #ffffff;
   font-family: "Marydale";
   padding: 16px 24px;
@@ -231,6 +231,7 @@
   background: url("./images/frame13.svg") top 50% left 50% / contain no-repeat;
   color: #ffffff;
   font-family: "Marydale";
+  display: none;
   padding: 16px 24px;
 }
 @media (min-width: 0px) and (max-width: 768px) {

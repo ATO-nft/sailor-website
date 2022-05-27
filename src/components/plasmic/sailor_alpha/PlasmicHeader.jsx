@@ -209,17 +209,19 @@ function PlasmicHeader__RenderFunc(props) {
                     {"ROADMAP"}
                   </a>
 
-                  <a
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__u2Ot5
-                    )}
-                    href={"/mint"}
-                  >
-                    {"    MINT    "}
-                  </a>
+                  {true ? (
+                    <a
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__u2Ot5
+                      )}
+                      href={"/mint"}
+                    >
+                      {"    MINT    "}
+                    </a>
+                  ) : null}
                 </div>
               ) : null}
               {true ? (

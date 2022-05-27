@@ -26,12 +26,7 @@ import sty from "./PlasmicArtwork.module.css"; // plasmic-import: YFLbf8Sj1U/css
 import titre1FFjsUvpvre from "./images/titre1.png"; // plasmic-import: fFJSUvpvre/picture
 import titre1PngHD0J16Vls from "./images/titre1Png.png"; // plasmic-import: hD0j16vls/picture
 import nft13LrJqBEcrbv from "./images/nft1.png"; // plasmic-import: 3LrJqBEcrbv/picture
-import nft2CaImCIbh7OT from "./images/nft2.png"; // plasmic-import: CAImCIbh7oT/picture
-import nft3I4UYce1FlU1 from "./images/nft3.png"; // plasmic-import: i4UYce1flU1/picture
-import nft4XHwUai6Q7C from "./images/nft4.png"; // plasmic-import: -xHwUAI6q7c/picture
 import nft5ZJyUFs8I0X from "./images/nft5.png"; // plasmic-import: z-jyUFs8i0x/picture
-import nft66SvKTzPzKlc from "./images/nft6.png"; // plasmic-import: 6SvKTzPzKLC/picture
-import nft7AovqndXcK from "./images/nft7.png"; // plasmic-import: aovqnd_XC_K/picture
 
 export const PlasmicArtwork__VariantProps = new Array();
 
@@ -70,11 +65,11 @@ function PlasmicArtwork__RenderFunc(props) {
             className={classNames("__wab_instance", sty.header)}
           />
 
-          <div className={classNames(projectcss.all, sty.freeBox__ky2WG)}>
-            <div className={classNames(projectcss.all, sty.freeBox__jh9Gs)}>
+          <div className={classNames(projectcss.all, sty.freeBox___3SVom)}>
+            <div className={classNames(projectcss.all, sty.freeBox___1TSrX)}>
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__i6Pqi)}
+                className={classNames(sty.img__eIpfC)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
@@ -118,173 +113,162 @@ function PlasmicArtwork__RenderFunc(props) {
               </div>
             </div>
 
-            <div className={classNames(projectcss.all, sty.freeBox__htF31)}>
-              <Slider
-                data-plasmic-name={"slider"}
-                data-plasmic-override={overrides.slider}
-                autoplay={true}
-                className={classNames("__wab_instance", sty.slider)}
-                dots={false}
-                slidesPerRow={
-                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 2
-                }
-                variableWidth={false}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__kM5KN)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "50%"
-                  }
-                  loading={"lazy"}
-                  src={{
-                    src: nft13LrJqBEcrbv,
-                    fullWidth: 1181,
-                    fullHeight: 1181,
-                    aspectRatio: undefined
-                  }}
-                />
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__pOlS1)}>
+                <div className={classNames(projectcss.all, sty.freeBox__y805G)}>
+                  <Slider
+                    data-plasmic-name={"slider"}
+                    data-plasmic-override={overrides.slider}
+                    className={classNames("__wab_instance", sty.slider)}
+                    slidesPerRow={2}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__yANqc)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft13LrJqBEcrbv,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___3Orf6)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "50%"
-                  }
-                  loading={"lazy"}
-                  src={{
-                    src: nft2CaImCIbh7OT,
-                    fullWidth: 1181,
-                    fullHeight: 1181,
-                    aspectRatio: undefined
-                  }}
-                />
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__hpsri)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft5ZJyUFs8I0X,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__qpgxe)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "50%"
-                  }
-                  loading={"lazy"}
-                  src={{
-                    src: nft3I4UYce1FlU1,
-                    fullWidth: 1181,
-                    fullHeight: 1181,
-                    aspectRatio: undefined
-                  }}
-                />
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__aBVq)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft5ZJyUFs8I0X,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__sU6F)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "50%"
-                  }
-                  loading={"lazy"}
-                  src={{
-                    src: nft4XHwUai6Q7C,
-                    fullWidth: 1181,
-                    fullHeight: 1181,
-                    aspectRatio: undefined
-                  }}
-                />
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__cL2P)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft5ZJyUFs8I0X,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__ogvQv)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "50%"
-                  }
-                  loading={"lazy"}
-                  src={{
-                    src: nft5ZJyUFs8I0X,
-                    fullWidth: 1181,
-                    fullHeight: 1181,
-                    aspectRatio: undefined
-                  }}
-                />
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__aSu3P)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft5ZJyUFs8I0X,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___0KYux)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "50%"
-                  }
-                  loading={"lazy"}
-                  src={{
-                    src: nft66SvKTzPzKlc,
-                    fullWidth: 1181,
-                    fullHeight: 1181,
-                    aspectRatio: undefined
-                  }}
-                />
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__piyH)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft5ZJyUFs8I0X,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__ab1)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "50%"
-                  }
-                  loading={"lazy"}
-                  src={{
-                    src: nft7AovqndXcK,
-                    fullWidth: 1181,
-                    fullHeight: 1181,
-                    aspectRatio: undefined
-                  }}
-                />
-              </Slider>
-            </div>
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__hTKv)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft5ZJyUFs8I0X,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__i1MGc)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft5ZJyUFs8I0X,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </Slider>
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
