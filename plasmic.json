@@ -185,6 +185,19 @@
           "cssFilePath": "plasmic/sailor_alpha/PlasmicArtwork2.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "opTqQ96dfN",
+          "name": "Vision",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicVision.jsx",
+          "importSpec": {
+            "modulePath": "Vision.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicVision.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -437,6 +450,21 @@
           "id": "3oW-8ZY9Ws",
           "name": "Vector35Icon",
           "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector35.jsx"
+        },
+        {
+          "id": "-oEINKCMy",
+          "name": "Vector37Icon",
+          "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector37.jsx"
+        },
+        {
+          "id": "TlvA4yYfff",
+          "name": "Frame18Icon",
+          "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Frame18.jsx"
+        },
+        {
+          "id": "6_cJG0lEE2",
+          "name": "Vector39Icon",
+          "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector39.jsx"
         }
       ],
       "images": [
@@ -704,6 +732,26 @@
           "id": "piFU6GBQB",
           "name": "stickers-19 1.png",
           "filePath": "plasmic/sailor_alpha/images/stickers191Png.png"
+        },
+        {
+          "id": "36p188FaR",
+          "name": "Maquette Final LD_page-0079 1",
+          "filePath": "plasmic/sailor_alpha/images/maquetteFinalLdPage00791.jpeg"
+        },
+        {
+          "id": "P-GVA9EEey",
+          "name": "fichier de travail-28 1",
+          "filePath": "plasmic/sailor_alpha/images/fichierDeTravail281.png"
+        },
+        {
+          "id": "NFnEIZWFIa",
+          "name": "Frame 19",
+          "filePath": "plasmic/sailor_alpha/images/frame19.svg"
+        },
+        {
+          "id": "9MQpMS7J2o",
+          "name": "Vector 38",
+          "filePath": "plasmic/sailor_alpha/images/vector38.svg"
         }
       ],
       "indirect": false,
