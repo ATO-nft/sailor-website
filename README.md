@@ -1,6 +1,8 @@
 # Sailor website
 
-In Plasmic: [https://studio.plasmic.app/projects/6tP4H2YXq73abyMEePhpsf](https://studio.plasmic.app/projects/6tP4H2YXq73abyMEePhpsf)
+Plasmic: [https://studio.plasmic.app/projects/6tP4H2YXq73abyMEePhpsf](https://studio.plasmic.app/projects/6tP4H2YXq73abyMEePhpsf)
+
+Staging: [https://sailor-alpha.netlify.app/](https://sailor-alpha.netlify.app/)
 
 ## Install
 
