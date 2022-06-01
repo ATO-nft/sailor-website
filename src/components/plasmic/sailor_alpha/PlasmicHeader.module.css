@@ -223,6 +223,21 @@
     text-align: center;
   }
 }
+.link__qbgp {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  background: url("./images/frame15.svg") top 50% left 50% / contain no-repeat;
+  color: #ffffff;
+  font-family: "Marydale";
+  padding: 16px 24px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .link__qbgp {
+    text-align: center;
+  }
+}
 .link__u2Ot5 {
   position: relative;
   width: auto;

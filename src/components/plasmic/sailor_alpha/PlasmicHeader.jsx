@@ -204,6 +204,18 @@ function PlasmicHeader__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link__bFdFf
                     )}
+                    href={"/vision"}
+                  >
+                    {"VISION"}
+                  </a>
+
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__qbgp
+                    )}
                     href={"/roadmap"}
                   >
                     {"ROADMAP"}

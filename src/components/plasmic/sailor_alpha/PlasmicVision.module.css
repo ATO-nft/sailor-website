@@ -1,0 +1,238 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("./images/maquetteFinalLdPage00791.jpeg") 0% 0% / cover no-repeat;
+  min-width: 0;
+  min-height: 0;
+  padding: 0px;
+}
+.header:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: var(--token-GwLpY0L1k) 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--token-l01UNgJZS);
+    padding-bottom: var(--token-l01UNgJZS);
+    flex-column-gap: 0px;
+  }
+}
+.figmaPaste {
+  display: block;
+  position: relative;
+  width: 4220px;
+  height: 3683px;
+  flex-shrink: 0;
+}
+.img__pzJUs {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 433px;
+  height: 396px;
+  display: block !important;
+  left: 2183px;
+  top: 3289px;
+}
+.img__pzJUs > picture > img {
+  object-fit: cover;
+}
+.img__pzJUs > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.svg__kyeRy {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  transform: scale(1.000000499999875, 0.999999500000375)
+    rotate(-179.94270423958343deg) skew(0.05729570311883569deg, 0deg);
+  width: 363px;
+  height: 42px;
+  display: block;
+  transform-origin: top left;
+  left: 2477px;
+  top: 3356px;
+}
+.text__cQlfC {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Marydale";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1.6480000000000001;
+  color: rgba(255, 255, 255, 1);
+  width: 362px;
+  height: 37px;
+  position: absolute;
+  left: 2151px;
+  top: 3322px;
+}
+.img__k2YgU {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 433px;
+  height: 396px;
+  display: block !important;
+  left: 69px;
+  top: 3289px;
+}
+.img__k2YgU > picture > img {
+  object-fit: cover;
+}
+.img__k2YgU > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.svg___9ZaI2 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  transform: scale(1.000000499999875, 0.999999500000375)
+    rotate(-179.94270423958343deg) skew(0.05729570311883569deg, 0deg);
+  width: 363px;
+  height: 42px;
+  display: block;
+  transform-origin: top left;
+  left: 363px;
+  top: 3356px;
+}
+.text___2Srvs {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Marydale";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.608;
+  color: rgba(0, 0, 0, 1);
+  width: 320px;
+  height: 107px;
+  position: absolute;
+  left: 125px;
+  top: 3452px;
+}
+.immersionInTheSailorsWorld {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Marydale";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1.6480000000000001;
+  color: rgba(255, 255, 255, 1);
+  width: 362px;
+  height: 37px;
+  position: absolute;
+  left: 37px;
+  top: 3322px;
+}
+.img__xEWqu {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  width: 433px;
+  height: 396px;
+  display: block !important;
+  left: 3347px;
+  top: 214px;
+}
+.img__xEWqu > picture > img {
+  object-fit: cover;
+}
+.img__xEWqu > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.empoweringMentoringArtist {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Marydale";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1.6480000000000001;
+  color: rgba(255, 255, 255, 1);
+  width: 362px;
+  height: 37px;
+  position: absolute;
+  left: 3315px;
+  top: 247px;
+}
+.fichierDeTravail281 {
+  mix-blend-mode: lighten;
+  background: url("./images/fichierDeTravail281.png") center center / cover no-repeat;
+  width: 310px;
+  height: 425px;
+  display: block;
+  position: absolute;
+  left: 3910px;
+  top: 389px;
+}
+.img__hmMH {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  transform: scale(0.9991881704664041, 0.9995244434627539)
+    rotate(19.649966795401728deg) skew(-0.05400295935940944deg, 0deg);
+  width: 420px;
+  height: 224px;
+  display: block !important;
+  transform-origin: top left;
+  overflow: hidden;
+  left: 3186px;
+  top: 442px;
+}
+.img__hmMH > picture > img {
+  object-fit: cover;
+}
+.img__hmMH > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.svg__imyt {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  transform: scale(1, -1) rotate(-180deg);
+  width: 500px;
+  height: 143px;
+  display: block;
+  transform-origin: top left;
+  overflow: hidden;
+  left: 1043px;
+  top: 3400px;
+}
+.svg__cxpYo {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 326px;
+  height: 93px;
+  display: block;
+  left: 3005px;
+  top: 0px;
+}
