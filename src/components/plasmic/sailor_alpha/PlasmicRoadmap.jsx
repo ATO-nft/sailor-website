@@ -18,6 +18,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
+import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
@@ -240,6 +241,12 @@ function PlasmicRoadmap__RenderFunc(props) {
               </div>
             </div>
           ) : null}
+
+          <Footer
+            data-plasmic-name={"footer"}
+            data-plasmic-override={overrides.footer}
+            className={classNames("__wab_instance", sty.footer)}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -260,7 +267,8 @@ const PlasmicDescendants = {
     "img",
     "case25",
     "case24",
-    "text"
+    "text",
+    "footer"
   ],
 
   header: ["header"],
@@ -299,7 +307,8 @@ const PlasmicDescendants = {
   img: ["img"],
   case25: ["case25"],
   case24: ["case24"],
-  text: ["text"]
+  text: ["text"],
+  footer: ["footer"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -355,6 +364,7 @@ export const PlasmicRoadmap = Object.assign(
     case25: makeNodeComponent("case25"),
     case24: makeNodeComponent("case24"),
     text: makeNodeComponent("text"),
+    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicRoadmap
     internalVariantProps: PlasmicRoadmap__VariantProps,
     internalArgProps: PlasmicRoadmap__ArgProps

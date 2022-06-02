@@ -212,3 +212,13 @@
 .img__i1MGc > .__wab_img-spacer > img {
   object-fit: cover;
 }
+.footer:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .footer:global(.__wab_instance) {
+    max-width: 100%;
+    position: relative;
+  }
+}

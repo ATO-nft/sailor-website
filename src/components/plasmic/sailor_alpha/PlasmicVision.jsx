@@ -9,23 +9,20 @@
 // Plasmic Project: 6tP4H2YXq73abyMEePhpsf
 // Component: opTqQ96dfN
 import * as React from "react";
-import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
+import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
+import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicVision.module.css"; // plasmic-import: opTqQ96dfN/css
-import Vector39Icon from "./icons/PlasmicIcon__Vector39"; // plasmic-import: 6_cJG0lEE2/icon
-import Frame18Icon from "./icons/PlasmicIcon__Frame18"; // plasmic-import: TlvA4yYfff/icon
-import Vector37Icon from "./icons/PlasmicIcon__Vector37"; // plasmic-import: -oEINKCMy/icon
-import vector389MQpMs7J2O from "./images/vector38.svg"; // plasmic-import: 9MQpMS7J2o/picture
-import frame19NFnEizwfIa from "./images/frame19.svg"; // plasmic-import: NFnEIZWFIa/picture
 
 export const PlasmicVision__VariantProps = new Array();
 
@@ -64,161 +61,224 @@ function PlasmicVision__RenderFunc(props) {
             className={classNames("__wab_instance", sty.header)}
           />
 
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
-            <div
-              data-plasmic-name={"figmaPaste"}
-              data-plasmic-override={overrides.figmaPaste}
-              className={classNames(projectcss.all, sty.figmaPaste)}
+          <div className={classNames(projectcss.all, sty.freeBox__qQwM6)}>
+            <Slider
+              data-plasmic-name={"slider"}
+              data-plasmic-override={overrides.slider}
+              autoplay={true}
+              autoplaySpeed={1500}
+              className={classNames("__wab_instance", sty.slider)}
+              dots={true}
             >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__pzJUs)}
-                displayHeight={"396px"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"433px"}
-                loading={"lazy"}
-                src={{
-                  src: vector389MQpMs7J2O,
-                  fullWidth: 433,
-                  fullHeight: 396,
-                  aspectRatio: 1.093434
-                }}
-              />
+              {true ? (
+                <div
+                  data-plasmic-name={"slide1"}
+                  data-plasmic-override={overrides.slide1}
+                  className={classNames(projectcss.all, sty.slide1)}
+                >
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox___4ISf)}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__ugwGx
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__ac8Pe
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__abkqx
+                              )}
+                            >
+                              {hasVariant(
+                                globalVariants,
+                                "screen",
+                                "mobileOnly"
+                              )
+                                ? "Immersion in the Sailor's world"
+                                : "Immersion in the Sailor's world"}
+                            </div>
+                          </div>
 
-              <Vector39Icon
-                className={classNames(projectcss.all, sty.svg__kyeRy)}
-                role={"img"}
-              />
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__vcLoX
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__lB5Bt
+                                )}
+                              >
+                                {
+                                  'Sailor invites whoever is ready to learn about the world, to dive into his creative universe and to share his vision. He will offer \nto discover him under all these aspects \nwith the operation "Hut", which will be a unique journey, mixing the real and the virtual.'
+                                }
+                              </div>
+                            </div>
+                          ) : null}
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </div>
+              ) : null}
+              {true ? (
+                <div
+                  data-plasmic-name={"slide2"}
+                  data-plasmic-override={overrides.slide2}
+                  className={classNames(projectcss.all, sty.slide2)}
+                >
+                  {true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___5DeFd
+                      )}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___2MxAi
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__nkRQo
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__vx7ED
+                              )}
+                            >
+                              {hasVariant(
+                                globalVariants,
+                                "screen",
+                                "mobileOnly"
+                              )
+                                ? "Immersion in the Sailor's world"
+                                : "Empowering & mentoring artist"}
+                            </div>
+                          </div>
 
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__cQlfC
-                )}
-              >
-                {"Imagine the tomorrow's Sailor"}
-              </div>
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__tdYdh
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__tgSpm
+                                )}
+                              >
+                                {
+                                  'We want to allow artists to express \nand value their creative spirit. \nThroughout our journey, we will highlight artists belonging to the Sailor community through the mysterious "Babylon" operation, creative contests, conferences, meetings, etc. \n... Everyone will have a chance to become \na famous artist!'
+                                }
+                              </div>
+                            </div>
+                          ) : null}
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </div>
+              ) : null}
+              {true ? (
+                <div
+                  data-plasmic-name={"slide3"}
+                  data-plasmic-override={overrides.slide3}
+                  className={classNames(projectcss.all, sty.slide3)}
+                >
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__bibg9)}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__cTvDm
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__qUblf
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__iJnHz
+                              )}
+                            >
+                              {hasVariant(
+                                globalVariants,
+                                "screen",
+                                "mobileOnly"
+                              )
+                                ? "Immersion in the Sailor's world"
+                                : "Imagine the tomorrow's Sailor"}
+                            </div>
+                          </div>
 
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__k2YgU)}
-                displayHeight={"396px"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"433px"}
-                loading={"lazy"}
-                src={{
-                  src: vector389MQpMs7J2O,
-                  fullWidth: 433,
-                  fullHeight: 396,
-                  aspectRatio: 1.093434
-                }}
-              />
-
-              <Vector39Icon
-                className={classNames(projectcss.all, sty.svg___9ZaI2)}
-                role={"img"}
-              />
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___2Srvs
-                )}
-              >
-                {
-                  'Sailor invites whoever is ready to learn about the world, to dive into his creative universe and to share his vision. He will offer \nto discover him under all these aspects \nwith the operation "Hut", which will be a unique journey, mixing the real and the virtual.'
-                }
-              </div>
-
-              <div
-                data-plasmic-name={"immersionInTheSailorsWorld"}
-                data-plasmic-override={overrides.immersionInTheSailorsWorld}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.immersionInTheSailorsWorld
-                )}
-              >
-                {"Immersion in the Sailor's world\n"}
-              </div>
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__xEWqu)}
-                displayHeight={"396px"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"433px"}
-                loading={"lazy"}
-                src={{
-                  src: vector389MQpMs7J2O,
-                  fullWidth: 433,
-                  fullHeight: 396,
-                  aspectRatio: 1.093434
-                }}
-              />
-
-              <div
-                data-plasmic-name={"empoweringMentoringArtist"}
-                data-plasmic-override={overrides.empoweringMentoringArtist}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.empoweringMentoringArtist
-                )}
-              >
-                {"Empowering & mentoring artist\n"}
-              </div>
-
-              <div
-                data-plasmic-name={"fichierDeTravail281"}
-                data-plasmic-override={overrides.fichierDeTravail281}
-                className={classNames(projectcss.all, sty.fichierDeTravail281)}
-              />
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__hmMH)}
-                displayHeight={"224px"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"420px"}
-                loading={"lazy"}
-                src={{
-                  src: frame19NFnEizwfIa,
-                  fullWidth: 420,
-                  fullHeight: 224,
-                  aspectRatio: 1.875
-                }}
-              />
-
-              <Frame18Icon
-                className={classNames(projectcss.all, sty.svg__imyt)}
-                role={"img"}
-              />
-
-              <Vector37Icon
-                className={classNames(projectcss.all, sty.svg__cxpYo)}
-                role={"img"}
-              />
-            </div>
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__oco7H
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__drsJ4
+                                )}
+                              >
+                                {
+                                  "Sailor wants to belong to the community, that's why he wanted to surrender himself \nin the web3. The community will decide together via a DAO the future \nof Sailor's story."
+                                }
+                              </div>
+                            </div>
+                          ) : null}
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </div>
+              ) : null}
+            </Slider>
           </div>
+
+          <Footer
+            data-plasmic-name={"footer"}
+            data-plasmic-override={overrides.footer}
+            className={classNames("__wab_instance", sty.footer)}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -226,35 +286,13 @@ function PlasmicVision__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "header",
-    "freeBox",
-    "figmaPaste",
-    "immersionInTheSailorsWorld",
-    "empoweringMentoringArtist",
-    "fichierDeTravail281"
-  ],
-
+  root: ["root", "header", "slider", "slide1", "slide2", "slide3", "footer"],
   header: ["header"],
-  freeBox: [
-    "freeBox",
-    "figmaPaste",
-    "immersionInTheSailorsWorld",
-    "empoweringMentoringArtist",
-    "fichierDeTravail281"
-  ],
-
-  figmaPaste: [
-    "figmaPaste",
-    "immersionInTheSailorsWorld",
-    "empoweringMentoringArtist",
-    "fichierDeTravail281"
-  ],
-
-  immersionInTheSailorsWorld: ["immersionInTheSailorsWorld"],
-  empoweringMentoringArtist: ["empoweringMentoringArtist"],
-  fichierDeTravail281: ["fichierDeTravail281"]
+  slider: ["slider", "slide1", "slide2", "slide3"],
+  slide1: ["slide1"],
+  slide2: ["slide2"],
+  slide3: ["slide3"],
+  footer: ["footer"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -287,11 +325,11 @@ export const PlasmicVision = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    freeBox: makeNodeComponent("freeBox"),
-    figmaPaste: makeNodeComponent("figmaPaste"),
-    immersionInTheSailorsWorld: makeNodeComponent("immersionInTheSailorsWorld"),
-    empoweringMentoringArtist: makeNodeComponent("empoweringMentoringArtist"),
-    fichierDeTravail281: makeNodeComponent("fichierDeTravail281"),
+    slider: makeNodeComponent("slider"),
+    slide1: makeNodeComponent("slide1"),
+    slide2: makeNodeComponent("slide2"),
+    slide3: makeNodeComponent("slide3"),
+    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicVision
     internalVariantProps: PlasmicVision__VariantProps,
     internalArgProps: PlasmicVision__ArgProps

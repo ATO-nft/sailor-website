@@ -174,19 +174,6 @@
           "componentType": "page"
         },
         {
-          "id": "uXGgfOygGw",
-          "name": "Artwork2",
-          "type": "managed",
-          "projectId": "6tP4H2YXq73abyMEePhpsf",
-          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicArtwork2.jsx",
-          "importSpec": {
-            "modulePath": "Artwork2.jsx"
-          },
-          "cssFilePath": "plasmic/sailor_alpha/PlasmicArtwork2.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "opTqQ96dfN",
           "name": "Vision",
           "type": "managed",
@@ -752,6 +739,26 @@
           "id": "9MQpMS7J2o",
           "name": "Vector 38",
           "filePath": "plasmic/sailor_alpha/images/vector38.svg"
+        },
+        {
+          "id": "DVu1WhRyZ",
+          "name": "Vector.png",
+          "filePath": "plasmic/sailor_alpha/images/vectorpng.png"
+        },
+        {
+          "id": "o8nUO8F-I",
+          "name": "Vector (1).png",
+          "filePath": "plasmic/sailor_alpha/images/vector1Png.png"
+        },
+        {
+          "id": "w0pUqv45A",
+          "name": "stickers-19 1.png 2",
+          "filePath": "plasmic/sailor_alpha/images/stickers191Png2.png"
+        },
+        {
+          "id": "gC-MHuSGf",
+          "name": "Vector (2).png",
+          "filePath": "plasmic/sailor_alpha/images/vector2Png.png"
         }
       ],
       "indirect": false,

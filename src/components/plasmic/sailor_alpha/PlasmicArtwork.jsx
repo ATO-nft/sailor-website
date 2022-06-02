@@ -19,6 +19,7 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
+import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
@@ -119,6 +120,7 @@ function PlasmicArtwork__RenderFunc(props) {
                   <Slider
                     data-plasmic-name={"slider"}
                     data-plasmic-override={overrides.slider}
+                    adaptiveHeight={false}
                     className={classNames("__wab_instance", sty.slider)}
                     slidesPerRow={2}
                   >
@@ -270,6 +272,12 @@ function PlasmicArtwork__RenderFunc(props) {
               </div>
             ) : null}
           </div>
+
+          <Footer
+            data-plasmic-name={"footer"}
+            data-plasmic-override={overrides.footer}
+            className={classNames("__wab_instance", sty.footer)}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -277,10 +285,11 @@ function PlasmicArtwork__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "text", "slider"],
+  root: ["root", "header", "text", "slider", "footer"],
   header: ["header"],
   text: ["text"],
-  slider: ["slider"]
+  slider: ["slider"],
+  footer: ["footer"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -315,6 +324,7 @@ export const PlasmicArtwork = Object.assign(
     header: makeNodeComponent("header"),
     text: makeNodeComponent("text"),
     slider: makeNodeComponent("slider"),
+    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicArtwork
     internalVariantProps: PlasmicArtwork__VariantProps,
     internalArgProps: PlasmicArtwork__ArgProps
