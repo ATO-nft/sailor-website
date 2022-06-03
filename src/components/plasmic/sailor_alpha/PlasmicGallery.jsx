@@ -452,7 +452,7 @@ function PlasmicGallery__RenderFunc(props) {
                   <Slider
                     data-plasmic-name={"slider"}
                     data-plasmic-override={overrides.slider}
-                    arrows={true}
+                    arrows={false}
                     autoplay={true}
                     autoplaySpeed={2000}
                     className={classNames("__wab_instance", sty.slider)}
