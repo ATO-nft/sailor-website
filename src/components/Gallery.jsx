@@ -18,7 +18,13 @@ function Gallery_(props, ref) {
   //
   // By default, we are just piping all GalleryProps here, but feel free
   // to do whatever works for you.
-  return <PlasmicGallery root={{ ref }} {...props} />;
+  // return <PlasmicGallery root={{ ref }} {...props} />;
+  return <PlasmicGallery
+  root={{ ref,
+    props
+  }}
+  />;
+
 }
 
 const Gallery = React.forwardRef(Gallery_);
