@@ -50,6 +50,7 @@ function PlasmicFocusImage__RenderFunc(props) {
       displayMinHeight={"0"}
       displayMinWidth={"0"}
       displayWidth={"100%"}
+      id={"FocusImg"}
       loading={"lazy"}
       src={{
         src: nft3I4UYce1FlU1,
