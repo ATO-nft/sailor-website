@@ -393,7 +393,6 @@
   }
 }
 .focus {
-  display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
@@ -401,6 +400,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
+  display: none;
   padding: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -424,7 +424,11 @@
     right: auto;
   }
 }
-.focusImage__hpeY:global(.__wab_instance) {
+.focusImage__acTW:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.focusImage__x0Kt0:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
 }
@@ -433,8 +437,9 @@
   max-width: 100%;
   flex-direction: column;
   position: relative;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
   min-width: 0;
-  display: none;
+  display: flex;
 }
 .img__jK9KK {
   object-fit: cover;

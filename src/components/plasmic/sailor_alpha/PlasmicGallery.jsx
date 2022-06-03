@@ -40,7 +40,7 @@ import nft13LrJqBEcrbv from "./images/nft1.png"; // plasmic-import: 3LrJqBEcrbv/
 
 export const PlasmicGallery__VariantProps = new Array();
 
-export const PlasmicGallery__ArgProps = new Array();
+export const PlasmicGallery__ArgProps = new Array("selected");
 
 export const defaultGallery__Args = {};
 
@@ -425,11 +425,24 @@ function PlasmicGallery__RenderFunc(props) {
                         name={"FocusImage"}
                       />
                     ) : null}
+                    {p.renderPlasmicSlot({
+                      defaultContents: (
+                        <FocusImage
+                          className={classNames(
+                            "__wab_instance",
+                            sty.focusImage__acTW
+                          )}
+                          name={"SelectedImage"}
+                        />
+                      ),
+
+                      value: args.selected
+                    })}
 
                     <FocusImage
                       className={classNames(
                         "__wab_instance",
-                        sty.focusImage__hpeY
+                        sty.focusImage__x0Kt0
                       )}
                       name={"SelectedImage"}
                     />
@@ -439,12 +452,13 @@ function PlasmicGallery__RenderFunc(props) {
                   <Slider
                     data-plasmic-name={"slider"}
                     data-plasmic-override={overrides.slider}
-                    arrows={false}
+                    arrows={true}
                     autoplay={true}
                     autoplaySpeed={2000}
                     className={classNames("__wab_instance", sty.slider)}
                     easing={""}
                     fade={true}
+                    focusOnSelect={false}
                     speed={50}
                   >
                     <p.PlasmicImg
