@@ -55,20 +55,6 @@
           "componentType": "component"
         },
         {
-          "id": "XuXn_eVAMfJ",
-          "name": "Button",
-          "type": "managed",
-          "projectId": "6tP4H2YXq73abyMEePhpsf",
-          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicButton.jsx",
-          "importSpec": {
-            "modulePath": "Button.jsx"
-          },
-          "cssFilePath": "plasmic/sailor_alpha/PlasmicButton.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "button"
-        },
-        {
           "id": "YFLbf8Sj1U",
           "name": "Artwork",
           "type": "managed",
@@ -185,6 +171,34 @@
           "cssFilePath": "plasmic/sailor_alpha/PlasmicVision.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "XuXn_eVAMfJ",
+          "name": "DiscoverButton",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicDiscoverButton.jsx",
+          "importSpec": {
+            "modulePath": "DiscoverButton.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicDiscoverButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "jijuzn5YmBR",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicButton.jsx",
+          "importSpec": {
+            "modulePath": "Button.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [

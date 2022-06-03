@@ -16,7 +16,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
-import Button from "../../Button"; // plasmic-import: XuXn_eVAMfJ/component
+import DiscoverButton from "../../DiscoverButton"; // plasmic-import: XuXn_eVAMfJ/component
 import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
@@ -118,14 +118,14 @@ function PlasmicHomepage__RenderFunc(props) {
                 </div>
               ) : null}
 
-              <Button
+              <DiscoverButton
                 data-plasmic-name={"cta"}
                 data-plasmic-override={overrides.cta}
                 className={classNames("__wab_instance", sty.cta)}
                 link={"/artist"}
               >
                 {"Discover his journey"}
-              </Button>
+              </DiscoverButton>
             </p.Stack>
           </div>
 

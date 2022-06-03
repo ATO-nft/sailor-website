@@ -71,7 +71,7 @@ function PlasmicHeader__RenderFunc(props) {
                 )
               }
             )}
-            href={"#"}
+            href={"/homepage"}
           >
             <p.PlasmicImg
               data-plasmic-name={"img"}

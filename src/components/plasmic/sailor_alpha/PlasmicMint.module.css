@@ -24,7 +24,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 140px 8px 8px;
+  padding: 140px 8px 375px;
 }
 .h1__zwEqL {
   position: relative;
@@ -47,7 +47,7 @@
   display: none;
   padding: 8px;
 }
-.button__b8VR:global(.__wab_instance) {
+.discoverButton__b8VR:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   width: 104px;

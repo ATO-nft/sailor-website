@@ -15,7 +15,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
-import Button from "../../Button"; // plasmic-import: XuXn_eVAMfJ/component
+import DiscoverButton from "../../DiscoverButton"; // plasmic-import: XuXn_eVAMfJ/component
 import MintButton from "../../MintButton"; // plasmic-import: GeHxaxYhV01/component
 import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -78,8 +78,11 @@ function PlasmicMint__RenderFunc(props) {
 
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__hlyV7)}>
-                <Button
-                  className={classNames("__wab_instance", sty.button__b8VR)}
+                <DiscoverButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.discoverButton__b8VR
+                  )}
                 >
                   <div
                     data-plasmic-name={"button1"}
@@ -92,18 +95,18 @@ function PlasmicMint__RenderFunc(props) {
                   >
                     {"Mint"}
                   </div>
-                </Button>
+                </DiscoverButton>
               </div>
             ) : null}
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox___37Pd)}>
-                <Button
+                <DiscoverButton
                   data-plasmic-name={"mintButton2"}
                   data-plasmic-override={overrides.mintButton2}
                   className={classNames("__wab_instance", sty.mintButton2)}
                 >
                   {"Mint2"}
-                </Button>
+                </DiscoverButton>
               </div>
             ) : null}
 
