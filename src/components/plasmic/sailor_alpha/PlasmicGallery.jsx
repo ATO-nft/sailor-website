@@ -31,7 +31,7 @@ import nft66SvKTzPzKlc from "./images/nft6.png"; // plasmic-import: 6SvKTzPzKLC/
 
 export const PlasmicGallery__VariantProps = new Array();
 
-export const PlasmicGallery__ArgProps = new Array("_1");
+export const PlasmicGallery__ArgProps = new Array("_1", "_2");
 
 export const defaultGallery__Args = {};
 
@@ -121,23 +121,29 @@ function PlasmicGallery__RenderFunc(props) {
                     data-plasmic-override={overrides._2}
                     className={classNames(projectcss.all, sty._2)}
                   >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__gApNi)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"200px"}
-                      loading={"lazy"}
-                      src={{
-                        src: nft2CaImCIbh7OT,
-                        fullWidth: 1181,
-                        fullHeight: 1181,
-                        aspectRatio: undefined
-                      }}
-                    />
+                    {p.renderPlasmicSlot({
+                      defaultContents: (
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__g4R3M)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"200px"}
+                          loading={"lazy"}
+                          src={{
+                            src: nft2CaImCIbh7OT,
+                            fullWidth: 1181,
+                            fullHeight: 1181,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      ),
+
+                      value: args._2
+                    })}
                   </div>
                 ) : null}
                 {true ? (

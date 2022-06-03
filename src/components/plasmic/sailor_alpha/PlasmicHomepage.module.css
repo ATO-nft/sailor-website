@@ -6,15 +6,14 @@
   height: 100%;
   justify-content: flex-start;
   align-items: center;
-  background: url("./images/sailor.png") left -20% bottom 0% / contain no-repeat,
-    url("./images/bgClourds2Png.png") top 50% left 50% / contain repeat,
+  background: url("./images/homegif.gif") top 50% left 50% / cover repeat,
     var(--token-xCJwSuBjk);
   min-width: 0;
   min-height: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
-    background: url("./images/sailor.png") top 100% left 100% / contain no-repeat,
+    background: url("./images/homegif.gif") top 100% left 50% / 100% auto no-repeat,
       var(--token-xCJwSuBjk);
   }
 }

@@ -122,6 +122,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-name={"cta"}
                 data-plasmic-override={overrides.cta}
                 className={classNames("__wab_instance", sty.cta)}
+                link={"/artist"}
               >
                 {"Discover his journey"}
               </Button>

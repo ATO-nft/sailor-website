@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
 
 .plasmic_tokens {
-  --token-xCJwSuBjk: #0099ff;
+  --token-xCJwSuBjk: #79afe0;
   --plasmic-token-blue: var(--token-xCJwSuBjk);
   --token-h6RawRnEP: #000000;
   --plasmic-token-black: var(--token-h6RawRnEP);
@@ -465,6 +465,7 @@
 
 :where(.root_reset .plasmic_default__h1),
 :where(.root_reset .h1),
+:where(.root_reset .__wab_text h1),
 :where(.root_reset.plasmic_default__h1) {
   color: var(--mixin-K9n4bwQL30dF_color);
   font-weight: var(--mixin-K9n4bwQL30dF_font-weight);
@@ -475,6 +476,7 @@
 
 :where(.root_reset .plasmic_default__h2),
 :where(.root_reset .h2),
+:where(.root_reset .__wab_text h2),
 :where(.root_reset.plasmic_default__h2) {
   font-family: var(--mixin-2ZBiTfHe7vZV_font-family);
   color: var(--mixin-2ZBiTfHe7vZV_color);
@@ -486,12 +488,14 @@
 
 :where(.root_reset .plasmic_default__a),
 :where(.root_reset .a),
+:where(.root_reset .__wab_text a),
 :where(.root_reset.plasmic_default__a) {
   color: var(--mixin-31h8eJwrNwxY_color);
 }
 
 :where(.root_reset .plasmic_default__h3),
 :where(.root_reset .h3),
+:where(.root_reset .__wab_text h3),
 :where(.root_reset.plasmic_default__h3) {
   font-family: var(--mixin-dQYKcp-1GuXl_font-family);
   color: var(--mixin-dQYKcp-1GuXl_color);
@@ -503,6 +507,7 @@
 
 :where(.root_reset .plasmic_default__h4),
 :where(.root_reset .h4),
+:where(.root_reset .__wab_text h4),
 :where(.root_reset.plasmic_default__h4) {
   font-family: var(--mixin-qYRayzWentoA_font-family);
   color: var(--mixin-qYRayzWentoA_color);
@@ -514,6 +519,7 @@
 
 :where(.root_reset .plasmic_default__code),
 :where(.root_reset .code),
+:where(.root_reset .__wab_text code),
 :where(.root_reset.plasmic_default__code) {
   background: var(--mixin-OAss7T8Xtz2M_background);
   font-family: var(--mixin-OAss7T8Xtz2M_font-family);
@@ -541,6 +547,7 @@
 
 :where(.root_reset .plasmic_default__blockquote),
 :where(.root_reset .blockquote),
+:where(.root_reset .__wab_text blockquote),
 :where(.root_reset.plasmic_default__blockquote) {
   color: var(--mixin-qhi9d0vSlvJM_color);
   padding-left: var(--mixin-qhi9d0vSlvJM_padding-left);
@@ -551,6 +558,7 @@
 
 :where(.root_reset .plasmic_default__pre),
 :where(.root_reset .pre),
+:where(.root_reset .__wab_text pre),
 :where(.root_reset.plasmic_default__pre) {
   background: var(--mixin-xTqkpWEvmLHc_background);
   font-family: var(--mixin-xTqkpWEvmLHc_font-family);
@@ -578,6 +586,7 @@
 
 :where(.root_reset .plasmic_default__ul),
 :where(.root_reset .ul),
+:where(.root_reset .__wab_text ul),
 :where(.root_reset.plasmic_default__ul) {
   display: var(--mixin-NC0MaGCZ2BuRk_display);
   flex-direction: var(--mixin-NC0MaGCZ2BuRk_flex-direction);
@@ -592,6 +601,7 @@
 
 :where(.root_reset .plasmic_default__ol),
 :where(.root_reset .ol),
+:where(.root_reset .__wab_text ol),
 :where(.root_reset.plasmic_default__ol) {
   display: var(--mixin-H-p5fNEt4kcH6_display);
   flex-direction: var(--mixin-H-p5fNEt4kcH6_flex-direction);
@@ -606,6 +616,7 @@
 
 :where(.root_reset .plasmic_default__h5),
 :where(.root_reset .h5),
+:where(.root_reset .__wab_text h5),
 :where(.root_reset.plasmic_default__h5) {
   font-family: var(--mixin-5sNdpX83qm6Np_font-family);
   color: var(--mixin-5sNdpX83qm6Np_color);
@@ -617,6 +628,7 @@
 
 :where(.root_reset .plasmic_default__h6),
 :where(.root_reset .h6),
+:where(.root_reset .__wab_text h6),
 :where(.root_reset.plasmic_default__h6) {
   font-family: var(--mixin-qgbUOfz0mdpWO_font-family);
   color: var(--mixin-qgbUOfz0mdpWO_color);
@@ -627,6 +639,7 @@
 
 :where(.root_reset .plasmic_default__a:hover),
 :where(.root_reset .a:hover),
+:where(.root_reset .__wab_text a:hover),
 :where(.root_reset.plasmic_default__a:hover) {
   color: var(--mixin-b2blq2z66Uz9l_color);
 }

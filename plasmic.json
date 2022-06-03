@@ -759,6 +759,11 @@
           "id": "gC-MHuSGf",
           "name": "Vector (2).png",
           "filePath": "plasmic/sailor_alpha/images/vector2Png.png"
+        },
+        {
+          "id": "ksrcZOir0",
+          "name": "home.gif",
+          "filePath": "plasmic/sailor_alpha/images/homegif.gif"
         }
       ],
       "indirect": false,
