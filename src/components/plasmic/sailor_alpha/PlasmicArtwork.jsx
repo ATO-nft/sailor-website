@@ -26,8 +26,18 @@ import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6
 import sty from "./PlasmicArtwork.module.css"; // plasmic-import: YFLbf8Sj1U/css
 import titre1FFjsUvpvre from "./images/titre1.png"; // plasmic-import: fFJSUvpvre/picture
 import titre1PngHD0J16Vls from "./images/titre1Png.png"; // plasmic-import: hD0j16vls/picture
-import nft13LrJqBEcrbv from "./images/nft1.png"; // plasmic-import: 3LrJqBEcrbv/picture
-import nft5ZJyUFs8I0X from "./images/nft5.png"; // plasmic-import: z-jyUFs8i0x/picture
+import masque28DistkjdS from "./images/masque2.png"; // plasmic-import: 8distkjdS/picture
+import masque4Vat1SKpnd from "./images/masque4.png"; // plasmic-import: VAT1S_Kpnd/picture
+import masque6O5ZcT0ZhKa from "./images/masque6.png"; // plasmic-import: O5ZcT0zhKa/picture
+import masque7Ba4GpSn2Ji from "./images/masque7.png"; // plasmic-import: ba4gpSn2Ji/picture
+import masque8B0GKmTrgkH from "./images/masque8.png"; // plasmic-import: B0gKmTrgkH/picture
+import masque9Pkp75Iup8N from "./images/masque9.png"; // plasmic-import: PKP75iup8N/picture
+import masque115BueXh3Eos from "./images/masque11.png"; // plasmic-import: 5BUEXh3EOS/picture
+import masque12Go3S3DHhz from "./images/masque12.png"; // plasmic-import: -GO3s3DHhz/picture
+import masque14RzCmEh4Sa4 from "./images/masque14.png"; // plasmic-import: RzCmEH4SA4/picture
+import masque15Qe8OSuvLhF from "./images/masque15.png"; // plasmic-import: Qe8oSUVLhF/picture
+import masque18KqxWtBJnPk from "./images/masque18.png"; // plasmic-import: kqxWtBJnPK/picture
+import nft3I4UYce1FlU1 from "./images/nft3.png"; // plasmic-import: i4UYce1flU1/picture
 
 export const PlasmicArtwork__VariantProps = new Array();
 
@@ -135,7 +145,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={"50%"}
                       loading={"lazy"}
                       src={{
-                        src: nft13LrJqBEcrbv,
+                        src: masque28DistkjdS,
                         fullWidth: 1181,
                         fullHeight: 1181,
                         aspectRatio: undefined
@@ -153,7 +163,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={"50%"}
                       loading={"lazy"}
                       src={{
-                        src: nft5ZJyUFs8I0X,
+                        src: masque4Vat1SKpnd,
                         fullWidth: 1181,
                         fullHeight: 1181,
                         aspectRatio: undefined
@@ -171,7 +181,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={"50%"}
                       loading={"lazy"}
                       src={{
-                        src: nft5ZJyUFs8I0X,
+                        src: masque6O5ZcT0ZhKa,
                         fullWidth: 1181,
                         fullHeight: 1181,
                         aspectRatio: undefined
@@ -180,7 +190,7 @@ function PlasmicArtwork__RenderFunc(props) {
 
                     <p.PlasmicImg
                       alt={""}
-                      className={classNames(sty.img__cL2P)}
+                      className={classNames(sty.img__zjXnS)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -189,7 +199,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={"50%"}
                       loading={"lazy"}
                       src={{
-                        src: nft5ZJyUFs8I0X,
+                        src: masque7Ba4GpSn2Ji,
                         fullWidth: 1181,
                         fullHeight: 1181,
                         aspectRatio: undefined
@@ -198,7 +208,7 @@ function PlasmicArtwork__RenderFunc(props) {
 
                     <p.PlasmicImg
                       alt={""}
-                      className={classNames(sty.img__aSu3P)}
+                      className={classNames(sty.img___0Stz)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -207,7 +217,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={"50%"}
                       loading={"lazy"}
                       src={{
-                        src: nft5ZJyUFs8I0X,
+                        src: masque8B0GKmTrgkH,
                         fullWidth: 1181,
                         fullHeight: 1181,
                         aspectRatio: undefined
@@ -216,7 +226,7 @@ function PlasmicArtwork__RenderFunc(props) {
 
                     <p.PlasmicImg
                       alt={""}
-                      className={classNames(sty.img__piyH)}
+                      className={classNames(sty.img__weMu4)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -225,7 +235,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={"50%"}
                       loading={"lazy"}
                       src={{
-                        src: nft5ZJyUFs8I0X,
+                        src: masque9Pkp75Iup8N,
                         fullWidth: 1181,
                         fullHeight: 1181,
                         aspectRatio: undefined
@@ -234,7 +244,7 @@ function PlasmicArtwork__RenderFunc(props) {
 
                     <p.PlasmicImg
                       alt={""}
-                      className={classNames(sty.img__hTKv)}
+                      className={classNames(sty.img__qr82F)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -243,7 +253,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={"50%"}
                       loading={"lazy"}
                       src={{
-                        src: nft5ZJyUFs8I0X,
+                        src: masque115BueXh3Eos,
                         fullWidth: 1181,
                         fullHeight: 1181,
                         aspectRatio: undefined
@@ -252,7 +262,7 @@ function PlasmicArtwork__RenderFunc(props) {
 
                     <p.PlasmicImg
                       alt={""}
-                      className={classNames(sty.img__i1MGc)}
+                      className={classNames(sty.img__ffX1M)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -261,7 +271,79 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={"50%"}
                       loading={"lazy"}
                       src={{
-                        src: nft5ZJyUFs8I0X,
+                        src: masque12Go3S3DHhz,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__ybOjv)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: masque14RzCmEh4Sa4,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__zzM8W)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: masque15Qe8OSuvLhF,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__u7Gb)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: masque18KqxWtBJnPk,
+                        fullWidth: 1181,
+                        fullHeight: 1181,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__pS5L)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"50%"}
+                      loading={"lazy"}
+                      src={{
+                        src: nft3I4UYce1FlU1,
                         fullWidth: 1181,
                         fullHeight: 1181,
                         aspectRatio: undefined
