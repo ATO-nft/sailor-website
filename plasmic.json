@@ -199,6 +199,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "OYpuIb6c8w",
+          "name": "FocusImage",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicFocusImage.jsx",
+          "importSpec": {
+            "modulePath": "FocusImage.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicFocusImage.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

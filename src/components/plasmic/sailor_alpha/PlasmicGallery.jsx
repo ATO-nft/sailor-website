@@ -17,6 +17,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
+import FocusImage from "../../FocusImage"; // plasmic-import: OYpuIb6c8w/component
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
@@ -35,12 +36,11 @@ import masque14RzCmEh4Sa4 from "./images/masque14.png"; // plasmic-import: RzCmE
 import masque15Qe8OSuvLhF from "./images/masque15.png"; // plasmic-import: Qe8oSUVLhF/picture
 import masque18KqxWtBJnPk from "./images/masque18.png"; // plasmic-import: kqxWtBJnPK/picture
 import nft2CaImCIbh7OT from "./images/nft2.png"; // plasmic-import: CAImCIbh7oT/picture
-import nft3I4UYce1FlU1 from "./images/nft3.png"; // plasmic-import: i4UYce1flU1/picture
 import nft13LrJqBEcrbv from "./images/nft1.png"; // plasmic-import: 3LrJqBEcrbv/picture
 
 export const PlasmicGallery__VariantProps = new Array();
 
-export const PlasmicGallery__ArgProps = new Array("_1", "_2");
+export const PlasmicGallery__ArgProps = new Array();
 
 export const defaultGallery__Args = {};
 
@@ -100,29 +100,23 @@ function PlasmicGallery__RenderFunc(props) {
                       data-plasmic-override={overrides._1}
                       className={classNames(projectcss.all, sty._1)}
                     >
-                      {p.renderPlasmicSlot({
-                        defaultContents: (
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img__femV)}
-                            displayHeight={"auto"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"200px"}
-                            loading={"lazy"}
-                            src={{
-                              src: masque28DistkjdS,
-                              fullWidth: 1181,
-                              fullHeight: 1181,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        ),
-
-                        value: args._1
-                      })}
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__femV)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"200px"}
+                        loading={"lazy"}
+                        src={{
+                          src: masque28DistkjdS,
+                          fullWidth: 1181,
+                          fullHeight: 1181,
+                          aspectRatio: undefined
+                        }}
+                      />
                     </div>
                   ) : null}
                   {true ? (
@@ -131,29 +125,23 @@ function PlasmicGallery__RenderFunc(props) {
                       data-plasmic-override={overrides._2}
                       className={classNames(projectcss.all, sty._2)}
                     >
-                      {p.renderPlasmicSlot({
-                        defaultContents: (
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img__g4R3M)}
-                            displayHeight={"auto"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"200px"}
-                            loading={"lazy"}
-                            src={{
-                              src: masque4Vat1SKpnd,
-                              fullWidth: 1181,
-                              fullHeight: 1181,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        ),
-
-                        value: args._2
-                      })}
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__g4R3M)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"200px"}
+                        loading={"lazy"}
+                        src={{
+                          src: masque4Vat1SKpnd,
+                          fullWidth: 1181,
+                          fullHeight: 1181,
+                          aspectRatio: undefined
+                        }}
+                      />
                     </div>
                   ) : null}
                   {true ? (
@@ -428,24 +416,22 @@ function PlasmicGallery__RenderFunc(props) {
                     data-plasmic-override={overrides.focus}
                     className={classNames(projectcss.all, sty.focus)}
                   >
-                    <p.PlasmicImg
-                      data-plasmic-name={"focusImage"}
-                      data-plasmic-override={overrides.focusImage}
-                      alt={""}
-                      className={classNames(sty.focusImage)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: nft3I4UYce1FlU1,
-                        fullWidth: 1181,
-                        fullHeight: 1181,
-                        aspectRatio: undefined
-                      }}
+                    {true ? (
+                      <FocusImage
+                        className={classNames(
+                          "__wab_instance",
+                          sty.focusImage__mbfVy
+                        )}
+                        name={"FocusImage"}
+                      />
+                    ) : null}
+
+                    <FocusImage
+                      className={classNames(
+                        "__wab_instance",
+                        sty.focusImage__hpeY
+                      )}
+                      name={"SelectedImage"}
                     />
                   </div>
                 ) : null}
@@ -703,7 +689,6 @@ const PlasmicDescendants = {
     "column1",
     "column2",
     "focus",
-    "focusImage",
     "slider",
     "footer"
   ],
@@ -728,7 +713,6 @@ const PlasmicDescendants = {
     "column1",
     "column2",
     "focus",
-    "focusImage",
     "slider"
   ],
 
@@ -778,9 +762,8 @@ const PlasmicDescendants = {
   _11: ["_11"],
   _12: ["_12"],
   column1: ["column1"],
-  column2: ["column2", "focus", "focusImage", "slider"],
-  focus: ["focus", "focusImage"],
-  focusImage: ["focusImage"],
+  column2: ["column2", "focus", "slider"],
+  focus: ["focus"],
   slider: ["slider"],
   footer: ["footer"]
 };
@@ -833,7 +816,6 @@ export const PlasmicGallery = Object.assign(
     column1: makeNodeComponent("column1"),
     column2: makeNodeComponent("column2"),
     focus: makeNodeComponent("focus"),
-    focusImage: makeNodeComponent("focusImage"),
     slider: makeNodeComponent("slider"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicGallery
