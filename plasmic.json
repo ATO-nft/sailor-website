@@ -778,6 +778,61 @@
           "id": "ksrcZOir0",
           "name": "home.gif",
           "filePath": "plasmic/sailor_alpha/images/homegif.gif"
+        },
+        {
+          "id": "8distkjdS",
+          "name": "masque 2",
+          "filePath": "plasmic/sailor_alpha/images/masque2.png"
+        },
+        {
+          "id": "VAT1S_Kpnd",
+          "name": "masque 4",
+          "filePath": "plasmic/sailor_alpha/images/masque4.png"
+        },
+        {
+          "id": "O5ZcT0zhKa",
+          "name": "masque 6",
+          "filePath": "plasmic/sailor_alpha/images/masque6.png"
+        },
+        {
+          "id": "ba4gpSn2Ji",
+          "name": "masque 7",
+          "filePath": "plasmic/sailor_alpha/images/masque7.png"
+        },
+        {
+          "id": "B0gKmTrgkH",
+          "name": "masque 8",
+          "filePath": "plasmic/sailor_alpha/images/masque8.png"
+        },
+        {
+          "id": "PKP75iup8N",
+          "name": "masque 9",
+          "filePath": "plasmic/sailor_alpha/images/masque9.png"
+        },
+        {
+          "id": "5BUEXh3EOS",
+          "name": "masque 11",
+          "filePath": "plasmic/sailor_alpha/images/masque11.png"
+        },
+        {
+          "id": "-GO3s3DHhz",
+          "name": "masque 12",
+          "filePath": "plasmic/sailor_alpha/images/masque12.png"
+        },
+        {
+          "id": "RzCmEH4SA4",
+          "name": "masque 14",
+          "filePath": "plasmic/sailor_alpha/images/masque14.png"
+        },
+        {
+          "id": "Qe8oSUVLhF",
+          "name": "masque 15",
+          "filePath": "plasmic/sailor_alpha/images/masque15.png"
+        },
+        {
+          "id": "kqxWtBJnPK",
+          "name": "masque 18",
+          "filePath": "plasmic/sailor_alpha/images/masque18.png"
         }
       ],
       "indirect": false,
