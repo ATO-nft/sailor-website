@@ -153,7 +153,7 @@ function PlasmicHeader__RenderFunc(props) {
                       projectcss.__wab_text,
                       sty.link___70Kzq
                     )}
-                    href={"/gallery"}
+                    href={"/gallery-legacy"}
                   >
                     {"GALLERY"}
                   </a>

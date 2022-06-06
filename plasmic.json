@@ -147,19 +147,6 @@
           "componentType": "page"
         },
         {
-          "id": "CFz-I9uXMp",
-          "name": "Gallery",
-          "type": "managed",
-          "projectId": "6tP4H2YXq73abyMEePhpsf",
-          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicGallery.jsx",
-          "importSpec": {
-            "modulePath": "Gallery.jsx"
-          },
-          "cssFilePath": "plasmic/sailor_alpha/PlasmicGallery.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "opTqQ96dfN",
           "name": "Vision",
           "type": "managed",
@@ -214,15 +201,28 @@
           "componentType": "component"
         },
         {
-          "id": "PXpi17MlSes",
-          "name": "Gallery2",
+          "id": "CFz-I9uXMp",
+          "name": "GalleryLegacy",
           "type": "managed",
           "projectId": "6tP4H2YXq73abyMEePhpsf",
-          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicGallery2.jsx",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicGalleryLegacy.jsx",
           "importSpec": {
-            "modulePath": "Gallery2.jsx"
+            "modulePath": "GalleryLegacy.jsx"
           },
-          "cssFilePath": "plasmic/sailor_alpha/PlasmicGallery2.module.css",
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicGalleryLegacy.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "PXpi17MlSes",
+          "name": "Gallery",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicGallery.jsx",
+          "importSpec": {
+            "modulePath": "Gallery.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicGallery.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
