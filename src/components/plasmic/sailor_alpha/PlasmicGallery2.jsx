@@ -100,23 +100,34 @@ function PlasmicGallery2__RenderFunc(props) {
                       data-plasmic-override={overrides._1}
                       className={classNames(projectcss.all, sty._1)}
                     >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__oqpaV)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"200px"}
-                        loading={"lazy"}
-                        src={{
-                          src: masque28DistkjdS,
-                          fullWidth: 1181,
-                          fullHeight: 1181,
-                          aspectRatio: undefined
-                        }}
-                      />
+                      <a
+                        data-plasmic-name={"link"}
+                        data-plasmic-override={overrides.link}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link
+                        )}
+                        href={"#"}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__oqpaV)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"200px"}
+                          loading={"lazy"}
+                          src={{
+                            src: masque28DistkjdS,
+                            fullWidth: 1181,
+                            fullHeight: 1181,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </a>
                     </div>
                   ) : null}
                   {true ? (
@@ -680,6 +691,7 @@ const PlasmicDescendants = {
     "scroll",
     "freeBox",
     "_1",
+    "link",
     "_2",
     "_3",
     "_4",
@@ -705,6 +717,7 @@ const PlasmicDescendants = {
     "scroll",
     "freeBox",
     "_1",
+    "link",
     "_2",
     "_3",
     "_4",
@@ -727,6 +740,7 @@ const PlasmicDescendants = {
     "scroll",
     "freeBox",
     "_1",
+    "link",
     "_2",
     "_3",
     "_4",
@@ -743,6 +757,7 @@ const PlasmicDescendants = {
   freeBox: [
     "freeBox",
     "_1",
+    "link",
     "_2",
     "_3",
     "_4",
@@ -756,7 +771,8 @@ const PlasmicDescendants = {
     "_12"
   ],
 
-  _1: ["_1"],
+  _1: ["_1", "link"],
+  link: ["link"],
   _2: ["_2"],
   _3: ["_3"],
   _4: ["_4"],
@@ -810,6 +826,7 @@ export const PlasmicGallery2 = Object.assign(
     scroll: makeNodeComponent("scroll"),
     freeBox: makeNodeComponent("freeBox"),
     _1: makeNodeComponent("_1"),
+    link: makeNodeComponent("link"),
     _2: makeNodeComponent("_2"),
     _3: makeNodeComponent("_3"),
     _4: makeNodeComponent("_4"),
