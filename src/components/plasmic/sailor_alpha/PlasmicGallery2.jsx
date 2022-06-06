@@ -17,7 +17,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
-import FocusImage from "../../FocusImage"; // plasmic-import: OYpuIb6c8w/component
 import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -35,10 +34,11 @@ import masque14RzCmEh4Sa4 from "./images/masque14.png"; // plasmic-import: RzCmE
 import masque15Qe8OSuvLhF from "./images/masque15.png"; // plasmic-import: Qe8oSUVLhF/picture
 import masque18KqxWtBJnPk from "./images/masque18.png"; // plasmic-import: kqxWtBJnPK/picture
 import nft2CaImCIbh7OT from "./images/nft2.png"; // plasmic-import: CAImCIbh7oT/picture
+import nft3I4UYce1FlU1 from "./images/nft3.png"; // plasmic-import: i4UYce1flU1/picture
 
 export const PlasmicGallery2__VariantProps = new Array();
 
-export const PlasmicGallery2__ArgProps = new Array("selected");
+export const PlasmicGallery2__ArgProps = new Array();
 
 export const defaultGallery2__Args = {};
 
@@ -87,7 +87,11 @@ function PlasmicGallery2__RenderFunc(props) {
                 data-plasmic-override={overrides.scroll}
                 className={classNames(projectcss.all, sty.scroll)}
               >
-                <div className={classNames(projectcss.all, sty.freeBox__tpqJr)}>
+                <div
+                  data-plasmic-name={"freeBox"}
+                  data-plasmic-override={overrides.freeBox}
+                  className={classNames(projectcss.all, sty.freeBox)}
+                >
                   {true ? (
                     <div
                       data-plasmic-name={"_1"}
@@ -397,21 +401,25 @@ function PlasmicGallery2__RenderFunc(props) {
                 data-plasmic-override={overrides.bigImage}
                 className={classNames(projectcss.all, sty.bigImage)}
               >
-                <div className={classNames(projectcss.all, sty.freeBox__feTtq)}>
-                  {p.renderPlasmicSlot({
-                    defaultContents: (
-                      <FocusImage
-                        className={classNames(
-                          "__wab_instance",
-                          sty.focusImage__s6EQt
-                        )}
-                        name={"FocusImage"}
-                      />
-                    ),
-
-                    value: args.selected
-                  })}
-                </div>
+                <p.PlasmicImg
+                  data-plasmic-name={"main"}
+                  data-plasmic-override={overrides.main}
+                  alt={"selected"}
+                  className={classNames(sty.main)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: nft3I4UYce1FlU1,
+                    fullWidth: 1181,
+                    fullHeight: 1181,
+                    aspectRatio: undefined
+                  }}
+                />
               </div>
             ) : null}
           </div>
@@ -433,6 +441,7 @@ const PlasmicDescendants = {
     "header",
     "section",
     "scroll",
+    "freeBox",
     "_1",
     "_2",
     "_3",
@@ -446,6 +455,7 @@ const PlasmicDescendants = {
     "_11",
     "_12",
     "bigImage",
+    "main",
     "footer"
   ],
 
@@ -453,6 +463,7 @@ const PlasmicDescendants = {
   section: [
     "section",
     "scroll",
+    "freeBox",
     "_1",
     "_2",
     "_3",
@@ -465,11 +476,29 @@ const PlasmicDescendants = {
     "_10",
     "_11",
     "_12",
-    "bigImage"
+    "bigImage",
+    "main"
   ],
 
   scroll: [
     "scroll",
+    "freeBox",
+    "_1",
+    "_2",
+    "_3",
+    "_4",
+    "_5",
+    "_6",
+    "_7",
+    "_8",
+    "_9",
+    "_10",
+    "_11",
+    "_12"
+  ],
+
+  freeBox: [
+    "freeBox",
     "_1",
     "_2",
     "_3",
@@ -496,7 +525,8 @@ const PlasmicDescendants = {
   _10: ["_10"],
   _11: ["_11"],
   _12: ["_12"],
-  bigImage: ["bigImage"],
+  bigImage: ["bigImage", "main"],
+  main: ["main"],
   footer: ["footer"]
 };
 
@@ -532,6 +562,7 @@ export const PlasmicGallery2 = Object.assign(
     header: makeNodeComponent("header"),
     section: makeNodeComponent("section"),
     scroll: makeNodeComponent("scroll"),
+    freeBox: makeNodeComponent("freeBox"),
     _1: makeNodeComponent("_1"),
     _2: makeNodeComponent("_2"),
     _3: makeNodeComponent("_3"),
@@ -545,6 +576,7 @@ export const PlasmicGallery2 = Object.assign(
     _11: makeNodeComponent("_11"),
     _12: makeNodeComponent("_12"),
     bigImage: makeNodeComponent("bigImage"),
+    main: makeNodeComponent("main"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicGallery2
     internalVariantProps: PlasmicGallery2__VariantProps,
