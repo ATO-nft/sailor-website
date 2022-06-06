@@ -162,7 +162,6 @@
   white-space: inherit;
   grid-row: auto;
   grid-column: auto;
-  position: relative;
   background: none;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -200,7 +199,6 @@
 }
 :where(.__wab_rich_text span),
 :where(.__wab_text span) {
-  position: static;
   font-family: inherit;
   line-height: inherit;
   font-size: inherit;

@@ -212,6 +212,19 @@
           "cssFilePath": "plasmic/sailor_alpha/PlasmicFocusImage.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Eg3pYUijjP0",
+          "name": "Gallery2",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicGallery2.jsx",
+          "importSpec": {
+            "modulePath": "Gallery2.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicGallery2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

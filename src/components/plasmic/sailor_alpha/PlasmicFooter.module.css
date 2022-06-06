@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   min-width: 0;
   padding: 20px;
@@ -116,7 +116,7 @@
 }
 .link__kNaSm {
   align-self: auto;
-  display: flex;
+  display: none;
 }
 .etherscan {
   mix-blend-mode: normal;
@@ -269,7 +269,7 @@
   left: 61.93%;
 }
 .link___9R8P {
-  display: flex;
+  display: none;
 }
 .discord {
   mix-blend-mode: normal;
@@ -321,7 +321,7 @@
   left: 27.85%;
 }
 .link__kvAk4 {
-  display: flex;
+  display: none;
 }
 .opensea {
   mix-blend-mode: normal;

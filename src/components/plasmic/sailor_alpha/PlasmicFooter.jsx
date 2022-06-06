@@ -77,7 +77,7 @@ function PlasmicFooter__RenderFunc(props) {
               projectcss.a,
               sty.link__s9Vud
             )}
-            href={"https://twitter.com/"}
+            href={"https://twitter.com/TheSailorNFT"}
             target={"_blank"}
           >
             <div
@@ -120,49 +120,51 @@ function PlasmicFooter__RenderFunc(props) {
             </div>
           </a>
 
-          <a
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              sty.link__kNaSm
-            )}
-            href={"https://etherscan.io/"}
-            target={"_blank"}
-          >
-            <div
-              data-plasmic-name={"etherscan"}
-              data-plasmic-override={overrides.etherscan}
-              className={classNames(projectcss.all, sty.etherscan)}
+          {true ? (
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__kNaSm
+              )}
+              href={"https://etherscan.io/"}
+              target={"_blank"}
             >
               <div
-                data-plasmic-name={"group5"}
-                data-plasmic-override={overrides.group5}
-                className={classNames(projectcss.all, sty.group5)}
+                data-plasmic-name={"etherscan"}
+                data-plasmic-override={overrides.etherscan}
+                className={classNames(projectcss.all, sty.etherscan)}
               >
                 <div
-                  data-plasmic-name={"objects5"}
-                  data-plasmic-override={overrides.objects5}
-                  className={classNames(projectcss.all, sty.objects5)}
+                  data-plasmic-name={"group5"}
+                  data-plasmic-override={overrides.group5}
+                  className={classNames(projectcss.all, sty.group5)}
                 >
-                  <Group11Icon
-                    className={classNames(projectcss.all, sty.svg__gtn7R)}
-                    role={"img"}
-                  />
-
                   <div
-                    data-plasmic-name={"circle"}
-                    data-plasmic-override={overrides.circle}
-                    className={classNames(projectcss.all, sty.circle)}
+                    data-plasmic-name={"objects5"}
+                    data-plasmic-override={overrides.objects5}
+                    className={classNames(projectcss.all, sty.objects5)}
                   >
-                    <Group12Icon
-                      className={classNames(projectcss.all, sty.svg__xU3Kf)}
+                    <Group11Icon
+                      className={classNames(projectcss.all, sty.svg__gtn7R)}
                       role={"img"}
                     />
+
+                    <div
+                      data-plasmic-name={"circle"}
+                      data-plasmic-override={overrides.circle}
+                      className={classNames(projectcss.all, sty.circle)}
+                    >
+                      <Group12Icon
+                        className={classNames(projectcss.all, sty.svg__xU3Kf)}
+                        role={"img"}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          ) : null}
 
           <a
             className={classNames(
@@ -170,7 +172,7 @@ function PlasmicFooter__RenderFunc(props) {
               projectcss.a,
               sty.link__njY3M
             )}
-            href={"https://www.instagram.com/"}
+            href={"https://www.instagram.com/thesailornft/"}
             target={"_blank"}
           >
             <div
@@ -217,86 +219,89 @@ function PlasmicFooter__RenderFunc(props) {
             </div>
           </a>
 
-          <a
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              sty.link___9R8P
-            )}
-            href={"https://discord.com/"}
-            target={"_blank"}
-          >
-            <div
-              data-plasmic-name={"discord"}
-              data-plasmic-override={overrides.discord}
-              className={classNames(projectcss.all, sty.discord)}
+          {true ? (
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link___9R8P
+              )}
+              href={"https://discord.com/"}
+              target={"_blank"}
             >
               <div
-                data-plasmic-name={"discord2"}
-                data-plasmic-override={overrides.discord2}
-                className={classNames(projectcss.all, sty.discord2)}
+                data-plasmic-name={"discord"}
+                data-plasmic-override={overrides.discord}
+                className={classNames(projectcss.all, sty.discord)}
               >
                 <div
-                  data-plasmic-name={"objects3"}
-                  data-plasmic-override={overrides.objects3}
-                  className={classNames(projectcss.all, sty.objects3)}
+                  data-plasmic-name={"discord2"}
+                  data-plasmic-override={overrides.discord2}
+                  className={classNames(projectcss.all, sty.discord2)}
                 >
-                  <Group9Icon
-                    className={classNames(projectcss.all, sty.svg__jeTgp)}
-                    role={"img"}
-                  />
+                  <div
+                    data-plasmic-name={"objects3"}
+                    data-plasmic-override={overrides.objects3}
+                    className={classNames(projectcss.all, sty.objects3)}
+                  >
+                    <Group9Icon
+                      className={classNames(projectcss.all, sty.svg__jeTgp)}
+                      role={"img"}
+                    />
 
-                  <Vector19Icon
-                    className={classNames(projectcss.all, sty.svg__jQXc9)}
-                    role={"img"}
-                  />
+                    <Vector19Icon
+                      className={classNames(projectcss.all, sty.svg__jQXc9)}
+                      role={"img"}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-
-          <a
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              sty.link__kvAk4
-            )}
-            href={"https://opensea.io/"}
-            target={"_blank"}
-          >
-            <div
-              data-plasmic-name={"opensea"}
-              data-plasmic-override={overrides.opensea}
-              className={classNames(projectcss.all, sty.opensea)}
+            </a>
+          ) : null}
+          {true ? (
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__kvAk4
+              )}
+              href={"https://opensea.io/"}
+              target={"_blank"}
             >
               <div
-                data-plasmic-name={"group2"}
-                data-plasmic-override={overrides.group2}
-                className={classNames(projectcss.all, sty.group2)}
+                data-plasmic-name={"opensea"}
+                data-plasmic-override={overrides.opensea}
+                className={classNames(projectcss.all, sty.opensea)}
               >
                 <div
-                  data-plasmic-name={"objects2"}
-                  data-plasmic-override={overrides.objects2}
-                  className={classNames(projectcss.all, sty.objects2)}
+                  data-plasmic-name={"group2"}
+                  data-plasmic-override={overrides.group2}
+                  className={classNames(projectcss.all, sty.group2)}
                 >
-                  <Group8Icon
-                    className={classNames(projectcss.all, sty.svg__sccHk)}
-                    role={"img"}
-                  />
+                  <div
+                    data-plasmic-name={"objects2"}
+                    data-plasmic-override={overrides.objects2}
+                    className={classNames(projectcss.all, sty.objects2)}
+                  >
+                    <Group8Icon
+                      className={classNames(projectcss.all, sty.svg__sccHk)}
+                      role={"img"}
+                    />
 
-                  <Vector17Icon
-                    className={classNames(projectcss.all, sty.svg__zj9R3)}
-                    role={"img"}
-                  />
+                    <Vector17Icon
+                      className={classNames(projectcss.all, sty.svg__zj9R3)}
+                      role={"img"}
+                    />
 
-                  <Vector18Icon
-                    className={classNames(projectcss.all, sty.svg__jnLlQ)}
-                    role={"img"}
-                  />
+                    <Vector18Icon
+                      className={classNames(projectcss.all, sty.svg__jnLlQ)}
+                      role={"img"}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          ) : null}
         </div>
       ) : null}
     </div>
