@@ -92,20 +92,14 @@
   min-width: 0;
   padding: 8px;
 }
-<<<<<<< HEAD
-=======
 .link {
   display: flex;
 }
->>>>>>> 8c93ad420f166759b11230f993e0893a165ac806
 .img__oqpaV {
   object-fit: contain;
   max-width: 100%;
   width: 200px;
-<<<<<<< HEAD
-=======
   flex-shrink: 0;
->>>>>>> 8c93ad420f166759b11230f993e0893a165ac806
 }
 .img__oqpaV > picture > img {
   object-fit: contain;
