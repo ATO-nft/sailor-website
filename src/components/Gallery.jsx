@@ -6,13 +6,8 @@ function Gallery2_(props, ref) {
   const [selectedImage, setSelectedImage] = React.useState("/static/media/nft3.c7c303aee467b2239233.png");
 
   async function switchImage(newSrc) {
-
-    console.log("clicked");
     setSelectedImage(newSrc);
-    
   }
-
-  console.log(props.className)
 
   return <PlasmicGallery
 
@@ -26,7 +21,7 @@ function Gallery2_(props, ref) {
           decoding={"async"}
           loading={"lazy"}
           src = {selectedImage}
-          style={{ maxWidth:"100%"}}
+          style={{ maxWidth:"100%", maxHeight:"850px" }}
         />
       </bigImage>
     </div>
