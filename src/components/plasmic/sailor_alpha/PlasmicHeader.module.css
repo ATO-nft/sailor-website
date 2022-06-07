@@ -61,15 +61,43 @@
 .linklight__itcKmBLk3V {
   filter: blur(0px);
 }
-.img {
+.img__mQ91N {
   object-fit: cover;
   height: 40px;
 }
-.img > picture > img {
+.img__mQ91N > picture > img {
   object-fit: cover;
 }
-.img > .__wab_img-spacer > img {
+.img__mQ91N > .__wab_img-spacer > img {
   object-fit: cover;
+}
+.link__rHjKa {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.linklight__rHjKabLk3V {
+  filter: blur(0px);
+}
+.img__ayRbm {
+  object-fit: cover;
+  height: 40px;
+}
+.img__ayRbm > picture > img {
+  object-fit: cover;
+}
+.img__ayRbm > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.imglight__ayRbmbLk3V {
+  display: none !important;
 }
 .img__b4Qlz {
   object-fit: cover;
@@ -163,22 +191,25 @@
     flex-column-gap: 0px;
   }
 }
-.link___70Kzq {
+.link__p31H1 {
+  position: relative;
   width: auto;
   height: auto;
   max-width: 800px;
-  background: url("./images/frame15.svg") top 50% left 50% / contain no-repeat;
+  background: url("./images/menuBg1Svg.svg") top 50% left 50% / contain no-repeat;
   color: #ffffff;
   font-family: "Marydale";
   padding: 16px 24px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .link___70Kzq {
-    color: #ffffff;
+  .link__p31H1 {
     text-align: center;
   }
 }
-.link__p31H1 {
+.rootlight .linklight__p31H1BLk3V:hover {
+  background: url("./images/frame14.svg") top 50% left 50% / contain no-repeat;
+}
+.link__gWQk8 {
   position: relative;
   width: auto;
   height: auto;
@@ -189,9 +220,12 @@
   padding: 16px 24px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .link__p31H1 {
+  .link__gWQk8 {
     text-align: center;
   }
+}
+.rootlight .linklight__gWQk8BLk3V:hover {
+  background: url("./images/frame10.svg") top 50% left 50% / contain no-repeat;
 }
 .link__u03Ge {
   position: relative;
@@ -208,6 +242,9 @@
     text-align: center;
   }
 }
+.rootlight .linklight__u03GeBLk3V:hover {
+  background: url("./images/frame13.svg") top 50% left 50% / contain no-repeat;
+}
 .link__bFdFf {
   position: relative;
   width: auto;
@@ -223,6 +260,10 @@
     text-align: center;
   }
 }
+.rootlight .linklight__bFdFfbLk3V:hover {
+  color: #ffffff;
+  background: url("./images/frame13.svg") top 50% left 50% / contain no-repeat;
+}
 .link__qbgp {
   position: relative;
   width: auto;
@@ -237,6 +278,9 @@
   .link__qbgp {
     text-align: center;
   }
+}
+.rootlight .linklight__qbgpBLk3V:hover {
+  background: url("./images/frame14.svg") top 50% left 50% / contain no-repeat;
 }
 .link__u2Ot5 {
   position: relative;

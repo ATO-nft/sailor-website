@@ -125,7 +125,7 @@ function PlasmicVision__RenderFunc(props) {
                                 )}
                               >
                                 {
-                                  'Sailor invites whoever is ready to learn about the world, to dive into his creative universe and to share his vision. He will offer \nto discover him under all these aspects \nwith the operation "Hut", which will be a unique journey, mixing the real and the virtual.'
+                                  'Sailor invites whoever is ready to learn about the world, to dive into his creative universe and to share his vision. \n\nHe will offer to discover him under all these aspects with the operation "Hut", which will be a unique journey, mixing the real and the virtual.'
                                 }
                               </div>
                             </div>
@@ -194,7 +194,7 @@ function PlasmicVision__RenderFunc(props) {
                                 )}
                               >
                                 {
-                                  'We want to allow artists to express \nand value their creative spirit. \nThroughout our journey, we will highlight artists belonging to the Sailor community through the mysterious "Babylon" operation, creative contests, conferences, meetings, etc. \n... Everyone will have a chance to become \na famous artist!'
+                                  'We want to allow artists to express \nand value their creative spirit. \n\nThroughout our journey, we will highlight artists belonging to the Sailor community through the mysterious "Babylon" operation, creative contests, conferences, meetings, etc. \n\n... Everyone will have a chance to become a famous artist!'
                                 }
                               </div>
                             </div>
@@ -260,7 +260,7 @@ function PlasmicVision__RenderFunc(props) {
                                 )}
                               >
                                 {
-                                  "Sailor wants to belong to the community, that's why he wanted to surrender himself \nin the web3. The community will decide together via a DAO the future \nof Sailor's story."
+                                  "Sailor wants to belong to the community, that's why he wanted to surrender himself \nin the web3. \n\nThe community will decide together via a DAO the future of Sailor's story."
                                 }
                               </div>
                             </div>

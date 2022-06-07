@@ -39,7 +39,7 @@
   height: 564px;
   display: block;
   position: absolute;
-  top: 219px;
+  top: 120px;
   left: 20px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -57,8 +57,8 @@
   line-height: 18px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 149px;
-  left: 110px;
+  top: -50px;
+  left: 66px;
   width: 215px;
   height: auto;
   background: #ffffff;
@@ -68,33 +68,34 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent {
     position: absolute;
-    left: 32px;
-    top: 68px;
+    left: 0px;
+    top: 0px;
     z-index: 4;
   }
 }
-.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore {
+.text {
   display: block;
   font-size: undefinedpx;
   text-transform: uppercase;
+  letter-spacing: 0em;
   line-height: 18px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 404px;
-  left: 449px;
-  width: 230px;
+  top: 328px;
+  left: 130px;
+  width: 224px;
   height: auto;
   background: #ffffff;
-  z-index: 1;
+  z-index: 6;
   padding: 8px;
   border-width: 2px;
   border-style: solid;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore {
+  .text {
+    left: 130px;
+    top: 328px;
     position: absolute;
-    left: 51px;
-    top: 1170px;
   }
 }
 .case22 {
@@ -103,7 +104,7 @@
   height: 277px;
   display: block;
   position: absolute;
-  top: 219px;
+  top: 122px;
   left: 413px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -119,8 +120,8 @@
   height: 288px;
   display: block;
   position: absolute;
-  top: 497px;
-  left: 410px;
+  top: 402px;
+  left: 416px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .case21 {
@@ -132,6 +133,30 @@
     display: none;
   }
 }
+.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 230px;
+  height: auto;
+  background: #ffffff;
+  z-index: 1;
+  padding: 8px;
+  border-width: 2px;
+  border-style: solid;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+}
 .phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2 {
   display: block;
   font-size: undefinedpx;
@@ -140,8 +165,8 @@
   line-height: 18px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 287px;
-  left: 851px;
+  top: 239px;
+  left: 834px;
   width: 350px;
   height: auto;
   background: #ffffff;
@@ -161,8 +186,8 @@
   position: absolute;
   object-fit: cover;
   max-width: 100%;
-  left: 800px;
-  top: 218px;
+  left: 806px;
+  top: 121px;
   z-index: 0;
 }
 .img > picture > img {
@@ -185,8 +210,8 @@
   height: 198px;
   display: block;
   position: absolute;
-  top: 122px;
-  left: 1049px;
+  top: 34px;
+  left: 1044px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .case25 {
@@ -203,39 +228,14 @@
   height: 288px;
   display: block;
   position: absolute;
-  top: 496px;
-  left: 1148px;
+  top: 402px;
+  left: 1149px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .case24 {
     position: absolute;
     left: 1148px;
     top: 496px;
-  }
-}
-.text {
-  display: block;
-  font-size: undefinedpx;
-  text-transform: uppercase;
-  letter-spacing: 0em;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 473px;
-  left: 149px;
-  width: 224px;
-  height: auto;
-  background: #ffffff;
-  z-index: 6;
-  padding: 8px;
-  border-width: 2px;
-  border-style: solid;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .text {
-    left: 149px;
-    top: 473px;
-    position: absolute;
   }
 }
 .footer:global(.__wab_instance) {

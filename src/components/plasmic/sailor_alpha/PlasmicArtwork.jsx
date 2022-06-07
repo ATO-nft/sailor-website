@@ -24,7 +24,6 @@ import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicArtwork.module.css"; // plasmic-import: YFLbf8Sj1U/css
-import titre1FFjsUvpvre from "./images/titre1.png"; // plasmic-import: fFJSUvpvre/picture
 import titre1PngHD0J16Vls from "./images/titre1Png.png"; // plasmic-import: hD0j16vls/picture
 import masque28DistkjdS from "./images/masque2.png"; // plasmic-import: 8distkjdS/picture
 import masque4Vat1SKpnd from "./images/masque4.png"; // plasmic-import: VAT1S_Kpnd/picture
@@ -77,7 +76,11 @@ function PlasmicArtwork__RenderFunc(props) {
           />
 
           <div className={classNames(projectcss.all, sty.freeBox___3SVom)}>
-            <div className={classNames(projectcss.all, sty.freeBox___1TSrX)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox___1TSrX)}
+            >
               <p.PlasmicImg
                 alt={""}
                 className={classNames(sty.img__eIpfC)}
@@ -89,7 +92,7 @@ function PlasmicArtwork__RenderFunc(props) {
                 displayWidth={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "80%"
-                    : "33%"
+                    : "80%"
                 }
                 loading={"lazy"}
                 src={
@@ -101,9 +104,9 @@ function PlasmicArtwork__RenderFunc(props) {
                         aspectRatio: undefined
                       }
                     : {
-                        src: titre1FFjsUvpvre,
-                        fullWidth: 1181,
-                        fullHeight: 1181,
+                        src: titre1PngHD0J16Vls,
+                        fullWidth: 431,
+                        fullHeight: 294,
                         aspectRatio: undefined
                       }
                 }
@@ -122,7 +125,7 @@ function PlasmicArtwork__RenderFunc(props) {
                   "“2020. Le monde s’est arrêté en sombrant dans une dictature sanitaire mondiale. Sailor est un marin solitaire parcourant le monde entier. Il est à la recherche de coins sauvages et tranquilles où il pourra s’évader dans les méandres de son imagination et s’abandonner à la poésie. Alors qu’il fuit “Babylone”, le coeur de l’humanité 2.0, il collectionne les petits boulots afin d’économiser et de se procurer un rafiot digne de concourir à sa grande échappée. Mais Dieu seul sait ce que son voyage lui réserve...”"
                 }
               </div>
-            </div>
+            </p.Stack>
 
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__pOlS1)}>
@@ -131,7 +134,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     data-plasmic-name={"slider"}
                     data-plasmic-override={overrides.slider}
                     adaptiveHeight={false}
+                    arrows={false}
                     className={classNames("__wab_instance", sty.slider)}
+                    dots={true}
                     slidesPerRow={2}
                   >
                     <p.PlasmicImg

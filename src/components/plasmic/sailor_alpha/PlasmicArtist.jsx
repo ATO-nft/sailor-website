@@ -23,7 +23,7 @@ import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicArtist.module.css"; // plasmic-import: 4T390JcXEt/css
-import sailor21Png24A5Q1FTz from "./images/sailor21Png.png"; // plasmic-import: 24A5q1fTZ/picture
+import sailorDark18PngXUXUumQo from "./images/sailorDark18Png.png"; // plasmic-import: xU-xUumQO/picture
 import stickers16Png9TwHWhtu from "./images/stickers16Png.png"; // plasmic-import: 9tw-HWhtu/picture
 import stickers12Png5RLjjTtzn from "./images/stickers12Png.png"; // plasmic-import: 5rLjjTTZN/picture
 import stickers14PngFD9Cie6Fx from "./images/stickers14Png.png"; // plasmic-import: fD9CIE6Fx/picture
@@ -63,6 +63,7 @@ function PlasmicArtist__RenderFunc(props) {
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
             className={classNames("__wab_instance", sty.header)}
+            light={true}
           />
 
           <div
@@ -70,33 +71,177 @@ function PlasmicArtist__RenderFunc(props) {
             data-plasmic-override={overrides.heroSection}
             className={classNames(projectcss.all, sty.heroSection)}
           >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__prq0R)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"auto"}
-              loading={"lazy"}
-              src={{
-                src: sailor21Png24A5Q1FTz,
-                fullWidth: 579,
-                fullHeight: 652,
-                aspectRatio: undefined
-              }}
-            />
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___2Wl24)}
+              >
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"rightColumn3"}
+                    data-plasmic-override={overrides.rightColumn3}
+                    className={classNames(projectcss.all, sty.rightColumn3)}
+                  >
+                    <a
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__jc0Hh
+                      )}
+                      href={"#childhood"}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___4HeT
+                        )}
+                      >
+                        {"Childhood & influence"}
+                      </div>
+                    </a>
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"rightColumn4"}
+                    data-plasmic-override={overrides.rightColumn4}
+                    className={classNames(projectcss.all, sty.rightColumn4)}
+                  >
+                    <a
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__k5Pt3
+                      )}
+                      href={"#art"}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__i6YoG
+                        )}
+                      >
+                        {"art  discovering"}
+                      </div>
+                    </a>
+                  </div>
+                ) : null}
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <div
+                data-plasmic-name={"centerElement"}
+                data-plasmic-override={overrides.centerElement}
+                className={classNames(projectcss.all, sty.centerElement)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__prq0R)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: sailorDark18PngXUXUumQo,
+                    fullWidth: 3751,
+                    fullHeight: 3962,
+                    aspectRatio: undefined
+                  }}
+                />
 
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__aw9UI
-              )}
-            >
-              {"Scroll"}
-            </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__aw9UI
+                  )}
+                >
+                  {"Scroll"}
+                </div>
+              </div>
+            ) : null}
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <div className={classNames(projectcss.all, sty.freeBox__qoG4)}>
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"rightColumn2"}
+                    data-plasmic-override={overrides.rightColumn2}
+                    className={classNames(projectcss.all, sty.rightColumn2)}
+                  >
+                    <a
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link___58K9U
+                      )}
+                      href={"#web"}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__wta5Z
+                        )}
+                      >
+                        {"WEB 3"}
+                      </div>
+                    </a>
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"rightColumn"}
+                    data-plasmic-override={overrides.rightColumn}
+                    className={classNames(projectcss.all, sty.rightColumn)}
+                  >
+                    <a
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__dqRfF
+                      )}
+                      href={"#dev"}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__qkLjq
+                        )}
+                      >
+                        {"art developpement"}
+                      </div>
+                    </a>
+                  </div>
+                ) : null}
+              </div>
+            ) : null}
           </div>
 
           {true ? (
@@ -117,6 +262,7 @@ function PlasmicArtist__RenderFunc(props) {
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__dDCi9)}
+                    id={"childhood"}
                   >
                     <h2
                       className={classNames(
@@ -199,6 +345,7 @@ function PlasmicArtist__RenderFunc(props) {
                     data-plasmic-override={overrides.text2}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.text2)}
+                    id={"art"}
                   >
                     <h2
                       className={classNames(
@@ -290,6 +437,7 @@ function PlasmicArtist__RenderFunc(props) {
                     data-plasmic-override={overrides.text3}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.text3)}
+                    id={"dev"}
                   >
                     <h2
                       className={classNames(
@@ -374,6 +522,7 @@ function PlasmicArtist__RenderFunc(props) {
                     data-plasmic-override={overrides.text4}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.text4)}
+                    id={"web"}
                   >
                     <h2
                       className={classNames(
@@ -465,6 +614,11 @@ const PlasmicDescendants = {
     "root",
     "header",
     "heroSection",
+    "rightColumn3",
+    "rightColumn4",
+    "centerElement",
+    "rightColumn2",
+    "rightColumn",
     "argumentSection",
     "childhood",
     "art",
@@ -476,7 +630,20 @@ const PlasmicDescendants = {
   ],
 
   header: ["header"],
-  heroSection: ["heroSection"],
+  heroSection: [
+    "heroSection",
+    "rightColumn3",
+    "rightColumn4",
+    "centerElement",
+    "rightColumn2",
+    "rightColumn"
+  ],
+
+  rightColumn3: ["rightColumn3"],
+  rightColumn4: ["rightColumn4"],
+  centerElement: ["centerElement"],
+  rightColumn2: ["rightColumn2"],
+  rightColumn: ["rightColumn"],
   argumentSection: [
     "argumentSection",
     "childhood",
@@ -527,6 +694,11 @@ export const PlasmicArtist = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     heroSection: makeNodeComponent("heroSection"),
+    rightColumn3: makeNodeComponent("rightColumn3"),
+    rightColumn4: makeNodeComponent("rightColumn4"),
+    centerElement: makeNodeComponent("centerElement"),
+    rightColumn2: makeNodeComponent("rightColumn2"),
+    rightColumn: makeNodeComponent("rightColumn"),
     argumentSection: makeNodeComponent("argumentSection"),
     childhood: makeNodeComponent("childhood"),
     art: makeNodeComponent("art"),

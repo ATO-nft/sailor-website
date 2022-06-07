@@ -51,65 +51,129 @@ function PlasmicHeader__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        sty.root
+        sty.root,
+        { [sty.rootlight]: hasVariant(variants, "light", "light") }
       )}
     >
       <NavigationBar
         data-plasmic-name={"navigationBar"}
         data-plasmic-override={overrides.navigationBar}
         brand={
-          <a
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              sty.link__itcKm,
-              {
-                [sty.linklight__itcKmBLk3V]: hasVariant(
-                  variants,
-                  "light",
-                  "light"
-                )
-              }
-            )}
-            href={"/"}
-          >
-            <p.PlasmicImg
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
-              alt={""}
-              className={classNames(sty.img, {
-                [sty.imglight]: hasVariant(variants, "light", "light")
-              })}
-              displayHeight={"40px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"none"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"auto"}
-              src={
-                hasVariant(variants, "light", "light")
-                  ? {
-                      src: logoWhitepngLJoWiw4Hh,
-                      fullWidth: 125,
-                      fullHeight: 46,
-                      aspectRatio: undefined
+          <React.Fragment>
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__itcKm,
+                {
+                  [sty.linklight__itcKmBLk3V]: hasVariant(
+                    variants,
+                    "light",
+                    "light"
+                  )
+                }
+              )}
+              href={"/"}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__mQ91N, {
+                  [sty.imglight__mQ91NBLk3V]: hasVariant(
+                    variants,
+                    "light",
+                    "light"
+                  )
+                })}
+                displayHeight={"40px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={
+                  hasVariant(variants, "light", "light")
+                    ? {
+                        src: signat101Rr4KQb0BZ,
+                        fullWidth: 2813,
+                        fullHeight: 780,
+                        aspectRatio: undefined
+                      }
+                    : hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? {
+                        src: signat101Rr4KQb0BZ,
+                        fullWidth: 2813,
+                        fullHeight: 780,
+                        aspectRatio: undefined
+                      }
+                    : {
+                        src: signat101Rr4KQb0BZ,
+                        fullWidth: 2813,
+                        fullHeight: 780,
+                        aspectRatio: undefined
+                      }
+                }
+              />
+            </a>
+
+            {(hasVariant(variants, "light", "light") ? true : false) ? (
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__rHjKa,
+                  {
+                    [sty.linklight__rHjKabLk3V]: hasVariant(
+                      variants,
+                      "light",
+                      "light"
+                    )
+                  }
+                )}
+                href={"/"}
+              >
+                {(hasVariant(variants, "light", "light") ? true : true) ? (
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__ayRbm, {
+                      [sty.imglight__ayRbmbLk3V]: hasVariant(
+                        variants,
+                        "light",
+                        "light"
+                      )
+                    })}
+                    displayHeight={"40px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    src={
+                      hasVariant(variants, "light", "light")
+                        ? {
+                            src: logoWhitepngLJoWiw4Hh,
+                            fullWidth: 125,
+                            fullHeight: 46,
+                            aspectRatio: undefined
+                          }
+                        : hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? {
+                            src: signat101Rr4KQb0BZ,
+                            fullWidth: 2813,
+                            fullHeight: 780,
+                            aspectRatio: undefined
+                          }
+                        : {
+                            src: signat101Rr4KQb0BZ,
+                            fullWidth: 2813,
+                            fullHeight: 780,
+                            aspectRatio: undefined
+                          }
                     }
-                  : hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? {
-                      src: signat101Rr4KQb0BZ,
-                      fullWidth: 2813,
-                      fullHeight: 780,
-                      aspectRatio: undefined
-                    }
-                  : {
-                      src: signat101Rr4KQb0BZ,
-                      fullWidth: 2813,
-                      fullHeight: 780,
-                      aspectRatio: undefined
-                    }
-              }
-            />
-          </a>
+                  />
+                ) : null}
+              </a>
+            ) : null}
+          </React.Fragment>
         }
         className={classNames("__wab_instance", sty.navigationBar, {
           [sty.navigationBarlight]: hasVariant(variants, "light", "light")
@@ -151,9 +215,20 @@ function PlasmicHeader__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link___70Kzq
+                      sty.link__p31H1,
+                      {
+                        [sty.linklight__p31H1BLk3V]: hasVariant(
+                          variants,
+                          "light",
+                          "light"
+                        )
+                      }
                     )}
-                    href={"/gallery"}
+                    href={
+                      hasVariant(variants, "light", "light")
+                        ? "/gallery"
+                        : "/artist"
+                    }
                   >
                     {"GALLERY"}
                   </a>
@@ -163,7 +238,14 @@ function PlasmicHeader__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__p31H1
+                      sty.link__gWQk8,
+                      {
+                        [sty.linklight__gWQk8BLk3V]: hasVariant(
+                          variants,
+                          "light",
+                          "light"
+                        )
+                      }
                     )}
                     href={"/artist"}
                   >
@@ -175,7 +257,14 @@ function PlasmicHeader__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__u03Ge
+                      sty.link__u03Ge,
+                      {
+                        [sty.linklight__u03GeBLk3V]: hasVariant(
+                          variants,
+                          "light",
+                          "light"
+                        )
+                      }
                     )}
                     href={"/artwork"}
                   >
@@ -187,7 +276,14 @@ function PlasmicHeader__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__bFdFf
+                      sty.link__bFdFf,
+                      {
+                        [sty.linklight__bFdFfbLk3V]: hasVariant(
+                          variants,
+                          "light",
+                          "light"
+                        )
+                      }
                     )}
                     href={"/vision"}
                   >
@@ -199,7 +295,14 @@ function PlasmicHeader__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link__qbgp
+                      sty.link__qbgp,
+                      {
+                        [sty.linklight__qbgpBLk3V]: hasVariant(
+                          variants,
+                          "light",
+                          "light"
+                        )
+                      }
                     )}
                     href={"/roadmap"}
                   >
@@ -244,9 +347,8 @@ function PlasmicHeader__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navigationBar", "img", "freeBox", "menuCont"],
-  navigationBar: ["navigationBar", "img", "freeBox", "menuCont"],
-  img: ["img"],
+  root: ["root", "navigationBar", "freeBox", "menuCont"],
+  navigationBar: ["navigationBar", "freeBox", "menuCont"],
   freeBox: ["freeBox", "menuCont"],
   menuCont: ["menuCont"]
 };
@@ -281,7 +383,6 @@ export const PlasmicHeader = Object.assign(
   {
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
-    img: makeNodeComponent("img"),
     freeBox: makeNodeComponent("freeBox"),
     menuCont: makeNodeComponent("menuCont"),
     // Metadata about props expected for PlasmicHeader

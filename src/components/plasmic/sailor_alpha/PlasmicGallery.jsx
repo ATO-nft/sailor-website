@@ -85,7 +85,7 @@ function PlasmicGallery__RenderFunc(props) {
               <div
                 data-plasmic-name={"scroll"}
                 data-plasmic-override={overrides.scroll}
-                className={classNames(projectcss.all, sty.scroll)}
+                className={classNames(projectcss.all, sty.scroll, "scrollbar")}
               >
                 <div
                   data-plasmic-name={"freeBox"}

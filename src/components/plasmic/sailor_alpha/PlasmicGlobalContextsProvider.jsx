@@ -5,9 +5,10 @@
 // Plasmic Project: 6tP4H2YXq73abyMEePhpsf
 import * as React from "react";
 import { ParallaxProviderWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: L6MfauX2Cw/codeComponent
+import { EmbedCss } from "@plasmicpkgs/plasmic-embed-css"; // plasmic-import: qF0uJxFztB/codeComponent
 
 export default function GlobalContextsProvider(props) {
-  const { children, parallaxProviderWrapperProps } = props;
+  const { children, parallaxProviderWrapperProps, embedCssProps } = props;
   return (
     <ParallaxProviderWrapper
       {...parallaxProviderWrapperProps}
@@ -18,7 +19,16 @@ export default function GlobalContextsProvider(props) {
           : undefined
       }
     >
-      {children}
+      <EmbedCss
+        {...embedCssProps}
+        css={
+          embedCssProps && "css" in embedCssProps
+            ? embedCssProps.css
+            : "/* total width */\r\n.scrollbar::-webkit-scrollbar {\r\n    background-color: black;\r\n    width:16px\r\n}\r\n\r\n/* background of the scrollbar except button or resizer */\r\n.scrollbar::-webkit-scrollbar-track {\r\n    background-color:black;\r\n}\r\n.scrollbar::-webkit-scrollbar-track:hover {\r\n    background-color:black\r\n}\r\n\r\n/* scrollbar itself */\r\n.scrollbar::-webkit-scrollbar-thumb {\r\n    background-color:#babac0;\r\n    border-radius:16px;\r\n    border:0px solid #fff\r\n}\r\n.scrollbar::-webkit-scrollbar-thumb:hover {\r\n    background-color:#a0a0a5;\r\n    border:0px solid #f4f4f4\r\n}\r\n\r\n/* set button(top and bottom of the scrollbar) */\r\n.scrollbar::-webkit-scrollbar-button {display:none}"
+        }
+      >
+        {children}
+      </EmbedCss>
     </ParallaxProviderWrapper>
   );
 }

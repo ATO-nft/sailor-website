@@ -6,6 +6,7 @@
     "@plasmicapp/cli": "^0.1.178",
     "@plasmicapp/host": "^1.0.45",
     "@plasmicapp/react-web": "^0.2.97",
+    "@plasmicpkgs/plasmic-embed-css": "^0.1.38",
     "@plasmicpkgs/plasmic-nav": "^0.0.17",
     "@plasmicpkgs/react-scroll-parallax": "^0.0.52",
     "@testing-library/jest-dom": "^5.16.4",

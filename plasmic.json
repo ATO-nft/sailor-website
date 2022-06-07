@@ -225,6 +225,19 @@
           "cssFilePath": "plasmic/sailor_alpha/PlasmicGallery.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "fIaP1xlSwQ",
+          "name": "MenuButton",
+          "type": "managed",
+          "projectId": "6tP4H2YXq73abyMEePhpsf",
+          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicMenuButton.jsx",
+          "importSpec": {
+            "modulePath": "MenuButton.jsx"
+          },
+          "cssFilePath": "plasmic/sailor_alpha/PlasmicMenuButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -859,6 +872,36 @@
           "id": "kqxWtBJnPK",
           "name": "masque 18",
           "filePath": "plasmic/sailor_alpha/images/masque18.png"
+        },
+        {
+          "id": "lS-lHGdLA",
+          "name": "left-cut-1.png",
+          "filePath": "plasmic/sailor_alpha/images/leftCut1Png.png"
+        },
+        {
+          "id": "noMSwuDAS",
+          "name": "left-cut-2.png",
+          "filePath": "plasmic/sailor_alpha/images/leftCut2Png.png"
+        },
+        {
+          "id": "tI4BcQXEx",
+          "name": "right-cut-1.png",
+          "filePath": "plasmic/sailor_alpha/images/rightCut1Png.png"
+        },
+        {
+          "id": "TdLT2I_xr",
+          "name": "right-cut-2.png",
+          "filePath": "plasmic/sailor_alpha/images/rightCut2Png.png"
+        },
+        {
+          "id": "C2jU6ChDk",
+          "name": "menu-bg-1.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg1Svg.svg"
+        },
+        {
+          "id": "xU-xUumQO",
+          "name": "sailor dark-18.png",
+          "filePath": "plasmic/sailor_alpha/images/sailorDark18Png.png"
         }
       ],
       "indirect": false,
@@ -929,6 +972,25 @@
         }
       ],
       "jsBundleThemes": []
+    },
+    {
+      "projectId": "8PtdGodUbexNYgkuyBUcWu",
+      "projectApiToken": "34o5R5KswluuZ4sD83F88oQrcLWsNNeUpCptQ8Okf4hYqgjnHnX2idGAlhtB7WWQQelNAInf5XFazR1cGw",
+      "projectName": "plasmic-embed-css",
+      "version": "3.0.3",
+      "cssFilePath": "plasmic/plasmic_embed_css/plasmic_plasmic_embed_css.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_embed_css/PlasmicGlobalContextsProvider.jsx",
+      "codeComponents": [
+        {
+          "id": "qF0uJxFztB",
+          "name": "EmbedCss",
+          "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
+        }
+      ]
     }
   ],
   "globalVariants": {
