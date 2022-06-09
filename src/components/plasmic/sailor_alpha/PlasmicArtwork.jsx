@@ -149,8 +149,11 @@ function PlasmicArtwork__RenderFunc(props) {
                     arrows={false}
                     autoplay={true}
                     autoplaySpeed={2500}
+                    centerMode={false}
+                    centerPadding={""}
                     className={classNames("__wab_instance", sty.slider)}
                     dots={false}
+                    pauseOnHover={false}
                     slidesPerRow={1}
                   >
                     <p.PlasmicImg

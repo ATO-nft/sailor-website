@@ -142,6 +142,7 @@
   max-width: 100%;
   flex-direction: column;
   position: relative;
+  align-self: center;
   min-width: 0;
 }
 .img__yANqc {
