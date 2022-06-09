@@ -9,6 +9,7 @@
 // Plasmic Project: 6tP4H2YXq73abyMEePhpsf
 // Component: nhj0lG9b9L
 import * as React from "react";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -32,6 +33,7 @@ function PlasmicSailorFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultSailorFooter__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <div
       data-plasmic-name={"root"}

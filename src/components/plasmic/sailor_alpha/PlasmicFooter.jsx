@@ -9,6 +9,7 @@
 // Plasmic Project: 6tP4H2YXq73abyMEePhpsf
 // Component: w_pxODdXjgL
 import * as React from "react";
+import * as ph from "@plasmicapp/host";
 import {
   hasVariant,
   classNames,
@@ -46,6 +47,7 @@ function PlasmicFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultFooter__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });

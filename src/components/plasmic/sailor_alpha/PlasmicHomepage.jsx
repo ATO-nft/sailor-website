@@ -10,6 +10,7 @@
 // Component: _5wgUA_BX3
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -33,6 +34,7 @@ function PlasmicHomepage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultHomepage__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>

@@ -9,6 +9,7 @@
 // Plasmic Project: 6tP4H2YXq73abyMEePhpsf
 // Component: kmIJQ5z3TF
 import * as React from "react";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -32,6 +33,7 @@ function PlasmicMint__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultMint__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>

@@ -201,19 +201,6 @@
           "componentType": "component"
         },
         {
-          "id": "CFz-I9uXMp",
-          "name": "GalleryLegacy",
-          "type": "managed",
-          "projectId": "6tP4H2YXq73abyMEePhpsf",
-          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicGalleryLegacy.jsx",
-          "importSpec": {
-            "modulePath": "GalleryLegacy.jsx"
-          },
-          "cssFilePath": "plasmic/sailor_alpha/PlasmicGalleryLegacy.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "PXpi17MlSes",
           "name": "Gallery",
           "type": "managed",
@@ -902,6 +889,116 @@
           "id": "xU-xUumQO",
           "name": "sailor dark-18.png",
           "filePath": "plasmic/sailor_alpha/images/sailorDark18Png.png"
+        },
+        {
+          "id": "TjzWwXVKT",
+          "name": "Image14.png",
+          "filePath": "plasmic/sailor_alpha/images/image14Png.png"
+        },
+        {
+          "id": "G5MfMh3xI",
+          "name": "Sailor-trouble.jpg",
+          "filePath": "plasmic/sailor_alpha/images/sailorTroublejpg.jpeg"
+        },
+        {
+          "id": "g14Ye9YP5",
+          "name": "Image11.png",
+          "filePath": "plasmic/sailor_alpha/images/image11Png.png"
+        },
+        {
+          "id": "Gg27tottA",
+          "name": "Page-12.jpg",
+          "filePath": "plasmic/sailor_alpha/images/page12Jpg.jpeg"
+        },
+        {
+          "id": "E7vRWfuP9",
+          "name": "La-patate.jpg",
+          "filePath": "plasmic/sailor_alpha/images/laPatatejpg.jpeg"
+        },
+        {
+          "id": "HlsrFpP2m",
+          "name": "Capture-decran-2021-08-25-a-17.08.25.png",
+          "filePath": "plasmic/sailor_alpha/images/captureDecran20210825A170825Png.png"
+        },
+        {
+          "id": "Upvt-SULz",
+          "name": "Page-18.jpg",
+          "filePath": "plasmic/sailor_alpha/images/page18Jpg.jpeg"
+        },
+        {
+          "id": "6pQHw6MhR",
+          "name": "Page-8.jpg",
+          "filePath": "plasmic/sailor_alpha/images/page8Jpg.jpeg"
+        },
+        {
+          "id": "1H9rvUht_",
+          "name": "Photo---Ferdinand-Feys-Quai-de-loise.jpg",
+          "filePath": "plasmic/sailor_alpha/images/photoFerdinandFeysQuaiDeLoisejpg.jpeg"
+        },
+        {
+          "id": "aS-dpzYnj",
+          "name": "Mother-toile.jpg",
+          "filePath": "plasmic/sailor_alpha/images/motherToilejpg.jpeg"
+        },
+        {
+          "id": "ObhFNKjS4",
+          "name": "IMG_2589.jpg",
+          "filePath": "plasmic/sailor_alpha/images/img2589Jpg.jpeg"
+        },
+        {
+          "id": "JdgTiYVIm",
+          "name": "IMG_2581.jpg",
+          "filePath": "plasmic/sailor_alpha/images/img2581Jpg.jpeg"
+        },
+        {
+          "id": "hN9-rv1J8",
+          "name": "IMG_2604.jpg",
+          "filePath": "plasmic/sailor_alpha/images/img2604Jpg.jpeg"
+        },
+        {
+          "id": "2R7Ik2ffF",
+          "name": "Try-450.jpg",
+          "filePath": "plasmic/sailor_alpha/images/try450Jpg.jpeg"
+        },
+        {
+          "id": "81IXWkrMW",
+          "name": "Image9.png",
+          "filePath": "plasmic/sailor_alpha/images/image9Png.png"
+        },
+        {
+          "id": "gdr0gJffm",
+          "name": "Miami-1.jpg",
+          "filePath": "plasmic/sailor_alpha/images/miami1Jpg.jpeg"
+        },
+        {
+          "id": "nxvjeLtw8",
+          "name": "Capture-decran-2021-09-10-a-17.09.54.png",
+          "filePath": "plasmic/sailor_alpha/images/captureDecran20210910A170954Png.png"
+        },
+        {
+          "id": "KRRAaQaoS",
+          "name": "Image13.png",
+          "filePath": "plasmic/sailor_alpha/images/image13Png.png"
+        },
+        {
+          "id": "IMooqA6gr",
+          "name": "51517fe6e0dee21421a2ba4f2836c66661d3b49d-lg.jpg",
+          "filePath": "plasmic/sailor_alpha/images/_51517Fe6E0Dee21421A2Ba4F2836C66661D3B49DLgjpg.jpeg"
+        },
+        {
+          "id": "NFDUr92yf",
+          "name": "Mise-a-l-epreuve-copie.jpg",
+          "filePath": "plasmic/sailor_alpha/images/miseALEpreuveCopiejpg.jpeg"
+        },
+        {
+          "id": "zbeYTs7Rz",
+          "name": "Capture-decran-2021-09-10-a-17.06.11.png",
+          "filePath": "plasmic/sailor_alpha/images/captureDecran20210910A170611Png.png"
+        },
+        {
+          "id": "VQdxlRBNe",
+          "name": "Renaissance.jpg",
+          "filePath": "plasmic/sailor_alpha/images/renaissancejpg.jpeg"
         }
       ],
       "indirect": false,
@@ -990,7 +1087,8 @@
           "name": "EmbedCss",
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
@@ -1010,6 +1108,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.178",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.178/dist/plasmic.schema.json"
+  "cliVersion": "0.1.180",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.180/dist/plasmic.schema.json"
 }

@@ -10,6 +10,7 @@
 // Component: PXpi17MlSes
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -46,6 +47,7 @@ function PlasmicGallery__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultGallery__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });
@@ -412,7 +414,7 @@ function PlasmicGallery__RenderFunc(props) {
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
-                  loading={"lazy"}
+                  loading={"eager"}
                   src={{
                     src: nft3I4UYce1FlU1,
                     fullWidth: 1181,

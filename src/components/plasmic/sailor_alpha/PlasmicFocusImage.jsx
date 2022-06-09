@@ -10,6 +10,7 @@
 // Component: OYpuIb6c8w
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -30,6 +31,7 @@ function PlasmicFocusImage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultFocusImage__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <p.PlasmicImg
       data-plasmic-name={"root"}
