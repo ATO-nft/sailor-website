@@ -1047,8 +1047,7 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -1098,16 +1097,10 @@
         "name": "Screen",
         "projectId": "6tP4H2YXq73abyMEePhpsf",
         "contextFilePath": "plasmic/sailor_alpha/PlasmicGlobalVariant__Screen.jsx"
-      },
-      {
-        "id": "QvtMAh6IevC",
-        "name": "Screen",
-        "projectId": "r3ASNrnyvLLLAtDvzUioQ",
-        "contextFilePath": "plasmic/react_slick/PlasmicGlobalVariant__Screen.jsx"
       }
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.180",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.180/dist/plasmic.schema.json"
+  "cliVersion": "0.1.182",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.182/dist/plasmic.schema.json"
 }

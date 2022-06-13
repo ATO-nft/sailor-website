@@ -32,9 +32,8 @@
   .freeBox___3SVom {
     display: flex;
     flex-direction: column;
-    padding-top: var(--token-l01UNgJZS);
-    padding-bottom: var(--token-l01UNgJZS);
     flex-column-gap: 0px;
+    padding: var(--token-l01UNgJZS) 0px;
   }
 }
 .freeBox___1TSrX {
