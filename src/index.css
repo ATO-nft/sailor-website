@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "marydale";
+  font-family: "Marydale";
   src: url("./components/Marydale.ttf") format("ttf");
  }
 
 body {
   margin: 0;
-  font-family: marydale, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Marydale, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     ;
   -webkit-font-smoothing: antialiased;
@@ -13,6 +13,6 @@ body {
 }
 
 code {
-  font-family: 'marydale', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  marydale;
+  font-family: 'Marydale', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  Marydale;
 }
