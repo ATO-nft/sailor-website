@@ -587,7 +587,7 @@ function PlasmicArtist__RenderFunc(props) {
                               )}
                             >
                               {
-                                'So I asked myself how to keep a unique touch while playing the game of the collection?\n I wanted to create several portraits of my emblematic character "Sailor the sailor" \nby depicting him in the most natural way possible: with the brush tool; while using the digital tool that gives him a "collectible" dimension in NFT. Each work is unique and can find its physical double in my studio.'
+                                'So I asked myself how to keep a unique touch while playing the game of the collection?\nI wanted to create several portraits of my emblematic character "Sailor the sailor" \nby depicting him in the most natural way possible: with the brush tool; while using the digital tool that gives him a "collectible" dimension in NFT. Each work is unique and can find its physical double in my studio.'
                               }
                             </div>
                           </p.Stack>

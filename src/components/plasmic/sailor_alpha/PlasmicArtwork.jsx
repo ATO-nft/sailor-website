@@ -85,6 +85,7 @@ function PlasmicArtwork__RenderFunc(props) {
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
             className={classNames("__wab_instance", sty.header)}
+            light={true}
           />
 
           <div className={classNames(projectcss.all, sty.freeBox___3SVom)}>
@@ -164,7 +165,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: image14PngTjzWwXvkt,
@@ -182,7 +187,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: sailorTroublejpgG5MfMh3XI,
@@ -200,7 +209,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: image11PngG14Ye9Yp5,
@@ -218,7 +231,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: page12JpgGg27TottA,
@@ -236,7 +253,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: laPatatejpgE7VRWfuP9,
@@ -254,7 +275,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: captureDecran20210825A170825PngHlsrFpP2M,
@@ -272,7 +297,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: page18JpgUpvtSuLz,
@@ -290,7 +319,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: page8Jpg6PQHw6MhR,
@@ -308,7 +341,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: photoFerdinandFeysQuaiDeLoisejpg1H9RvUht,
@@ -326,7 +363,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: motherToilejpgASDpzYnj,
@@ -344,7 +385,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: img2589JpgObhFnKjS4,
@@ -362,7 +407,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: img2581JpgJdgTiYvIm,
@@ -380,7 +429,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: img2604JpgHN9Rv1J8,
@@ -398,7 +451,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: try450Jpg2R7Ik2FfF,
@@ -416,7 +473,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: image9Png81IxWkrMw,
@@ -434,7 +495,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: miami1JpgGdr0GJffm,
@@ -452,7 +517,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: captureDecran20210910A170954PngNxvjeLtw8,
@@ -470,7 +539,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: image13PngKrrAaQaoS,
@@ -488,7 +561,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: _51517Fe6E0Dee21421A2Ba4F2836C66661D3B49DLgjpgIMooqA6Gr,
@@ -506,7 +583,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: miseALEpreuveCopiejpgNfdUr92Yf,
@@ -524,7 +605,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: captureDecran20210910A170611PngZbeYTs7Rz,
@@ -542,7 +627,11 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"50%"}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "100%"
+                          : "50%"
+                      }
                       loading={"lazy"}
                       src={{
                         src: renaissancejpgVQdxlRbNe,

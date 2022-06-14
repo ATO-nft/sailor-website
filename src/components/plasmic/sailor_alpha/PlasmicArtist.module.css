@@ -367,7 +367,7 @@
   position: relative;
   width: auto;
   height: auto;
-  max-width: 60%;
+  max-width: 75%;
   margin-top: calc(0px + 61px) !important;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -548,7 +548,7 @@
   position: relative;
   width: auto;
   height: auto;
-  max-width: 60%;
+  max-width: 75%;
   padding-right: 10%;
   margin: 0px;
 }
@@ -698,7 +698,7 @@
   position: relative;
   width: auto;
   height: auto;
-  max-width: 60%;
+  max-width: 75%;
   padding-right: 10%;
   margin: 0px;
 }
@@ -843,7 +843,7 @@
   position: relative;
   width: auto;
   height: auto;
-  max-width: 60%;
+  max-width: 75%;
   padding-right: 10%;
   margin: 0px;
 }

@@ -93,20 +93,32 @@
   min-width: 0;
   padding: 8px;
 }
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 462px;
+  height: auto;
+  max-width: 100%;
+  padding: 8px;
+}
 .text__t75Qm {
   width: 100%;
   height: auto;
   text-align: center;
   color: var(--token-XhAnDcyiC);
+  padding-left: 8px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__t75Qm {
     text-align: left;
+    padding-left: 0px;
   }
 }
 .sailor {
-  position: relative;
   object-fit: cover;
   max-width: 100%;
 }

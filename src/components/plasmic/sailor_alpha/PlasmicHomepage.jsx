@@ -56,6 +56,7 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
             className={classNames("__wab_instance", sty.header)}
+            light={true}
           />
 
           <div
@@ -76,37 +77,45 @@ function PlasmicHomepage__RenderFunc(props) {
                   data-plasmic-override={overrides.textContainer}
                   className={classNames(projectcss.all, sty.textContainer)}
                 >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__t75Qm
-                    )}
-                  >
-                    {
-                      "From the streets to the blockchain : \nthe journey of the"
-                    }
-                  </div>
+                  {true ? (
+                    <div
+                      data-plasmic-name={"freeBox"}
+                      data-plasmic-override={overrides.freeBox}
+                      className={classNames(projectcss.all, sty.freeBox)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__t75Qm
+                        )}
+                      >
+                        {
+                          "From the streets to the blockchain: \nthe journey of the"
+                        }
+                      </div>
 
-                  <p.PlasmicImg
-                    data-plasmic-name={"sailor"}
-                    data-plasmic-override={overrides.sailor}
-                    alt={""}
-                    className={classNames(sty.sailor)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: titre1PngHD0J16Vls,
-                      fullWidth: 431,
-                      fullHeight: 294,
-                      aspectRatio: undefined
-                    }}
-                  />
+                      <p.PlasmicImg
+                        data-plasmic-name={"sailor"}
+                        data-plasmic-override={overrides.sailor}
+                        alt={""}
+                        className={classNames(sty.sailor)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: titre1PngHD0J16Vls,
+                          fullWidth: 431,
+                          fullHeight: 294,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
+                  ) : null}
 
                   <div
                     className={classNames(
@@ -149,15 +158,25 @@ const PlasmicDescendants = {
     "heroSection",
     "container",
     "textContainer",
+    "freeBox",
     "sailor",
     "cta",
     "footer"
   ],
 
   header: ["header"],
-  heroSection: ["heroSection", "container", "textContainer", "sailor", "cta"],
-  container: ["container", "textContainer", "sailor", "cta"],
-  textContainer: ["textContainer", "sailor"],
+  heroSection: [
+    "heroSection",
+    "container",
+    "textContainer",
+    "freeBox",
+    "sailor",
+    "cta"
+  ],
+
+  container: ["container", "textContainer", "freeBox", "sailor", "cta"],
+  textContainer: ["textContainer", "freeBox", "sailor"],
+  freeBox: ["freeBox", "sailor"],
   sailor: ["sailor"],
   cta: ["cta"],
   footer: ["footer"]
@@ -196,6 +215,7 @@ export const PlasmicHomepage = Object.assign(
     heroSection: makeNodeComponent("heroSection"),
     container: makeNodeComponent("container"),
     textContainer: makeNodeComponent("textContainer"),
+    freeBox: makeNodeComponent("freeBox"),
     sailor: makeNodeComponent("sailor"),
     cta: makeNodeComponent("cta"),
     footer: makeNodeComponent("footer"),
