@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Marydale";
-  src: url("./components/Marydale.ttf") format("ttf");
+  src: url("./components/Marydale.ttf") format("truetype");
  }
 
 body {
