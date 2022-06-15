@@ -143,6 +143,7 @@
   flex-direction: column;
   position: relative;
   align-self: center;
+  max-height: none;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
