@@ -225,19 +225,6 @@
           "cssFilePath": "plasmic/sailor_alpha/PlasmicMenuButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "9ykw7nb6Sf",
-          "name": "Vision2",
-          "type": "managed",
-          "projectId": "6tP4H2YXq73abyMEePhpsf",
-          "renderModuleFilePath": "plasmic/sailor_alpha/PlasmicVision2.jsx",
-          "importSpec": {
-            "modulePath": "Vision2.jsx"
-          },
-          "cssFilePath": "plasmic/sailor_alpha/PlasmicVision2.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
         }
       ],
       "icons": [

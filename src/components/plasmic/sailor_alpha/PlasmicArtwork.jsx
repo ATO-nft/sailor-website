@@ -168,7 +168,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -190,7 +190,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -212,7 +212,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -234,7 +234,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -256,7 +256,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -278,7 +278,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -300,7 +300,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -322,7 +322,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -344,7 +344,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -366,7 +366,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -388,7 +388,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -410,7 +410,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -432,7 +432,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -454,7 +454,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -476,7 +476,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -498,7 +498,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -520,7 +520,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -542,7 +542,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -564,7 +564,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -586,7 +586,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -608,7 +608,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
@@ -630,7 +630,7 @@ function PlasmicArtwork__RenderFunc(props) {
                       displayWidth={
                         hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "100%"
-                          : "50%"
+                          : "100%"
                       }
                       loading={"lazy"}
                       src={{
