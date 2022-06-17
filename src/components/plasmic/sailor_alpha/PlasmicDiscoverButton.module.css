@@ -101,7 +101,7 @@
   padding-right: 16px;
 }
 .root:hover {
-  background: #282826;
+  background: var(--token-PvYYAX3xE);
 }
 .rootcolor_green:hover {
   background: #3cb179;

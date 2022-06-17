@@ -25,7 +25,6 @@ import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicArtwork.module.css"; // plasmic-import: YFLbf8Sj1U/css
-import titre1PngHD0J16Vls from "./images/titre1Png.png"; // plasmic-import: hD0j16vls/picture
 import image14PngTjzWwXvkt from "./images/image14Png.png"; // plasmic-import: TjzWwXVKT/picture
 import sailorTroublejpgG5MfMh3XI from "./images/sailorTroublejpg.jpeg"; // plasmic-import: G5MfMh3xI/picture
 import image11PngG14Ye9Yp5 from "./images/image11Png.png"; // plasmic-import: g14Ye9YP5/picture
@@ -48,6 +47,7 @@ import _51517Fe6E0Dee21421A2Ba4F2836C66661D3B49DLgjpgIMooqA6Gr from "./images/_5
 import miseALEpreuveCopiejpgNfdUr92Yf from "./images/miseALEpreuveCopiejpg.jpeg"; // plasmic-import: NFDUr92yf/picture
 import captureDecran20210910A170611PngZbeYTs7Rz from "./images/captureDecran20210910A170611Png.png"; // plasmic-import: zbeYTs7Rz/picture
 import renaissancejpgVQdxlRbNe from "./images/renaissancejpg.jpeg"; // plasmic-import: VQdxlRBNe/picture
+import titre1PngHD0J16Vls from "./images/titre1Png.png"; // plasmic-import: hD0j16vls/picture
 
 export const PlasmicArtwork__VariantProps = new Array();
 
@@ -89,66 +89,15 @@ function PlasmicArtwork__RenderFunc(props) {
           />
 
           <div className={classNames(projectcss.all, sty.freeBox___3SVom)}>
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___1TSrX)}
-            >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__eIpfC)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "80%"
-                    : "80%"
-                }
-                loading={"lazy"}
-                src={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? {
-                        src: titre1PngHD0J16Vls,
-                        fullWidth: 431,
-                        fullHeight: 294,
-                        aspectRatio: undefined
-                      }
-                    : {
-                        src: titre1PngHD0J16Vls,
-                        fullWidth: 431,
-                        fullHeight: 294,
-                        aspectRatio: undefined
-                      }
-                }
-              />
-
-              <div
-                data-plasmic-name={"text"}
-                data-plasmic-override={overrides.text}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text
-                )}
-              >
-                {
-                  "“2020. Le monde s’est arrêté en sombrant dans une dictature sanitaire mondiale. Sailor est un marin solitaire parcourant le monde entier. Il est à la recherche de coins sauvages et tranquilles où il pourra s’évader dans les méandres de son imagination et s’abandonner à la poésie. Alors qu’il fuit “Babylone”, le coeur de l’humanité 2.0, il collectionne les petits boulots afin d’économiser et de se procurer un rafiot digne de concourir à sa grande échappée. Mais Dieu seul sait ce que son voyage lui réserve...”"
-                }
-              </div>
-            </p.Stack>
-
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__pOlS1)}>
                 <div className={classNames(projectcss.all, sty.freeBox__y805G)}>
                   <Slider
                     data-plasmic-name={"slider"}
                     data-plasmic-override={overrides.slider}
-                    adaptiveHeight={true}
+                    adaptiveHeight={false}
                     arrows={false}
-                    autoplay={true}
+                    autoplay={false}
                     autoplaySpeed={2500}
                     centerMode={false}
                     centerPadding={""}
@@ -160,9 +109,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__yANqc)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -182,9 +131,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__hpsri)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -204,9 +153,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__aBVq)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -226,9 +175,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__zjXnS)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -248,9 +197,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img___0Stz)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -270,9 +219,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__weMu4)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -292,9 +241,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__qr82F)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -314,9 +263,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__ffX1M)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -336,9 +285,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__ybOjv)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -358,9 +307,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__zzM8W)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -380,9 +329,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__u7Gb)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -402,9 +351,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__pS5L)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -424,9 +373,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__xtpLn)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -446,9 +395,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__tavsQ)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -468,9 +417,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__k9Ds)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -490,9 +439,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__ndauC)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -512,9 +461,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img___2ZofI)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -534,9 +483,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__kReEu)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -556,9 +505,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__xRqoN)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -578,9 +527,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__f4GE)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -600,9 +549,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__l0Bra)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -622,9 +571,9 @@ function PlasmicArtwork__RenderFunc(props) {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__lGfIz)}
-                      displayHeight={"auto"}
+                      displayHeight={"100%"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
+                      displayMaxWidth={"none"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
@@ -642,6 +591,57 @@ function PlasmicArtwork__RenderFunc(props) {
                     />
                   </Slider>
                 </div>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___1TSrX)}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__eIpfC)}
+                    displayHeight={"113px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "80%"
+                        : "57.45%"
+                    }
+                    loading={"lazy"}
+                    src={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? {
+                            src: titre1PngHD0J16Vls,
+                            fullWidth: 431,
+                            fullHeight: 294,
+                            aspectRatio: undefined
+                          }
+                        : {
+                            src: titre1PngHD0J16Vls,
+                            fullWidth: 431,
+                            fullHeight: 294,
+                            aspectRatio: undefined
+                          }
+                    }
+                  />
+
+                  <div
+                    data-plasmic-name={"text"}
+                    data-plasmic-override={overrides.text}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text
+                    )}
+                  >
+                    {
+                      '"2020. The world has come to a halt by sinking into a global health crisis dictatorship.\nSailor is a lonely sailor traveling the world. He is looking for wild, quiet places where he can escape into the wilds of his imagination and indulge in poetry. As he flees "Babylone", the heart of humanity 2.0, he collects odd jobs in order to save money and get a boat worthy of competing in his great escape. But only God knows what his journey will bring..."'
+                    }
+                  </div>
+                </p.Stack>
               </div>
             ) : null}
           </div>
@@ -658,10 +658,10 @@ function PlasmicArtwork__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "text", "slider", "footer"],
+  root: ["root", "header", "slider", "text", "footer"],
   header: ["header"],
-  text: ["text"],
   slider: ["slider"],
+  text: ["text"],
   footer: ["footer"]
 };
 
@@ -695,8 +695,8 @@ export const PlasmicArtwork = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    text: makeNodeComponent("text"),
     slider: makeNodeComponent("slider"),
+    text: makeNodeComponent("text"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicArtwork
     internalVariantProps: PlasmicArtwork__VariantProps,

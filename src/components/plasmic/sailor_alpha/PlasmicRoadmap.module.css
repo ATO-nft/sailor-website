@@ -74,6 +74,38 @@
     position: absolute;
   }
 }
+.phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: -85px;
+  left: 44px;
+  width: 215px;
+  height: auto;
+  background: #ffffff;
+  padding: 8px;
+  border: 2px solid #000000;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 4;
+  }
+}
+.figmaPaste {
+  display: block;
+  position: absolute;
+  width: 251px;
+  height: 175px;
+  left: 0px;
+  top: 0px;
+}
 .case22 {
   background: url("./images/case22.png") center center / cover no-repeat;
   width: 390px;
@@ -88,30 +120,6 @@
     position: absolute;
     left: 9px;
     top: 250px;
-  }
-}
-.phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent {
-  display: block;
-  font-size: undefinedpx;
-  text-transform: uppercase;
-  letter-spacing: 0em;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 87.99996948242188px;
-  left: 128.00694370269775px;
-  width: 215px;
-  height: auto;
-  background: #ffffff;
-  padding: 8px;
-  border: 2px solid #000000;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent {
-    position: absolute;
-    left: 128.00694370269775px;
-    top: 87.99996948242188px;
-    z-index: 4;
   }
 }
 .case21 {
@@ -133,30 +141,6 @@
     display: none;
   }
 }
-.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore {
-  display: block;
-  font-size: undefinedpx;
-  text-transform: uppercase;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 230px;
-  height: auto;
-  background: #ffffff;
-  z-index: 1;
-  padding: 8px;
-  border-width: 2px;
-  border-style: solid;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-}
 .phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2 {
   display: block;
   font-size: undefinedpx;
@@ -165,8 +149,8 @@
   line-height: 18px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 239px;
-  left: 834px;
+  top: 185px;
+  left: 863px;
   width: 350px;
   height: auto;
   background: #ffffff;
@@ -236,6 +220,30 @@
     position: absolute;
     left: 1148px;
     top: 496px;
+  }
+}
+.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore {
+  display: block;
+  font-size: undefinedpx;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: -47px;
+  left: 557px;
+  width: 230px;
+  height: auto;
+  background: #ffffff;
+  z-index: 1;
+  padding: 8px;
+  border-width: 2px;
+  border-style: solid;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore {
+    position: absolute;
+    left: 0px;
+    top: 0px;
   }
 }
 .footer:global(.__wab_instance) {

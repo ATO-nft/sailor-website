@@ -398,6 +398,20 @@
     padding: 0px 0% 0px 0px;
   }
 }
+.text__gZns9 {
+  width: 100%;
+  height: auto;
+  color: var(--token-h6RawRnEP);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  min-width: 0;
+  padding: 0px 0% 0px 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__gZns9 {
+    padding: 0px 0% 0px 0px;
+  }
+}
 .text__riDvk {
   position: relative;
   width: 100%;
@@ -406,7 +420,8 @@
   border-left-width: 4px;
   padding-left: 5%;
   color: var(--token-h6RawRnEP);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 24px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -418,6 +433,8 @@
   width: 100%;
   height: auto;
   color: var(--token-h6RawRnEP);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
   min-width: 0;
   padding: 0px 0% 0px 0px;
 }
@@ -584,7 +601,8 @@
   padding-left: 5%;
   color: var(--token-h6RawRnEP);
   padding-top: 0px;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 24px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -596,6 +614,8 @@
   width: 100%;
   height: auto;
   color: var(--token-h6RawRnEP);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
   min-width: 0;
   padding: 0px 0% 0px 0px;
 }
@@ -729,6 +749,8 @@
   width: 100%;
   height: auto;
   color: var(--token-h6RawRnEP);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   min-width: 0;
   padding: 0px 0% 0px 0px;
 }
@@ -747,6 +769,7 @@
   color: var(--token-h6RawRnEP);
   padding-top: 0px;
   font-weight: 700;
+  font-size: 24px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -874,6 +897,8 @@
   width: 100%;
   height: auto;
   color: var(--token-h6RawRnEP);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   min-width: 0;
   padding: 0px 0% 0px 0px;
 }
@@ -893,6 +918,8 @@
   padding-top: 0px;
   transform: translateX(-200px) translateY(0px) translateZ(0px);
   font-weight: 700;
+  font-size: 24px;
+  max-width: 881px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -905,6 +932,8 @@
   width: 100%;
   height: auto;
   color: var(--token-h6RawRnEP);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
   min-width: 0;
   padding: 0px 0% 0px 0px;
 }

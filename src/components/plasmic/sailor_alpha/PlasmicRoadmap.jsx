@@ -91,13 +91,7 @@ function PlasmicRoadmap__RenderFunc(props) {
                     'Q3. Course to port\n\nEmpowering and mentoring artist from community\nFederici\'s creative live \nand meet\nNFT Holders Artworks : \nOwn your masterpiece\nOperation "Babylone" launch\nCreation contest: the new Sailor'
                   }
                 </div>
-              </div>
 
-              <div
-                data-plasmic-name={"case22"}
-                data-plasmic-override={overrides.case22}
-                className={classNames(projectcss.all, sty.case22)}
-              >
                 <div
                   data-plasmic-name={
                     "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent"
@@ -111,11 +105,34 @@ function PlasmicRoadmap__RenderFunc(props) {
                     sty.phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent
                   )}
                 >
-                  {
-                    'Q2. Cast off the mooring\n\nEnergizing community\nCreative live hosted by Federici\nCollection release \n& reveal event party\nStarting the preparation \nof operation "Babylone"'
-                  }
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"Q2. Cast off the mooring"}
+                    </span>
+                    <React.Fragment>
+                      {
+                        '\nEnergizing community\nCreative live hosted by Federici\nCollection release \n& reveal event party\nStarting the preparation \nof operation "Babylone"'
+                      }
+                    </React.Fragment>
+                  </React.Fragment>
                 </div>
+
+                <div
+                  data-plasmic-name={"figmaPaste"}
+                  data-plasmic-override={overrides.figmaPaste}
+                  className={classNames(projectcss.all, sty.figmaPaste)}
+                />
               </div>
+
+              <div
+                data-plasmic-name={"case22"}
+                data-plasmic-override={overrides.case22}
+                className={classNames(projectcss.all, sty.case22)}
+              />
 
               {(
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
@@ -124,25 +141,7 @@ function PlasmicRoadmap__RenderFunc(props) {
                   data-plasmic-name={"case21"}
                   data-plasmic-override={overrides.case21}
                   className={classNames(projectcss.all, sty.case21)}
-                >
-                  <div
-                    data-plasmic-name={
-                      "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
-                    }
-                    data-plasmic-override={
-                      overrides.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore
-                    }
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore
-                    )}
-                  >
-                    {
-                      'Q4 . Throw the ink\n\nOperation "Hut" launch\nPossibility to claim \nthe Sailor comic\nFirst vote requirement for Sailor tome 2\nOperation "Bbabylone" exhibition'
-                    }
-                  </div>
-                </div>
+                />
               ) : null}
 
               <div
@@ -198,6 +197,24 @@ function PlasmicRoadmap__RenderFunc(props) {
                 data-plasmic-override={overrides.case24}
                 className={classNames(projectcss.all, sty.case24)}
               />
+
+              <div
+                data-plasmic-name={
+                  "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
+                }
+                data-plasmic-override={
+                  overrides.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore
+                }
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore
+                )}
+              >
+                {
+                  'Q4 . Throw the ink\n\nOperation "Hut" launch\nPossibility to claim \nthe Sailor comic\nFirst vote requirement for Sailor tome 2\nOperation "Bbabylone" exhibition'
+                }
+              </div>
             </div>
           ) : null}
 
@@ -219,14 +236,15 @@ const PlasmicDescendants = {
     "roadmapDesktop",
     "case20",
     "text",
-    "case22",
     "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent",
+    "figmaPaste",
+    "case22",
     "case21",
-    "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore",
     "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2",
     "img",
     "case25",
     "case24",
+    "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore",
     "footer"
   ],
 
@@ -235,38 +253,33 @@ const PlasmicDescendants = {
     "roadmapDesktop",
     "case20",
     "text",
-    "case22",
     "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent",
+    "figmaPaste",
+    "case22",
     "case21",
-    "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore",
     "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2",
     "img",
     "case25",
-    "case24"
+    "case24",
+    "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
   ],
 
-  case20: ["case20", "text"],
+  case20: [
+    "case20",
+    "text",
+    "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent",
+    "figmaPaste"
+  ],
+
   text: ["text"],
-  case22: [
-    "case22",
-    "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent"
-  ],
-
   phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent:
     [
       "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent"
     ],
 
-  case21: [
-    "case21",
-    "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
-  ],
-
-  phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore:
-    [
-      "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
-    ],
-
+  figmaPaste: ["figmaPaste"],
+  case22: ["case22"],
+  case21: ["case21"],
   phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2:
     [
       "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2"
@@ -275,6 +288,11 @@ const PlasmicDescendants = {
   img: ["img"],
   case25: ["case25"],
   case24: ["case24"],
+  phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore:
+    [
+      "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
+    ],
+
   footer: ["footer"]
 };
 
@@ -311,18 +329,14 @@ export const PlasmicRoadmap = Object.assign(
     roadmapDesktop: makeNodeComponent("roadmapDesktop"),
     case20: makeNodeComponent("case20"),
     text: makeNodeComponent("text"),
-    case22: makeNodeComponent("case22"),
     phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent:
       makeNodeComponent(
         "phase1TheFirstApparitionOfTheSailorHappenedInTheStreetsOfParisOutOfRaphaelFedericisMindAbandonedWallClosedShopRuinedBuildingTheSailorHasNoLimitInvadingTheCityTheCountryAndAll5Continent"
       ),
 
+    figmaPaste: makeNodeComponent("figmaPaste"),
+    case22: makeNodeComponent("case22"),
     case21: makeNodeComponent("case21"),
-    phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore:
-      makeNodeComponent(
-        "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
-      ),
-
     phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2:
       makeNodeComponent(
         "phase4LaunchOfTheCollectionRevealOfTheLegendaryLaunchOfARaritySniperHoldersOfTheNftWillBePrivateEventForHoldersInParisPurchaseOfAnIslandToGiveawayToTheCommunityPurchaseOfABoatToGiveawayToTheCommunityStartOfTheSailorComics2"
@@ -331,6 +345,11 @@ export const PlasmicRoadmap = Object.assign(
     img: makeNodeComponent("img"),
     case25: makeNodeComponent("case25"),
     case24: makeNodeComponent("case24"),
+    phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore:
+      makeNodeComponent(
+        "phase3TheSailorIsFreeAndHasNoFrontierThatsWhyRaphaelFedericiProposeToBeCoProducterOfTheSailorsComicsAnimatedSeriesByOwningASailorNftLaunchOfTheSocialMediaAndPrivateDiscordLivePaintingOfRaphaelFedericiMeditationCoursesAndMore"
+      ),
+
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicRoadmap
     internalVariantProps: PlasmicRoadmap__VariantProps,

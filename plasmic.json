@@ -492,6 +492,16 @@
           "id": "6_cJG0lEE2",
           "name": "Vector39Icon",
           "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector39.jsx"
+        },
+        {
+          "id": "sTAz2gJfwj",
+          "name": "Vector41Icon",
+          "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector41.jsx"
+        },
+        {
+          "id": "rdNgFjqtQ",
+          "name": "Vector42Icon",
+          "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector42.jsx"
         }
       ],
       "images": [
@@ -999,6 +1009,16 @@
           "id": "VQdxlRBNe",
           "name": "Renaissance.jpg",
           "filePath": "plasmic/sailor_alpha/images/renaissancejpg.jpeg"
+        },
+        {
+          "id": "09_bxIupF",
+          "name": "Vector 40",
+          "filePath": "plasmic/sailor_alpha/images/vector40.svg"
+        },
+        {
+          "id": "UNuxePbDQ8",
+          "name": "Frame 20",
+          "filePath": "plasmic/sailor_alpha/images/frame20.svg"
         }
       ],
       "indirect": false,
