@@ -502,6 +502,11 @@
           "id": "rdNgFjqtQ",
           "name": "Vector42Icon",
           "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector42.jsx"
+        },
+        {
+          "id": "rNAfiL_Eos",
+          "name": "Vector43Icon",
+          "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector43.jsx"
         }
       ],
       "images": [
@@ -1019,6 +1024,26 @@
           "id": "UNuxePbDQ8",
           "name": "Frame 20",
           "filePath": "plasmic/sailor_alpha/images/frame20.svg"
+        },
+        {
+          "id": "fUTrDXCAI",
+          "name": "sailor smoke.png",
+          "filePath": "plasmic/sailor_alpha/images/sailorSmokepng.png"
+        },
+        {
+          "id": "zQDYgt_B8",
+          "name": "orque.png",
+          "filePath": "plasmic/sailor_alpha/images/orquepng.png"
+        },
+        {
+          "id": "LzTakKt2X",
+          "name": "prev-nav.png",
+          "filePath": "plasmic/sailor_alpha/images/prevNavpng.png"
+        },
+        {
+          "id": "GGzJCt2Ys",
+          "name": "next-nav.png",
+          "filePath": "plasmic/sailor_alpha/images/nextNavpng.png"
         }
       ],
       "indirect": false,

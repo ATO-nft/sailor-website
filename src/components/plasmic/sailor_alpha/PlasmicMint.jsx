@@ -18,7 +18,6 @@ import {
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
 import DiscoverButton from "../../DiscoverButton"; // plasmic-import: XuXn_eVAMfJ/component
 import MintButton from "../../MintButton"; // plasmic-import: GeHxaxYhV01/component
-import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicMint.module.css"; // plasmic-import: kmIJQ5z3TF/css
@@ -143,12 +142,6 @@ function PlasmicMint__RenderFunc(props) {
               </React.Fragment>
             </h1>
           ) : null}
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </div>
       </div>
     </React.Fragment>
@@ -156,11 +149,10 @@ function PlasmicMint__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "button1", "mintButton2", "footer"],
+  root: ["root", "header", "button1", "mintButton2"],
   header: ["header"],
   button1: ["button1"],
-  mintButton2: ["mintButton2"],
-  footer: ["footer"]
+  mintButton2: ["mintButton2"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -195,7 +187,6 @@ export const PlasmicMint = Object.assign(
     header: makeNodeComponent("header"),
     button1: makeNodeComponent("button1"),
     mintButton2: makeNodeComponent("mintButton2"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicMint
     internalVariantProps: PlasmicMint__VariantProps,
     internalArgProps: PlasmicMint__ArgProps

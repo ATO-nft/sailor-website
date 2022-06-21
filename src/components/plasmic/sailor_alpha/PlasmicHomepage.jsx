@@ -18,7 +18,6 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
 import DiscoverButton from "../../DiscoverButton"; // plasmic-import: XuXn_eVAMfJ/component
-import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: _5wgUA_BX3/css
@@ -149,12 +148,6 @@ function PlasmicHomepage__RenderFunc(props) {
               </DiscoverButton>
             </p.Stack>
           </div>
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </div>
       </div>
     </React.Fragment>
@@ -169,8 +162,7 @@ const PlasmicDescendants = {
     "container",
     "textContainer",
     "sailor",
-    "cta",
-    "footer"
+    "cta"
   ],
 
   header: ["header"],
@@ -178,8 +170,7 @@ const PlasmicDescendants = {
   container: ["container", "textContainer", "sailor", "cta"],
   textContainer: ["textContainer", "sailor"],
   sailor: ["sailor"],
-  cta: ["cta"],
-  footer: ["footer"]
+  cta: ["cta"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -217,7 +208,6 @@ export const PlasmicHomepage = Object.assign(
     textContainer: makeNodeComponent("textContainer"),
     sailor: makeNodeComponent("sailor"),
     cta: makeNodeComponent("cta"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps

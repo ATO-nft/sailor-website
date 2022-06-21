@@ -60,7 +60,7 @@
   overflow: auto;
   flex-shrink: 0;
   flex-grow: 0;
-  max-height: 850px;
+  max-height: 85vh;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .scroll {
@@ -377,7 +377,7 @@
   width: 60%;
   height: 100%;
   max-width: 100%;
-  max-height: 90vh;
+  max-height: 85vh;
   min-height: 0;
   padding: 0px;
 }
@@ -397,14 +397,4 @@
 }
 .main > .__wab_img-spacer > img {
   object-fit: cover;
-}
-.footer:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .footer:global(.__wab_instance) {
-    max-width: 100%;
-    position: relative;
-  }
 }

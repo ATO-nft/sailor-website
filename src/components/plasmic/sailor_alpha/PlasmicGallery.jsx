@@ -18,7 +18,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
-import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
@@ -425,12 +424,6 @@ function PlasmicGallery__RenderFunc(props) {
               </div>
             ) : null}
           </div>
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </p.Stack>
       </div>
     </React.Fragment>
@@ -457,8 +450,7 @@ const PlasmicDescendants = {
     "_11",
     "_12",
     "bigImage",
-    "main",
-    "footer"
+    "main"
   ],
 
   header: ["header"],
@@ -528,8 +520,7 @@ const PlasmicDescendants = {
   _11: ["_11"],
   _12: ["_12"],
   bigImage: ["bigImage", "main"],
-  main: ["main"],
-  footer: ["footer"]
+  main: ["main"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -579,7 +570,6 @@ export const PlasmicGallery = Object.assign(
     _12: makeNodeComponent("_12"),
     bigImage: makeNodeComponent("bigImage"),
     main: makeNodeComponent("main"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicGallery
     internalVariantProps: PlasmicGallery__VariantProps,
     internalArgProps: PlasmicGallery__ArgProps

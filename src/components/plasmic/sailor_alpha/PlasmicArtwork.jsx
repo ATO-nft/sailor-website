@@ -20,7 +20,6 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
-import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
@@ -47,6 +46,8 @@ import _51517Fe6E0Dee21421A2Ba4F2836C66661D3B49DLgjpgIMooqA6Gr from "./images/_5
 import miseALEpreuveCopiejpgNfdUr92Yf from "./images/miseALEpreuveCopiejpg.jpeg"; // plasmic-import: NFDUr92yf/picture
 import captureDecran20210910A170611PngZbeYTs7Rz from "./images/captureDecran20210910A170611Png.png"; // plasmic-import: zbeYTs7Rz/picture
 import renaissancejpgVQdxlRbNe from "./images/renaissancejpg.jpeg"; // plasmic-import: VQdxlRBNe/picture
+import prevNavpngLzTakKt2X from "./images/prevNavpng.png"; // plasmic-import: LzTakKt2X/picture
+import nextNavpngGGzJCt2Ys from "./images/nextNavpng.png"; // plasmic-import: GGzJCt2Ys/picture
 import titre1PngHD0J16Vls from "./images/titre1Png.png"; // plasmic-import: hD0j16vls/picture
 
 export const PlasmicArtwork__VariantProps = new Array();
@@ -95,7 +96,11 @@ function PlasmicArtwork__RenderFunc(props) {
                   <Slider
                     data-plasmic-name={"slider"}
                     data-plasmic-override={overrides.slider}
-                    adaptiveHeight={false}
+                    adaptiveHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    }
                     arrows={false}
                     autoplay={false}
                     autoplaySpeed={2500}
@@ -590,6 +595,50 @@ function PlasmicArtwork__RenderFunc(props) {
                       }}
                     />
                   </Slider>
+
+                  <div
+                    data-plasmic-name={"sliderNavBar"}
+                    data-plasmic-override={overrides.sliderNavBar}
+                    className={classNames(projectcss.all, sty.sliderNavBar)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__auxcC)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      id={"prev-nav"}
+                      loading={"lazy"}
+                      src={{
+                        src: prevNavpngLzTakKt2X,
+                        fullWidth: 64,
+                        fullHeight: 45,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__pgDte)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      id={"next-nav"}
+                      loading={"lazy"}
+                      src={{
+                        src: nextNavpngGGzJCt2Ys,
+                        fullWidth: 64,
+                        fullHeight: 45,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
                 </div>
 
                 <p.Stack
@@ -645,12 +694,6 @@ function PlasmicArtwork__RenderFunc(props) {
               </div>
             ) : null}
           </div>
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </div>
       </div>
     </React.Fragment>
@@ -658,11 +701,11 @@ function PlasmicArtwork__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "slider", "text", "footer"],
+  root: ["root", "header", "slider", "sliderNavBar", "text"],
   header: ["header"],
   slider: ["slider"],
-  text: ["text"],
-  footer: ["footer"]
+  sliderNavBar: ["sliderNavBar"],
+  text: ["text"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -696,8 +739,8 @@ export const PlasmicArtwork = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     slider: makeNodeComponent("slider"),
+    sliderNavBar: makeNodeComponent("sliderNavBar"),
     text: makeNodeComponent("text"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicArtwork
     internalVariantProps: PlasmicArtwork__VariantProps,
     internalArgProps: PlasmicArtwork__ArgProps
