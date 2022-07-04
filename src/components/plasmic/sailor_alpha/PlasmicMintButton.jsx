@@ -41,13 +41,11 @@ export const PlasmicMintButton__ArgProps = new Array(
   "link"
 );
 
-export const defaultMintButton__Args = {};
-
 function PlasmicMintButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultMintButton__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false

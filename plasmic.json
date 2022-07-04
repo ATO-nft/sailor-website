@@ -507,6 +507,11 @@
           "id": "rNAfiL_Eos",
           "name": "Vector43Icon",
           "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__Vector43.jsx"
+        },
+        {
+          "id": "8_IoCkK3ro",
+          "name": "BgIconWhite1SvgIcon",
+          "moduleFilePath": "plasmic/sailor_alpha/icons/PlasmicIcon__BgIconWhite1Svg.jsx"
         }
       ],
       "images": [
@@ -1044,6 +1049,101 @@
           "id": "GGzJCt2Ys",
           "name": "next-nav.png",
           "filePath": "plasmic/sailor_alpha/images/nextNavpng.png"
+        },
+        {
+          "id": "a1t83evgA-",
+          "name": "bg-sticky-1.svg",
+          "filePath": "plasmic/sailor_alpha/images/bgSticky1Svg.svg"
+        },
+        {
+          "id": "iwS2GJ3M9s",
+          "name": "bg-sticky-2.svg",
+          "filePath": "plasmic/sailor_alpha/images/bgSticky2Svg.svg"
+        },
+        {
+          "id": "8HLJFo47Bh",
+          "name": "bg-sticky-3.svg",
+          "filePath": "plasmic/sailor_alpha/images/bgSticky3Svg.svg"
+        },
+        {
+          "id": "9cNGdgKKHD",
+          "name": "bg-sticky-4.svg",
+          "filePath": "plasmic/sailor_alpha/images/bgSticky4Svg.svg"
+        },
+        {
+          "id": "9TTbvy7ee",
+          "name": "bg-sticky-1-red.svg",
+          "filePath": "plasmic/sailor_alpha/images/bgSticky1Redsvg.svg"
+        },
+        {
+          "id": "Gx1t5EFMCP",
+          "name": "bg-sticky-2-red.svg",
+          "filePath": "plasmic/sailor_alpha/images/bgSticky2Redsvg.svg"
+        },
+        {
+          "id": "7yLxYUBv38",
+          "name": "bg-sticky-3-red.svg",
+          "filePath": "plasmic/sailor_alpha/images/bgSticky3Redsvg.svg"
+        },
+        {
+          "id": "a89ecOxbVt",
+          "name": "bg-sticky-4-red.svg",
+          "filePath": "plasmic/sailor_alpha/images/bgSticky4Redsvg.svg"
+        },
+        {
+          "id": "rzeWUe6dc",
+          "name": "menu-bg-1-white.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg1Whitesvg.svg"
+        },
+        {
+          "id": "484YLAesPa",
+          "name": "menu-bg-2-white.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg2Whitesvg.svg"
+        },
+        {
+          "id": "GEbCflFaeb",
+          "name": "menu-bg-3-white.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg3Whitesvg.svg"
+        },
+        {
+          "id": "OZaCatr525",
+          "name": "menu-bg-4-white.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg4Whitesvg.svg"
+        },
+        {
+          "id": "fiojRfwRwu",
+          "name": "menu-bg-5-white.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg5Whitesvg.svg"
+        },
+        {
+          "id": "J5ihuZJDY",
+          "name": "menu-bg-1-red.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg1Redsvg.svg"
+        },
+        {
+          "id": "fnHVjFZ_R8",
+          "name": "menu-bg-2-red.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg2Redsvg.svg"
+        },
+        {
+          "id": "s-TS4TZLw",
+          "name": "menu-bg-3-red.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg3Redsvg.svg"
+        },
+        {
+          "id": "08HhpiD7c",
+          "name": "menu-bg-4-red.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg4Redsvg.svg"
+        },
+        {
+          "id": "V7fOiwrCUV",
+          "name": "menu-bg-5-red.svg",
+          "filePath": "plasmic/sailor_alpha/images/menuBg5Redsvg.svg"
+        },
+        {
+          "id": "A6GEuuSY-L",
+          "name": "menu-bg-1-red.svg 2",
+          "filePath": "plasmic/sailor_alpha/images/menuBg1Redsvg2.svg"
         }
       ],
       "indirect": false,
@@ -1147,6 +1247,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.182",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.182/dist/plasmic.schema.json"
+  "cliVersion": "0.1.183",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.183/dist/plasmic.schema.json"
 }

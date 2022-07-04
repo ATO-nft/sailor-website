@@ -40,13 +40,11 @@ export const PlasmicGallery__VariantProps = new Array();
 
 export const PlasmicGallery__ArgProps = new Array();
 
-export const defaultGallery__Args = {};
-
 function PlasmicGallery__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultGallery__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });
@@ -74,7 +72,7 @@ function PlasmicGallery__RenderFunc(props) {
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
             className={classNames("__wab_instance", sty.header)}
-            light={true}
+            red={true}
           />
 
           <div

@@ -55,7 +55,10 @@
 .link__jc0Hh {
   position: relative;
   display: flex;
-  background: url("./images/frame.svg") top 50% left -104% / cover no-repeat;
+  background: url("./images/bgSticky1Svg.svg") top 50% left 50% / cover repeat;
+}
+.root .link__jc0Hh:hover {
+  background: url("./images/bgSticky1Redsvg.svg") top 50% left 50% / cover repeat;
 }
 .text___4HeT {
   width: auto;
@@ -64,29 +67,39 @@
   background: none;
   color: #ffffff;
   white-space: pre;
-  font-size: 32px;
+  font-size: 30px;
   text-transform: uppercase;
   padding: 16px 40px 16px 16px;
 }
 .link__k5Pt3 {
   position: relative;
   display: flex;
+  background: url("./images/bgSticky2Svg.svg") top 50% left 50% / cover no-repeat;
+  padding-right: 44px;
+}
+.root .link__k5Pt3:hover {
+  background: url("./images/bgSticky2Redsvg.svg") top 50% left 50% / cover no-repeat;
 }
 .text__i6YoG {
   width: auto;
   height: auto;
   text-align: left;
-  background: url("./images/frame3.svg") top 50% left 50% / cover repeat;
+  background: none;
   color: #ffffff;
   white-space: pre;
-  font-size: 32px;
+  font-size: 30px;
   text-transform: uppercase;
   padding: 16px 40px 16px 16px;
 }
 .link___58K9U {
   position: relative;
   display: flex;
-  background: url("./images/frame6.svg") top 50% left 50% / cover repeat;
+  background: url("./images/bgSticky3Svg.svg") top 50% left 80% / cover no-repeat;
+  width: auto;
+  padding-right: 84px;
+}
+.root .link___58K9U:hover {
+  background: url("./images/bgSticky3Redsvg.svg") top 50% left 80% / cover no-repeat;
 }
 .text__wta5Z {
   width: auto;
@@ -95,13 +108,16 @@
   background: none;
   color: #ffffff;
   white-space: pre;
-  font-size: 32px;
+  font-size: 30px;
   padding: 16px 16px 16px 59px;
 }
 .link__dqRfF {
   position: relative;
   display: flex;
-  background: url("./images/frame6.svg") top 50% left 50% / cover repeat;
+  background: url("./images/bgSticky4Svg.svg") top 50% left 50% / cover repeat;
+}
+.root .link__dqRfF:hover {
+  background: url("./images/bgSticky4Redsvg.svg") top 50% left 50% / cover repeat;
 }
 .text__qkLjq {
   width: auto;
@@ -110,7 +126,7 @@
   background: none;
   color: #ffffff;
   white-space: pre;
-  font-size: 32px;
+  font-size: 30px;
   text-transform: uppercase;
   padding: 16px 16px 16px 53px;
 }
@@ -843,10 +859,10 @@
   height: auto;
   border-left-style: solid;
   border-left-width: 4px;
-  padding-left: 5%;
+  padding-left: 40px;
   color: var(--token-h6RawRnEP);
   padding-top: 0px;
-  transform: translateX(-200px) translateY(0px) translateZ(0px);
+  transform: translateX(-100px) translateY(0px) translateZ(0px);
   font-weight: 700;
   font-size: 24px;
   max-width: 881px;

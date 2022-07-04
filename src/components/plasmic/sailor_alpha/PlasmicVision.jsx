@@ -31,13 +31,11 @@ export const PlasmicVision__VariantProps = new Array();
 
 export const PlasmicVision__ArgProps = new Array();
 
-export const defaultVision__Args = {};
-
 function PlasmicVision__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultVision__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });

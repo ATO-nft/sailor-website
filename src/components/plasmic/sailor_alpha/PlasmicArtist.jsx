@@ -32,13 +32,11 @@ export const PlasmicArtist__VariantProps = new Array();
 
 export const PlasmicArtist__ArgProps = new Array();
 
-export const defaultArtist__Args = {};
-
 function PlasmicArtist__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultArtist__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });

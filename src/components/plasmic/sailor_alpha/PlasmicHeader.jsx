@@ -26,6 +26,7 @@ import sty from "./PlasmicHeader.module.css"; // plasmic-import: 9HJOL_ndHV/css
 import Vector42Icon from "./icons/PlasmicIcon__Vector42"; // plasmic-import: rdNgFjqtQ/icon
 import Vector41Icon from "./icons/PlasmicIcon__Vector41"; // plasmic-import: sTAz2gJfwj/icon
 import Group7Icon from "./icons/PlasmicIcon__Group7"; // plasmic-import: YuTey3_gZl/icon
+import BgIconWhite1SvgIcon from "./icons/PlasmicIcon__BgIconWhite1Svg"; // plasmic-import: 8_IoCkK3ro/icon
 import Vector15Icon from "./icons/PlasmicIcon__Vector15"; // plasmic-import: Bj4GhDg1_t/icon
 import Vector16Icon from "./icons/PlasmicIcon__Vector16"; // plasmic-import: nPl2qKjNR7/icon
 import Group11Icon from "./icons/PlasmicIcon__Group11"; // plasmic-import: Hg_aDXW0Z0/icon
@@ -44,17 +45,15 @@ import signat101Rr4KQb0BZ from "./images/signat101.png"; // plasmic-import: rr4K
 import logoWhitepngLJoWiw4Hh from "./images/logoWhitepng.png"; // plasmic-import: lJoWIW4HH/picture
 import frame20UNuxePbDq8 from "./images/frame20.svg"; // plasmic-import: UNuxePbDQ8/picture
 
-export const PlasmicHeader__VariantProps = new Array("light");
+export const PlasmicHeader__VariantProps = new Array("light", "red");
 
 export const PlasmicHeader__ArgProps = new Array();
 
-export const defaultHeader__Args = {};
-
 function PlasmicHeader__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHeader__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });
@@ -72,7 +71,10 @@ function PlasmicHeader__RenderFunc(props) {
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         sty.root,
-        { [sty.rootlight]: hasVariant(variants, "light", "light") }
+        {
+          [sty.rootlight]: hasVariant(variants, "light", "light"),
+          [sty.rootred]: hasVariant(variants, "red", "red")
+        }
       )}
     >
       <NavigationBar
@@ -102,7 +104,9 @@ function PlasmicHeader__RenderFunc(props) {
                     variants,
                     "light",
                     "light"
-                  )
+                  ),
+
+                  [sty.imgred__mQ91NX3X7G]: hasVariant(variants, "red", "red")
                 })}
                 displayHeight={"40px"}
                 displayMaxHeight={"none"}
@@ -111,7 +115,14 @@ function PlasmicHeader__RenderFunc(props) {
                 displayMinWidth={"0"}
                 displayWidth={"auto"}
                 src={
-                  hasVariant(variants, "light", "light")
+                  hasVariant(variants, "red", "red")
+                    ? {
+                        src: logoWhitepngLJoWiw4Hh,
+                        fullWidth: 125,
+                        fullHeight: 46,
+                        aspectRatio: undefined
+                      }
+                    : hasVariant(variants, "light", "light")
                     ? {
                         src: signat101Rr4KQb0BZ,
                         fullWidth: 2813,
@@ -241,6 +252,12 @@ function PlasmicHeader__RenderFunc(props) {
                           variants,
                           "light",
                           "light"
+                        ),
+
+                        [sty.linkred__p31H1X3X7G]: hasVariant(
+                          variants,
+                          "red",
+                          "red"
                         )
                       }
                     )}
@@ -264,6 +281,12 @@ function PlasmicHeader__RenderFunc(props) {
                           variants,
                           "light",
                           "light"
+                        ),
+
+                        [sty.linkred__gWQk8X3X7G]: hasVariant(
+                          variants,
+                          "red",
+                          "red"
                         )
                       }
                     )}
@@ -283,6 +306,12 @@ function PlasmicHeader__RenderFunc(props) {
                           variants,
                           "light",
                           "light"
+                        ),
+
+                        [sty.linkred__u03GeX3X7G]: hasVariant(
+                          variants,
+                          "red",
+                          "red"
                         )
                       }
                     )}
@@ -302,6 +331,12 @@ function PlasmicHeader__RenderFunc(props) {
                           variants,
                           "light",
                           "light"
+                        ),
+
+                        [sty.linkred__bFdFfx3X7G]: hasVariant(
+                          variants,
+                          "red",
+                          "red"
                         )
                       }
                     )}
@@ -321,6 +356,12 @@ function PlasmicHeader__RenderFunc(props) {
                           variants,
                           "light",
                           "light"
+                        ),
+
+                        [sty.linkred__qbgpX3X7G]: hasVariant(
+                          variants,
+                          "red",
+                          "red"
                         )
                       }
                     )}
@@ -374,10 +415,22 @@ function PlasmicHeader__RenderFunc(props) {
                                   sty.objects
                                 )}
                               >
-                                <Group7Icon
+                                <p.PlasmicIcon
+                                  PlasmicIconType={
+                                    hasVariant(variants, "red", "red")
+                                      ? BgIconWhite1SvgIcon
+                                      : Group7Icon
+                                  }
                                   className={classNames(
                                     projectcss.all,
-                                    sty.svg__zbgDe
+                                    sty.svg__zbgDe,
+                                    {
+                                      [sty.svgred__zbgDeX3X7G]: hasVariant(
+                                        variants,
+                                        "red",
+                                        "red"
+                                      )
+                                    }
                                   )}
                                   role={"img"}
                                 />
@@ -385,7 +438,14 @@ function PlasmicHeader__RenderFunc(props) {
                                 <Vector15Icon
                                   className={classNames(
                                     projectcss.all,
-                                    sty.svg__s9DhF
+                                    sty.svg__s9DhF,
+                                    {
+                                      [sty.svgred__s9DhFx3X7G]: hasVariant(
+                                        variants,
+                                        "red",
+                                        "red"
+                                      )
+                                    }
                                   )}
                                   role={"img"}
                                 />
@@ -491,13 +551,27 @@ function PlasmicHeader__RenderFunc(props) {
                               data-plasmic-override={overrides.objects4}
                               className={classNames(
                                 projectcss.all,
-                                sty.objects4
+                                sty.objects4,
+                                {
+                                  [sty.objects4red]: hasVariant(
+                                    variants,
+                                    "red",
+                                    "red"
+                                  )
+                                }
                               )}
                             >
                               <Group10Icon
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg___32M7W
+                                  sty.svg___32M7W,
+                                  {
+                                    [sty.svgred___32M7WX3X7G]: hasVariant(
+                                      variants,
+                                      "red",
+                                      "red"
+                                    )
+                                  }
                                 )}
                                 role={"img"}
                               />
@@ -505,7 +579,14 @@ function PlasmicHeader__RenderFunc(props) {
                               <Vector20Icon
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__gLkno
+                                  sty.svg__gLkno,
+                                  {
+                                    [sty.svgred__gLknoX3X7G]: hasVariant(
+                                      variants,
+                                      "red",
+                                      "red"
+                                    )
+                                  }
                                 )}
                                 role={"img"}
                               />
@@ -521,7 +602,14 @@ function PlasmicHeader__RenderFunc(props) {
                               <Vector22Icon
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg___6QZwn
+                                  sty.svg___6QZwn,
+                                  {
+                                    [sty.svgred___6QZwnX3X7G]: hasVariant(
+                                      variants,
+                                      "red",
+                                      "red"
+                                    )
+                                  }
                                 )}
                                 role={"img"}
                               />
@@ -529,7 +617,14 @@ function PlasmicHeader__RenderFunc(props) {
                               <Vector23Icon
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__oxwsq
+                                  sty.svg__oxwsq,
+                                  {
+                                    [sty.svgred__oxwsqx3X7G]: hasVariant(
+                                      variants,
+                                      "red",
+                                      "red"
+                                    )
+                                  }
                                 )}
                                 role={"img"}
                               />
