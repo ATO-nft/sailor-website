@@ -41,13 +41,11 @@ export const PlasmicDiscoverButton__ArgProps = new Array(
   "link"
 );
 
-export const defaultDiscoverButton__Args = {};
-
 function PlasmicDiscoverButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultDiscoverButton__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false

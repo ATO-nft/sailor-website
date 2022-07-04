@@ -27,13 +27,11 @@ export const PlasmicHomepage__VariantProps = new Array();
 
 export const PlasmicHomepage__ArgProps = new Array();
 
-export const defaultHomepage__Args = {};
-
 function PlasmicHomepage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHomepage__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>

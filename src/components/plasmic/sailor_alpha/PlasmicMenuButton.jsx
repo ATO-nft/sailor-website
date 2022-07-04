@@ -23,13 +23,11 @@ export const PlasmicMenuButton__VariantProps = new Array();
 
 export const PlasmicMenuButton__ArgProps = new Array();
 
-export const defaultMenuButton__Args = {};
-
 function PlasmicMenuButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultMenuButton__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   return (
     <a
       data-plasmic-name={"root"}

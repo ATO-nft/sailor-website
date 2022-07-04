@@ -25,13 +25,11 @@ export const PlasmicFocusImage__VariantProps = new Array();
 
 export const PlasmicFocusImage__ArgProps = new Array("name");
 
-export const defaultFocusImage__Args = {};
-
 function PlasmicFocusImage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFocusImage__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   return (
     <p.PlasmicImg
       data-plasmic-name={"root"}

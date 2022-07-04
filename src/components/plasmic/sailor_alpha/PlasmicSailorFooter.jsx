@@ -27,13 +27,11 @@ export const PlasmicSailorFooter__VariantProps = new Array();
 
 export const PlasmicSailorFooter__ArgProps = new Array();
 
-export const defaultSailorFooter__Args = {};
-
 function PlasmicSailorFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultSailorFooter__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}

@@ -26,13 +26,11 @@ export const PlasmicMint__VariantProps = new Array();
 
 export const PlasmicMint__ArgProps = new Array();
 
-export const defaultMint__Args = {};
-
 function PlasmicMint__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultMint__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>

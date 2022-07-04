@@ -29,13 +29,11 @@ export const PlasmicRoadmap__VariantProps = new Array();
 
 export const PlasmicRoadmap__ArgProps = new Array();
 
-export const defaultRoadmap__Args = {};
-
 function PlasmicRoadmap__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultRoadmap__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign({}, props.args);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });
