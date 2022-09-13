@@ -14,7 +14,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
     background: url("./images/homegif.gif") top 100% left 50% / 100% auto no-repeat,
-      var(--token-xCJwSuBjk);
+      #65a5d5;
   }
 }
 .header:global(.__wab_instance) {
@@ -93,7 +93,7 @@
   min-width: 0;
   padding: 8px;
 }
-.freeBox {
+.freeBox___6RMm8 {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -104,10 +104,22 @@
   max-width: 100%;
   padding: 8px;
 }
+.freeBox___6Js8C {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
 .text__t75Qm {
   width: 100%;
   height: auto;
-  text-align: center;
+  text-align: left;
   color: var(--token-XhAnDcyiC);
   padding-left: 8px;
   min-width: 0;
@@ -125,7 +137,7 @@
 .sailor > picture > img {
   object-fit: cover;
 }
-.sailor > .__wab_img-spacer > img {
+.sailor > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text__q9R62 {
@@ -139,6 +151,9 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .text__q9R62 {
     text-align: left;
+    max-width: 372px;
+    width: 100%;
+    min-width: 0;
   }
 }
 .cta:global(.__wab_instance) {
@@ -156,15 +171,4 @@
   object-fit: cover;
   width: 1em;
   height: 1em;
-}
-.footer:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .footer:global(.__wab_instance) {
-    max-width: 100%;
-    position: relative;
-    align-self: auto;
-  }
 }

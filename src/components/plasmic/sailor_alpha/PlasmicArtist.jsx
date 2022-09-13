@@ -19,27 +19,24 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
-import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicArtist.module.css"; // plasmic-import: 4T390JcXEt/css
 import sailorDark18PngXUXUumQo from "./images/sailorDark18Png.png"; // plasmic-import: xU-xUumQO/picture
-import stickers16Png9TwHWhtu from "./images/stickers16Png.png"; // plasmic-import: 9tw-HWhtu/picture
-import stickers12Png5RLjjTtzn from "./images/stickers12Png.png"; // plasmic-import: 5rLjjTTZN/picture
-import stickers14PngFD9Cie6Fx from "./images/stickers14Png.png"; // plasmic-import: fD9CIE6Fx/picture
+import nuagemouette1PngHOpTk8EaP from "./images/nuagemouette1Png.png"; // plasmic-import: hOpTK8eaP/picture
+import mouette3Png0Wm50NiY from "./images/mouette3Png.png"; // plasmic-import: 0Wm5-0NiY/picture
+import nuagemouette2PngThrdJVnZ from "./images/nuagemouette2Png.png"; // plasmic-import: thrdJVn_z/picture
 
 export const PlasmicArtist__VariantProps = new Array();
 
 export const PlasmicArtist__ArgProps = new Array();
 
-export const defaultArtist__Args = {};
-
 function PlasmicArtist__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultArtist__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });
@@ -68,81 +65,99 @@ function PlasmicArtist__RenderFunc(props) {
             light={true}
           />
 
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"stickyMenu"}
+              data-plasmic-override={overrides.stickyMenu}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.stickyMenu)}
+            >
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__jc0Hh
+                )}
+                href={"#childhood"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___4HeT
+                  )}
+                >
+                  {"Childhood & influence"}
+                </div>
+              </a>
+
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__k5Pt3
+                )}
+                href={"#art"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__i6YoG
+                  )}
+                >
+                  {"art  \ndiscovering"}
+                </div>
+              </a>
+
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link___58K9U
+                )}
+                href={"#web"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__wta5Z
+                  )}
+                >
+                  {"WEB 3"}
+                </div>
+              </a>
+
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__dqRfF
+                )}
+                href={"#dev"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__qkLjq
+                  )}
+                >
+                  {"art \ndeveloppement"}
+                </div>
+              </a>
+            </p.Stack>
+          ) : null}
+
           <div
             data-plasmic-name={"heroSection"}
             data-plasmic-override={overrides.heroSection}
             className={classNames(projectcss.all, sty.heroSection)}
           >
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-            ) ? (
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___2Wl24)}
-              >
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"rightColumn3"}
-                    data-plasmic-override={overrides.rightColumn3}
-                    className={classNames(projectcss.all, sty.rightColumn3)}
-                  >
-                    <a
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__jc0Hh
-                      )}
-                      href={"#childhood"}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___4HeT
-                        )}
-                      >
-                        {"Childhood & influence"}
-                      </div>
-                    </a>
-                  </div>
-                ) : null}
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"rightColumn4"}
-                    data-plasmic-override={overrides.rightColumn4}
-                    className={classNames(projectcss.all, sty.rightColumn4)}
-                  >
-                    <a
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__k5Pt3
-                      )}
-                      href={"#art"}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__i6YoG
-                        )}
-                      >
-                        {"art  discovering"}
-                      </div>
-                    </a>
-                  </div>
-                ) : null}
-              </p.Stack>
-            ) : null}
             {true ? (
               <div
                 data-plasmic-name={"centerElement"}
@@ -157,7 +172,7 @@ function PlasmicArtist__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"auto"}
+                  displayWidth={"33%"}
                   loading={"lazy"}
                   src={{
                     src: sailorDark18PngXUXUumQo,
@@ -176,72 +191,6 @@ function PlasmicArtist__RenderFunc(props) {
                 >
                   {"Scroll"}
                 </div>
-              </div>
-            ) : null}
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-            ) ? (
-              <div className={classNames(projectcss.all, sty.freeBox__qoG4)}>
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"rightColumn2"}
-                    data-plasmic-override={overrides.rightColumn2}
-                    className={classNames(projectcss.all, sty.rightColumn2)}
-                  >
-                    <a
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link___58K9U
-                      )}
-                      href={"#web"}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__wta5Z
-                        )}
-                      >
-                        {"WEB 3"}
-                      </div>
-                    </a>
-                  </div>
-                ) : null}
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    data-plasmic-name={"rightColumn"}
-                    data-plasmic-override={overrides.rightColumn}
-                    className={classNames(projectcss.all, sty.rightColumn)}
-                  >
-                    <a
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__dqRfF
-                      )}
-                      href={"#dev"}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__qkLjq
-                        )}
-                      >
-                        {"art developpement"}
-                      </div>
-                    </a>
-                  </div>
-                ) : null}
               </div>
             ) : null}
           </div>
@@ -292,6 +241,18 @@ function PlasmicArtist__RenderFunc(props) {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
+                            sty.text__gZns9
+                          )}
+                        >
+                          {
+                            "I grew up with several obsessions. The first was drawing. My mother often painted at home, and would automatically draw beautiful portraits of women when she was on the phone. My father, during our time together, would often draw with me. I was able to watch him for hours and learn from him during my childhood. And when my friends at school found out that my father drew so well, my level of fame increased dramatically. I think that was the primary source of motivation that launched me on this quest for the line. I now realize how important it is to learn to draw early. It's such a complicated practice to master that if you didn't start when you were little, it's hard to accumulate hours of practice as an adult. I was lucky enough not to count my hours and to travel through my imagination all my childhood. "
+                          }
+                        </div>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
                             sty.text__riDvk
                           )}
                         >
@@ -308,7 +269,7 @@ function PlasmicArtist__RenderFunc(props) {
                           )}
                         >
                           {
-                            'I grew up with several obsessions. The first was drawing. My mother often painted at home, and would automatically draw beautiful portraits of women when she was on the phone. My father, during our time together, would often draw with me. I was able to watch him for hours and learn from him during my childhood. And when my friends at school found out that my father drew so well, my level of fame increased dramatically. I think that was the primary source of motivation that launched me on this quest for the line. I now realize how important it is to learn to draw early. It\'s such a complicated practice to master that if you didn\'t start when you were little, it\'s hard to accumulate hours of practice as an adult. I was lucky enough not to count my hours and to travel through my imagination all my childhood. \n \nAs a kid, I also discovered the world of cinema that we devoured without moderation at home. Besides, I was much more into movies than cartoons... " Honey, I shrunk the kids ", " Willow ", " Mom I missed the plane ", " Bethoveen ", " The Goonies ", " Beattlejuice ", " Jurassic Park ", " Hook ", " Turtles ", " Back to the future ", " E.T " etc. I was rocked by the Hollywood movies of the 80s and 90s, which also got me hooked on the soundtrack of movies that I still listen to regularly today during my creative phases. I also grew up with the video game references that were flourishing. Nintendo with "Ninja Turtle", "Mario Bros" or "Double Dragon", the Mega-drive, the Gamegear, the Gameboy, the Super Nintendo, the Playstation, etc... I was addicted and amazed. My imagination flourished and turned my comic book scripts upside down. Comic books flourished on my parents\' shelves, serving as my first literature... " Gaston Lagaffe ", " Asterix ", " Tintin ", " Lucky Luke ", " Boule et Bill ", but especially the comics of Mr. Marcel Gotlib.  I have always been very impressed by the ability of this artist to draw expressions. He always impressed me a lot. I really learned to draw proportions thanks to him, and quite a lot of "Dragon Ball Z" I must admit. Moreover, I was obsessed with only one type of toy: the ones that were perfectly articulated and would allow me to imitate very realistic movements and aerial acrobatics (in the twists at least). This is what helped me to understand the movement and the apprehension of the human body in space.'
+                            'As a kid, I also discovered the world of cinema that we devoured without moderation at home. Besides, I was much more into movies than cartoons... " Honey, I shrunk the kids ", " Willow ", " Mom I missed the plane ", " Bethoveen ", " The Goonies ", " Beattlejuice ", " Jurassic Park ", " Hook ", " Turtles ", " Back to the future ", " E.T " etc. I was rocked by the Hollywood movies of the 80s and 90s, which also got me hooked on the soundtrack of movies that I still listen to regularly today during my creative phases. I also grew up with the video game references that were flourishing. Nintendo with "Ninja Turtle", "Mario Bros" or "Double Dragon", the Mega-drive, the Gamegear, the Gameboy, the Super Nintendo, the Playstation, etc... I was addicted and amazed. My imagination flourished and turned my comic book scripts upside down. Comic books flourished on my parents\' shelves, serving as my first literature... " Gaston Lagaffe ", " Asterix ", " Tintin ", " Lucky Luke ", " Boule et Bill ", but especially the comics of Mr. Marcel Gotlib.  I have always been very impressed by the ability of this artist to draw expressions. He always impressed me a lot. I really learned to draw proportions thanks to him, and quite a lot of "Dragon Ball Z" I must admit. Moreover, I was obsessed with only one type of toy: the ones that were perfectly articulated and would allow me to imitate very realistic movements and aerial acrobatics (in the twists at least). This is what helped me to understand the movement and the apprehension of the human body in space.'
                           }
                         </div>
                       </p.Stack>
@@ -327,9 +288,9 @@ function PlasmicArtist__RenderFunc(props) {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: stickers16Png9TwHWhtu,
-                    fullWidth: 830,
-                    fullHeight: 259,
+                    src: nuagemouette1PngHOpTk8EaP,
+                    fullWidth: 956,
+                    fullHeight: 199,
                     aspectRatio: undefined
                   }}
                 />
@@ -380,9 +341,9 @@ function PlasmicArtist__RenderFunc(props) {
                           displayWidth={"auto"}
                           loading={"lazy"}
                           src={{
-                            src: stickers12Png5RLjjTtzn,
-                            fullWidth: 447,
-                            fullHeight: 365,
+                            src: mouette3Png0Wm50NiY,
+                            fullWidth: 475,
+                            fullHeight: 382,
                             aspectRatio: undefined
                           }}
                         />
@@ -509,9 +470,9 @@ function PlasmicArtist__RenderFunc(props) {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: stickers14PngFD9Cie6Fx,
-                        fullWidth: 544,
-                        fullHeight: 140,
+                        src: nuagemouette2PngThrdJVnZ,
+                        fullWidth: 491,
+                        fullHeight: 143,
                         aspectRatio: undefined
                       }}
                     />
@@ -575,7 +536,7 @@ function PlasmicArtist__RenderFunc(props) {
                               )}
                             >
                               {
-                                'I compelled the machine to create as I would have done before my mind could even imagine it. This is my digitized painting collection. I have digitally transcribed my brushstrokes so that I can make a "handmade" NFT collection. I used artificial intelligence to record an imprint of my soul and emotions when I paint. So, by digitizing enough information through the machine\'s algorithm that assists me, I get a series of thousands of combinations that could have come straight out of my mind. \nMy reflection was to keep a link with reality, the touch, and the movement that I normally \napply to my creations, but this time, by transposing them into this new "de-meta-realized" world. '
+                                'I compelled the machine to create as I would have done before my mind could even imagine it. This is my digitized painting collection. I have digitally transcribed my brushstrokes so that I can make a "handmade" NFT collection. I used artificial intelligence to record an imprint of my soul and emotions when I paint. So, by digitizing enough information through the machine\'s algorithm that assists me, I get a series of thousands of combinations that could have come straight out of my mind. \nMy reflection was to keep a link with reality, the touch, and the movement that I normally apply to my creations, but this time, by transposing them into this new "de-meta-realized" world. '
                               }
                             </div>
 
@@ -599,12 +560,6 @@ function PlasmicArtist__RenderFunc(props) {
               </div>
             </p.Stack>
           ) : null}
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </div>
       </div>
     </React.Fragment>
@@ -615,37 +570,22 @@ const PlasmicDescendants = {
   root: [
     "root",
     "header",
+    "stickyMenu",
     "heroSection",
-    "rightColumn3",
-    "rightColumn4",
     "centerElement",
-    "rightColumn2",
-    "rightColumn",
     "argumentSection",
     "childhood",
     "art",
     "text2",
     "art2",
     "text3",
-    "text4",
-    "footer"
+    "text4"
   ],
 
   header: ["header"],
-  heroSection: [
-    "heroSection",
-    "rightColumn3",
-    "rightColumn4",
-    "centerElement",
-    "rightColumn2",
-    "rightColumn"
-  ],
-
-  rightColumn3: ["rightColumn3"],
-  rightColumn4: ["rightColumn4"],
+  stickyMenu: ["stickyMenu"],
+  heroSection: ["heroSection", "centerElement"],
   centerElement: ["centerElement"],
-  rightColumn2: ["rightColumn2"],
-  rightColumn: ["rightColumn"],
   argumentSection: [
     "argumentSection",
     "childhood",
@@ -661,18 +601,22 @@ const PlasmicDescendants = {
   text2: ["text2"],
   art2: ["art2", "text3", "text4"],
   text3: ["text3"],
-  text4: ["text4"],
-  footer: ["footer"]
+  text4: ["text4"]
 };
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicArtist__ArgProps,
-      internalVariantPropNames: PlasmicArtist__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicArtist__ArgProps,
+          internalVariantPropNames: PlasmicArtist__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicArtist__RenderFunc({
       variants,
@@ -695,12 +639,9 @@ export const PlasmicArtist = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
+    stickyMenu: makeNodeComponent("stickyMenu"),
     heroSection: makeNodeComponent("heroSection"),
-    rightColumn3: makeNodeComponent("rightColumn3"),
-    rightColumn4: makeNodeComponent("rightColumn4"),
     centerElement: makeNodeComponent("centerElement"),
-    rightColumn2: makeNodeComponent("rightColumn2"),
-    rightColumn: makeNodeComponent("rightColumn"),
     argumentSection: makeNodeComponent("argumentSection"),
     childhood: makeNodeComponent("childhood"),
     art: makeNodeComponent("art"),
@@ -708,7 +649,6 @@ export const PlasmicArtist = Object.assign(
     art2: makeNodeComponent("art2"),
     text3: makeNodeComponent("text3"),
     text4: makeNodeComponent("text4"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicArtist
     internalVariantProps: PlasmicArtist__VariantProps,
     internalArgProps: PlasmicArtist__ArgProps

@@ -23,13 +23,11 @@ export const PlasmicMenuButton__VariantProps = new Array();
 
 export const PlasmicMenuButton__ArgProps = new Array();
 
-export const defaultMenuButton__Args = {};
-
 function PlasmicMenuButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultMenuButton__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <a
       data-plasmic-name={"root"}
@@ -46,7 +44,7 @@ function PlasmicMenuButton__RenderFunc(props) {
         projectcss.plasmic_tokens,
         sty.root
       )}
-      href={"/gallery"}
+      href={`/gallery`}
     >
       {"GALLERY"}
     </a>
@@ -59,12 +57,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicMenuButton__ArgProps,
-      internalVariantPropNames: PlasmicMenuButton__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicMenuButton__ArgProps,
+          internalVariantPropNames: PlasmicMenuButton__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicMenuButton__RenderFunc({
       variants,

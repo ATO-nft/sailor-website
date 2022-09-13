@@ -13,12 +13,13 @@ import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
 import DiscoverButton from "../../DiscoverButton"; // plasmic-import: XuXn_eVAMfJ/component
 import MintButton from "../../MintButton"; // plasmic-import: GeHxaxYhV01/component
-import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
+import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicMint.module.css"; // plasmic-import: kmIJQ5z3TF/css
@@ -27,13 +28,15 @@ export const PlasmicMint__VariantProps = new Array();
 
 export const PlasmicMint__ArgProps = new Array();
 
-export const defaultMint__Args = {};
-
 function PlasmicMint__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultMint__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsu0VQjvxy5SkDm()
+  });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -68,14 +71,12 @@ function PlasmicMint__RenderFunc(props) {
               )}
             >
               <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
                 <span
                   className={"plasmic_default__all plasmic_default__span"}
                   style={{ color: "#FFFFFF" }}
                 >
                   {"Hello mint"}
                 </span>
-                <React.Fragment>{""}</React.Fragment>
               </React.Fragment>
             </h1>
 
@@ -132,23 +133,15 @@ function PlasmicMint__RenderFunc(props) {
               )}
             >
               <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
                 <span
                   className={"plasmic_default__all plasmic_default__span"}
                   style={{ color: "#FFFFFF" }}
                 >
                   {"Test"}
                 </span>
-                <React.Fragment>{""}</React.Fragment>
               </React.Fragment>
             </h1>
           ) : null}
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </div>
       </div>
     </React.Fragment>
@@ -156,21 +149,25 @@ function PlasmicMint__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "button1", "mintButton2", "footer"],
+  root: ["root", "header", "button1", "mintButton2"],
   header: ["header"],
   button1: ["button1"],
-  mintButton2: ["mintButton2"],
-  footer: ["footer"]
+  mintButton2: ["mintButton2"]
 };
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicMint__ArgProps,
-      internalVariantPropNames: PlasmicMint__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicMint__ArgProps,
+          internalVariantPropNames: PlasmicMint__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicMint__RenderFunc({
       variants,
@@ -195,7 +192,6 @@ export const PlasmicMint = Object.assign(
     header: makeNodeComponent("header"),
     button1: makeNodeComponent("button1"),
     mintButton2: makeNodeComponent("mintButton2"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicMint
     internalVariantProps: PlasmicMint__VariantProps,
     internalArgProps: PlasmicMint__ArgProps

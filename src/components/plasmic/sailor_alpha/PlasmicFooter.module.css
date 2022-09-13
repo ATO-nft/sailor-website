@@ -159,6 +159,8 @@
   right: 0px;
   transition-property: all;
   transition-duration: 1s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
 }
 .circle {
   transform: translate(-0.10299999999999976px, 0.02999999999999936px);

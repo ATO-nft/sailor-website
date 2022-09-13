@@ -25,13 +25,11 @@ export const PlasmicFocusImage__VariantProps = new Array();
 
 export const PlasmicFocusImage__ArgProps = new Array("name");
 
-export const defaultFocusImage__Args = {};
-
 function PlasmicFocusImage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFocusImage__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <p.PlasmicImg
       data-plasmic-name={"root"}
@@ -70,12 +68,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicFocusImage__ArgProps,
-      internalVariantPropNames: PlasmicFocusImage__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicFocusImage__ArgProps,
+          internalVariantPropNames: PlasmicFocusImage__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicFocusImage__RenderFunc({
       variants,

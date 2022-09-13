@@ -12,13 +12,13 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
-import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
 import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
@@ -41,13 +41,11 @@ export const PlasmicGallery__VariantProps = new Array();
 
 export const PlasmicGallery__ArgProps = new Array();
 
-export const defaultGallery__Args = {};
-
 function PlasmicGallery__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultGallery__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });
@@ -75,7 +73,11 @@ function PlasmicGallery__RenderFunc(props) {
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
             className={classNames("__wab_instance", sty.header)}
-            light={true}
+            red={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? undefined
+                : true
+            }
           />
 
           <div
@@ -403,34 +405,34 @@ function PlasmicGallery__RenderFunc(props) {
                 data-plasmic-override={overrides.bigImage}
                 className={classNames(projectcss.all, sty.bigImage)}
               >
-                <p.PlasmicImg
-                  data-plasmic-name={"main"}
-                  data-plasmic-override={overrides.main}
-                  alt={"selected"}
-                  className={classNames(sty.main)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"eager"}
-                  src={{
-                    src: nft3I4UYce1FlU1,
-                    fullWidth: 1181,
-                    fullHeight: 1181,
-                    aspectRatio: undefined
-                  }}
-                />
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <p.PlasmicImg
+                    data-plasmic-name={"main"}
+                    data-plasmic-override={overrides.main}
+                    alt={"selected"}
+                    className={classNames(sty.main)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"eager"}
+                    src={{
+                      src: nft3I4UYce1FlU1,
+                      fullWidth: 1181,
+                      fullHeight: 1181,
+                      aspectRatio: undefined
+                    }}
+                  />
+                ) : null}
               </div>
             ) : null}
           </div>
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </p.Stack>
       </div>
     </React.Fragment>
@@ -457,8 +459,7 @@ const PlasmicDescendants = {
     "_11",
     "_12",
     "bigImage",
-    "main",
-    "footer"
+    "main"
   ],
 
   header: ["header"],
@@ -528,18 +529,22 @@ const PlasmicDescendants = {
   _11: ["_11"],
   _12: ["_12"],
   bigImage: ["bigImage", "main"],
-  main: ["main"],
-  footer: ["footer"]
+  main: ["main"]
 };
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicGallery__ArgProps,
-      internalVariantPropNames: PlasmicGallery__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicGallery__ArgProps,
+          internalVariantPropNames: PlasmicGallery__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicGallery__RenderFunc({
       variants,
@@ -579,7 +584,6 @@ export const PlasmicGallery = Object.assign(
     _12: makeNodeComponent("_12"),
     bigImage: makeNodeComponent("bigImage"),
     main: makeNodeComponent("main"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicGallery
     internalVariantProps: PlasmicGallery__VariantProps,
     internalArgProps: PlasmicGallery__ArgProps

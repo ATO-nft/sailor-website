@@ -12,28 +12,34 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
-import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
+import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicVision.module.css"; // plasmic-import: opTqQ96dfN/css
+import sailorSmokepngFUTrDxcai from "./images/sailorSmokepng.png"; // plasmic-import: fUTrDXCAI/picture
+import orquepngZQdYgtB8 from "./images/orquepng.png"; // plasmic-import: zQDYgt_B8/picture
 
 export const PlasmicVision__VariantProps = new Array();
 
 export const PlasmicVision__ArgProps = new Array();
 
-export const defaultVision__Args = {};
-
 function PlasmicVision__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultVision__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsu0VQjvxy5SkDm()
+  });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -197,13 +203,50 @@ function PlasmicVision__RenderFunc(props) {
                 ) : null}
               </Slider>
             </div>
-          </div>
 
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__yePjf)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: sailorSmokepngFUTrDxcai,
+                  fullWidth: 602,
+                  fullHeight: 425,
+                  aspectRatio: undefined
+                }}
+              />
+            ) : null}
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__bVvXz)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: orquepngZQdYgtB8,
+                  fullWidth: 472,
+                  fullHeight: 354,
+                  aspectRatio: undefined
+                }}
+              />
+            ) : null}
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -219,8 +262,7 @@ const PlasmicDescendants = {
     "slider",
     "slide1",
     "slide2",
-    "slide3",
-    "footer"
+    "slide3"
   ],
 
   header: ["header"],
@@ -237,18 +279,22 @@ const PlasmicDescendants = {
   slider: ["slider", "slide1", "slide2", "slide3"],
   slide1: ["slide1"],
   slide2: ["slide2"],
-  slide3: ["slide3"],
-  footer: ["footer"]
+  slide3: ["slide3"]
 };
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicVision__ArgProps,
-      internalVariantPropNames: PlasmicVision__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicVision__ArgProps,
+          internalVariantPropNames: PlasmicVision__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicVision__RenderFunc({
       variants,
@@ -277,7 +323,6 @@ export const PlasmicVision = Object.assign(
     slide1: makeNodeComponent("slide1"),
     slide2: makeNodeComponent("slide2"),
     slide3: makeNodeComponent("slide3"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicVision
     internalVariantProps: PlasmicVision__VariantProps,
     internalArgProps: PlasmicVision__ArgProps

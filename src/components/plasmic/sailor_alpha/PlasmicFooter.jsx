@@ -41,13 +41,11 @@ export const PlasmicFooter__VariantProps = new Array();
 
 export const PlasmicFooter__ArgProps = new Array();
 
-export const defaultFooter__Args = {};
-
 function PlasmicFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFooter__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsu0VQjvxy5SkDm()
   });
@@ -375,12 +373,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicFooter__ArgProps,
-      internalVariantPropNames: PlasmicFooter__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicFooter__ArgProps,
+          internalVariantPropNames: PlasmicFooter__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicFooter__RenderFunc({
       variants,

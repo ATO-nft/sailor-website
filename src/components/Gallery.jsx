@@ -12,19 +12,19 @@ function Gallery2_(props, ref) {
   return <PlasmicGallery
 
   bigImage={{
-    render: () => 
-    <div>
-      <bigImage>
-        <img 
-          alt={""}
-          className={props.className} 
-          decoding={"async"}
-          loading={"lazy"}
-          src = {selectedImage}
-          style={{ maxWidth:"100%", maxHeight:"850px" }}
-        />
-      </bigImage>
-    </div>
+    // render: () => 
+    // <div>
+    //   <bigImage>
+    //     <img 
+    //       alt={""}
+    //       className={props.className} 
+    //       decoding={"async"}
+    //       loading={"lazy"}
+    //       src = {selectedImage}
+    //       style={{ maxWidth:"100%", maxHeight:"850px" }}
+    //     />
+    //   </bigImage>
+    // </div>
   }}
 
     // alt="" 

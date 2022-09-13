@@ -14,11 +14,12 @@ import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9HJOL_ndHV/component
 import DiscoverButton from "../../DiscoverButton"; // plasmic-import: XuXn_eVAMfJ/component
-import Footer from "../../Footer"; // plasmic-import: w_pxODdXjgL/component
+import { useScreenVariants as useScreenVariantsu0VQjvxy5SkDm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: U0vQjvxy5SKDm/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sailor_alpha.module.css"; // plasmic-import: 6tP4H2YXq73abyMEePhpsf/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: _5wgUA_BX3/css
@@ -28,13 +29,15 @@ export const PlasmicHomepage__VariantProps = new Array();
 
 export const PlasmicHomepage__ArgProps = new Array();
 
-export const defaultHomepage__Args = {};
-
 function PlasmicHomepage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHomepage__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsu0VQjvxy5SkDm()
+  });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -79,41 +82,51 @@ function PlasmicHomepage__RenderFunc(props) {
                 >
                   {true ? (
                     <div
-                      data-plasmic-name={"freeBox"}
-                      data-plasmic-override={overrides.freeBox}
-                      className={classNames(projectcss.all, sty.freeBox)}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___6RMm8
+                      )}
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__t75Qm
-                        )}
-                      >
-                        {
-                          "From the streets to the blockchain: \nthe journey of the"
-                        }
-                      </div>
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___6Js8C
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__t75Qm
+                            )}
+                          >
+                            {
+                              "From the streets to the blockchain: \nthe journey of the"
+                            }
+                          </div>
 
-                      <p.PlasmicImg
-                        data-plasmic-name={"sailor"}
-                        data-plasmic-override={overrides.sailor}
-                        alt={""}
-                        className={classNames(sty.sailor)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: titre1PngHD0J16Vls,
-                          fullWidth: 431,
-                          fullHeight: 294,
-                          aspectRatio: undefined
-                        }}
-                      />
+                          <p.PlasmicImg
+                            data-plasmic-name={"sailor"}
+                            data-plasmic-override={overrides.sailor}
+                            alt={""}
+                            className={classNames(sty.sailor)}
+                            displayHeight={"auto"}
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"auto"}
+                            loading={"lazy"}
+                            src={{
+                              src: titre1PngHD0J16Vls,
+                              fullWidth: 431,
+                              fullHeight: 294,
+                              aspectRatio: undefined
+                            }}
+                          />
+                        </div>
+                      ) : null}
                     </div>
                   ) : null}
 
@@ -133,18 +146,12 @@ function PlasmicHomepage__RenderFunc(props) {
                 data-plasmic-name={"cta"}
                 data-plasmic-override={overrides.cta}
                 className={classNames("__wab_instance", sty.cta)}
-                link={"/artist"}
+                link={`/artist`}
               >
                 {"Discover his journey"}
               </DiscoverButton>
             </p.Stack>
           </div>
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </div>
       </div>
     </React.Fragment>
@@ -158,38 +165,31 @@ const PlasmicDescendants = {
     "heroSection",
     "container",
     "textContainer",
-    "freeBox",
-    "sailor",
-    "cta",
-    "footer"
-  ],
-
-  header: ["header"],
-  heroSection: [
-    "heroSection",
-    "container",
-    "textContainer",
-    "freeBox",
     "sailor",
     "cta"
   ],
 
-  container: ["container", "textContainer", "freeBox", "sailor", "cta"],
-  textContainer: ["textContainer", "freeBox", "sailor"],
-  freeBox: ["freeBox", "sailor"],
+  header: ["header"],
+  heroSection: ["heroSection", "container", "textContainer", "sailor", "cta"],
+  container: ["container", "textContainer", "sailor", "cta"],
+  textContainer: ["textContainer", "sailor"],
   sailor: ["sailor"],
-  cta: ["cta"],
-  footer: ["footer"]
+  cta: ["cta"]
 };
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicHomepage__ArgProps,
-      internalVariantPropNames: PlasmicHomepage__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicHomepage__ArgProps,
+          internalVariantPropNames: PlasmicHomepage__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicHomepage__RenderFunc({
       variants,
@@ -215,10 +215,8 @@ export const PlasmicHomepage = Object.assign(
     heroSection: makeNodeComponent("heroSection"),
     container: makeNodeComponent("container"),
     textContainer: makeNodeComponent("textContainer"),
-    freeBox: makeNodeComponent("freeBox"),
     sailor: makeNodeComponent("sailor"),
     cta: makeNodeComponent("cta"),
-    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps

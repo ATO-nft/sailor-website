@@ -41,13 +41,11 @@ export const PlasmicDiscoverButton__ArgProps = new Array(
   "link"
 );
 
-export const defaultDiscoverButton__Args = {};
-
 function PlasmicDiscoverButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultDiscoverButton__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false
@@ -528,12 +526,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicDiscoverButton__ArgProps,
-      internalVariantPropNames: PlasmicDiscoverButton__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicDiscoverButton__ArgProps,
+          internalVariantPropNames: PlasmicDiscoverButton__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicDiscoverButton__RenderFunc({
       variants,

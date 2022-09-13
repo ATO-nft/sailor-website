@@ -8,6 +8,6 @@
 .root > picture > img {
   object-fit: cover;
 }
-.root > .__wab_img-spacer > img {
+.root > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }

@@ -27,13 +27,11 @@ export const PlasmicSailorFooter__VariantProps = new Array();
 
 export const PlasmicSailorFooter__ArgProps = new Array();
 
-export const defaultSailorFooter__Args = {};
-
 function PlasmicSailorFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultSailorFooter__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -87,12 +85,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicSailorFooter__ArgProps,
-      internalVariantPropNames: PlasmicSailorFooter__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicSailorFooter__ArgProps,
+          internalVariantPropNames: PlasmicSailorFooter__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicSailorFooter__RenderFunc({
       variants,
